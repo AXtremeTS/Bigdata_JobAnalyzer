@@ -1,0 +1,69 @@
+{
+  "total_records": 48092,
+  "min_coverage_threshold": 30.0,
+  "modules": {
+    "overview": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 48092,
+      "reason": "Dữ liệu có 48,092 bản ghi",
+      "unlock_hint": ""
+    },
+    "hot_jobs": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 48092,
+      "reason": "Đạt độ phủ 100.0% (48,092 dòng hợp lệ)",
+      "unlock_hint": ""
+    },
+    "salary": {
+      "enabled": true,
+      "coverage_pct": 71.4,
+      "n_rows": 34350,
+      "reason": "Đạt độ phủ 71.4% (34,350 dòng hợp lệ)",
+      "unlock_hint": ""
+    },
+    "geo": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 48092,
+      "reason": "Đạt độ phủ 100.0% (48,092 dòng hợp lệ)",
+      "unlock_hint": ""
+    },
+    "requirements": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 48092,
+      "reason": "Đạt độ phủ yêu cầu tuyển dụng 100.0% (48,092 dòng)",
+      "unlock_hint": ""
+    },
+    "skills": {
+      "enabled": true,
+      "coverage_pct": 99.7,
+      "n_rows": 47935,
+      "reason": "Đạt độ phủ kỹ năng 99.7% (47,935 dòng)",
+      "unlock_hint": ""
+    },
+    "trend": {
+      "enabled": false,
+      "coverage_pct": 0.0,
+      "n_rows": 0,
+      "reason": "Độ phủ 0.0% dưới ngưỡng 30.0% hoặc ít hơn 30 dòng",
+      "unlock_hint": "Cần ánh xạ cột ngày đăng tuyển (posted_date / ngày tạo) với định dạng ngày hợp lệ"
+    },
+    "ml_salary": {
+      "enabled": true,
+      "coverage_pct": 71.4,
+      "n_rows": 34350,
+      "reason": "Có 34,350 mẫu lương phục vụ huấn luyện mô hình hồi quy (ngưỡng >= 200)",
+      "unlock_hint": ""
+    },
+    "ml_clustering": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 48092,
+      "reason": "Đủ quy mô dữ liệu (48,092 vị trí) để chạy thuật toán gom cụm K-Means",
+      "unlock_hint": ""
+    }
+  }
+}

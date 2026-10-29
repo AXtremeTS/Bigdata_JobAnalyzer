@@ -1,0 +1,12 @@
+{
+  "country": "US",
+  "country_name": "United States",
+  "currency": "USD",
+  "language": "en",
+  "confidence": 0.98,
+  "evidence": [
+    "Detected 37 US geographic tokens",
+    "Detected 167 USD currency symbols ('$')",
+    "Detected 76 English keyword markers"
+  ]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "level": "Vai trò phổ thông",
+    "education": null,
+    "job_count": 39369,
+    "avg_min_exp_years": 0.0,
+    "avg_salary_vnd": 22991828.0
+  },
+  {
+    "level": "Quản lý / dẫn dắt",
+    "education": null,
+    "job_count": 10110,
+    "avg_min_exp_years": 0.0,
+    "avg_salary_vnd": 44340570.0
+  },
+  {
+    "level": "Chuyên môn cao",
+    "education": null,
+    "job_count": 4859,
+    "avg_min_exp_years": 0.0,
+    "avg_salary_vnd": 32393280.0
+  },
+  {
+    "level": "Mới vào nghề",
+    "education": null,
+    "job_count": 2649,
+    "avg_min_exp_years": 0.0,
+    "avg_salary_vnd": 11789611.0
+  },
+  {
+    "level": "Đầu sự nghiệp",
+    "education": null,
+    "job_count": 1519,
+    "avg_min_exp_years": 0.0,
+    "avg_salary_vnd": 19814601.0
+  },
+  {
+    "level": "Điều hành",
+    "education": null,
+    "job_count": 800,
+    "avg_min_exp_years": 0.0,
+    "avg_salary_vnd": 63264820.0
+  }
+]

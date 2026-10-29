@@ -1,0 +1,50 @@
+[
+  {
+    "clean_title": "Kỹ sư DevOps / Cloud",
+    "job_count": 13,
+    "median_salary": 0,
+    "hot_score": 84.4
+  },
+  {
+    "clean_title": "Frontend React Developer",
+    "job_count": 11,
+    "median_salary": 0,
+    "hot_score": 80.6
+  },
+  {
+    "clean_title": "Lập trình viên Python Backend",
+    "job_count": 11,
+    "median_salary": 0,
+    "hot_score": 80.6
+  },
+  {
+    "clean_title": "Kỹ sư Lập trình Java",
+    "job_count": 10,
+    "median_salary": 0,
+    "hot_score": 78.8
+  },
+  {
+    "clean_title": "Trưởng nhóm Kỹ thuật (Tech Lead)",
+    "job_count": 10,
+    "median_salary": 0,
+    "hot_score": 78.8
+  },
+  {
+    "clean_title": "Chuyên viên An toàn Thông tin",
+    "job_count": 9,
+    "median_salary": 0,
+    "hot_score": 76.9
+  },
+  {
+    "clean_title": "Chuyên viên Phân tích Dữ liệu",
+    "job_count": 8,
+    "median_salary": 0,
+    "hot_score": 75.0
+  },
+  {
+    "clean_title": "Nhân viên Kiểm thử Phần mềm (QA/QC)",
+    "job_count": 8,
+    "median_salary": 0,
+    "hot_score": 75.0
+  }
+]

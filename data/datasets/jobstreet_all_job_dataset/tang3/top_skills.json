@@ -1,0 +1,102 @@
+[
+  {
+    "skill": "Communication",
+    "frequency": 33418,
+    "prevalence_pct": 60.1
+  },
+  {
+    "skill": "Excel",
+    "frequency": 27332,
+    "prevalence_pct": 49.15
+  },
+  {
+    "skill": "Analytical thinking",
+    "frequency": 18744,
+    "prevalence_pct": 33.71
+  },
+  {
+    "skill": "Finance / Accounting",
+    "frequency": 18730,
+    "prevalence_pct": 33.68
+  },
+  {
+    "skill": "Sales",
+    "frequency": 15826,
+    "prevalence_pct": 28.46
+  },
+  {
+    "skill": "Marketing",
+    "frequency": 10326,
+    "prevalence_pct": 18.57
+  },
+  {
+    "skill": "Leadership",
+    "frequency": 7395,
+    "prevalence_pct": 13.3
+  },
+  {
+    "skill": "Human resources",
+    "frequency": 7382,
+    "prevalence_pct": 13.28
+  },
+  {
+    "skill": "SQL / Database",
+    "frequency": 6913,
+    "prevalence_pct": 12.43
+  },
+  {
+    "skill": "Supply chain",
+    "frequency": 6789,
+    "prevalence_pct": 12.21
+  },
+  {
+    "skill": "Customer service",
+    "frequency": 6439,
+    "prevalence_pct": 11.58
+  },
+  {
+    "skill": "Negotiation",
+    "frequency": 5642,
+    "prevalence_pct": 10.15
+  },
+  {
+    "skill": "Project management",
+    "frequency": 5492,
+    "prevalence_pct": 9.88
+  },
+  {
+    "skill": "Cloud computing",
+    "frequency": 5151,
+    "prevalence_pct": 9.26
+  },
+  {
+    "skill": "CAD / Design tools",
+    "frequency": 4320,
+    "prevalence_pct": 7.77
+  },
+  {
+    "skill": "JavaScript / TypeScript",
+    "frequency": 1237,
+    "prevalence_pct": 2.22
+  },
+  {
+    "skill": "Python",
+    "frequency": 1196,
+    "prevalence_pct": 2.15
+  },
+  {
+    "skill": "Java",
+    "frequency": 1077,
+    "prevalence_pct": 1.94
+  },
+  {
+    "skill": "Design tools",
+    "frequency": 986,
+    "prevalence_pct": 1.77
+  },
+  {
+    "skill": "Data visualization",
+    "frequency": 801,
+    "prevalence_pct": 1.44
+  }
+]

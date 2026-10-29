@@ -1,0 +1,37 @@
+{
+  "position_title": {
+    "target": "job_title",
+    "confidence": 0.9,
+    "reason": "Keyword match with alias 'title'"
+  },
+  "organization": {
+    "target": "company",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'organization'"
+  },
+  "work_location": {
+    "target": "location",
+    "confidence": 0.9,
+    "reason": "Keyword match with alias 'location'"
+  },
+  "job_level": {
+    "target": null,
+    "confidence": 0.0,
+    "reason": "Unmapped field 'job_level'"
+  },
+  "skills_required": {
+    "target": "technical_skills",
+    "confidence": 0.92,
+    "reason": "Content heuristic: skill header identifier"
+  },
+  "education_level": {
+    "target": "education",
+    "confidence": 0.9,
+    "reason": "Keyword match with alias 'education'"
+  },
+  "created_at": {
+    "target": "posted_date",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'created_at'"
+  }
+}

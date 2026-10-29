@@ -1,0 +1,69 @@
+{
+  "total_records": 120,
+  "min_coverage_threshold": 30.0,
+  "modules": {
+    "overview": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 120,
+      "reason": "Dữ liệu có 120 bản ghi",
+      "unlock_hint": ""
+    },
+    "hot_jobs": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 120,
+      "reason": "Đạt độ phủ 100.0% (120 dòng hợp lệ)",
+      "unlock_hint": ""
+    },
+    "salary": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 120,
+      "reason": "Đạt độ phủ 100.0% (120 dòng hợp lệ)",
+      "unlock_hint": ""
+    },
+    "geo": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 120,
+      "reason": "Đạt độ phủ 100.0% (120 dòng hợp lệ)",
+      "unlock_hint": ""
+    },
+    "requirements": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 120,
+      "reason": "Đạt độ phủ yêu cầu tuyển dụng 100.0% (120 dòng)",
+      "unlock_hint": ""
+    },
+    "skills": {
+      "enabled": true,
+      "coverage_pct": 515.0,
+      "n_rows": 618,
+      "reason": "Đạt độ phủ kỹ năng 515.0% (618 dòng)",
+      "unlock_hint": ""
+    },
+    "trend": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 120,
+      "reason": "Đạt độ phủ 100.0% (120 dòng hợp lệ)",
+      "unlock_hint": ""
+    },
+    "ml_salary": {
+      "enabled": false,
+      "coverage_pct": 100.0,
+      "n_rows": 120,
+      "reason": "Chỉ có 120 mẫu lương, chưa đủ tối thiểu 200 mẫu để train mô hình hồi quy",
+      "unlock_hint": "Cần bổ sung dữ liệu có thông tin mức lương rõ ràng để huấn luyện mô hình ML"
+    },
+    "ml_clustering": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 120,
+      "reason": "Đủ quy mô dữ liệu (120 vị trí) để chạy thuật toán gom cụm K-Means",
+      "unlock_hint": ""
+    }
+  }
+}

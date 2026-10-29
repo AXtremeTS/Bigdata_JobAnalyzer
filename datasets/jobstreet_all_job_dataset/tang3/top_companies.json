@@ -1,0 +1,122 @@
+[
+  {
+    "company": "Private Advertiser",
+    "province": "Kuala Lumpur",
+    "active_jobs": 424,
+    "avg_salary_vnd": 35042676.0
+  },
+  {
+    "company": "Private Advertiser",
+    "province": "Petaling",
+    "active_jobs": 244,
+    "avg_salary_vnd": 27530224.0
+  },
+  {
+    "company": "Intel Technology Sdn. Bhd.",
+    "province": "Penang",
+    "active_jobs": 151,
+    "avg_salary_vnd": null
+  },
+  {
+    "company": "Private Advertiser",
+    "province": "Johor Bahru District",
+    "active_jobs": 149,
+    "avg_salary_vnd": 30662663.0
+  },
+  {
+    "company": "ExxonMobil Malaysia",
+    "province": "Kuala Lumpur",
+    "active_jobs": 119,
+    "avg_salary_vnd": null
+  },
+  {
+    "company": "Huawei Technologies (Malaysia) Sdn. Bhd",
+    "province": "Kuala Lumpur",
+    "active_jobs": 108,
+    "avg_salary_vnd": 96593750.0
+  },
+  {
+    "company": "Sunway Berhad",
+    "province": "Petaling",
+    "active_jobs": 101,
+    "avg_salary_vnd": 14902923.0
+  },
+  {
+    "company": "Michael Page International (Malaysia) Sdn Bhd",
+    "province": "Kuala Lumpur",
+    "active_jobs": 98,
+    "avg_salary_vnd": 71045960.0
+  },
+  {
+    "company": "MumsMe Sdn Bhd",
+    "province": "Johor Bahru District",
+    "active_jobs": 85,
+    "avg_salary_vnd": 22118094.0
+  },
+  {
+    "company": "Agensi Pekerjaan Hays (Malaysia) Sdn Bhd",
+    "province": "Kuala Lumpur",
+    "active_jobs": 84,
+    "avg_salary_vnd": 234279531.0
+  },
+  {
+    "company": "DKSH Malaysia Sdn Bhd",
+    "province": "Petaling",
+    "active_jobs": 83,
+    "avg_salary_vnd": 26400000.0
+  },
+  {
+    "company": "CIEF Worldwide Sdn Bhd",
+    "province": "Bukit Jalil",
+    "active_jobs": 80,
+    "avg_salary_vnd": null
+  },
+  {
+    "company": "TDCX Malaysia",
+    "province": "Kuala Lumpur",
+    "active_jobs": 77,
+    "avg_salary_vnd": 87175000.0
+  },
+  {
+    "company": "SEEK",
+    "province": "Kuala Lumpur City Centre",
+    "active_jobs": 76,
+    "avg_salary_vnd": null
+  },
+  {
+    "company": "Private Advertiser",
+    "province": "Selangor",
+    "active_jobs": 74,
+    "avg_salary_vnd": 35896667.0
+  },
+  {
+    "company": "Agensi Pekerjaan PERSOLKELLY Malaysia Sdn Bhd",
+    "province": "Kuala Lumpur",
+    "active_jobs": 70,
+    "avg_salary_vnd": 33482246.0
+  },
+  {
+    "company": "Deloitte",
+    "province": "Kuala Lumpur",
+    "active_jobs": 66,
+    "avg_salary_vnd": 27500000.0
+  },
+  {
+    "company": "Agensi Pekerjaan Achieve Career Consultant (M) Sdn Bhd (JTKSM 579)",
+    "province": "Kuala Lumpur",
+    "active_jobs": 65,
+    "avg_salary_vnd": 20912484.0
+  },
+  {
+    "company": "SEEK",
+    "province": "Kuala Lumpur",
+    "active_jobs": 63,
+    "avg_salary_vnd": null
+  },
+  {
+    "company": "Ambition Group Malaysia Sdn Bhd",
+    "province": "Kuala Lumpur",
+    "active_jobs": 62,
+    "avg_salary_vnd": 224152818.0
+  }
+]

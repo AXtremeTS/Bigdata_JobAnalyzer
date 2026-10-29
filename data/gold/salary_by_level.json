@@ -1,0 +1,68 @@
+[
+  {
+    "level": "Senior",
+    "sample_size": 126,
+    "min_salary_vnd": 10000000.0,
+    "p25_salary_vnd": 17000000.0,
+    "median_salary_vnd": 21500000.0,
+    "p75_salary_vnd": 26000000.0,
+    "p90_salary_vnd": 27500000.0,
+    "max_salary_vnd": 130000000.0,
+    "avg_salary_vnd": 22817460.0
+  },
+  {
+    "level": "Lead / Manager",
+    "sample_size": 2283,
+    "min_salary_vnd": 1500000.0,
+    "p25_salary_vnd": 13500000.0,
+    "median_salary_vnd": 17500000.0,
+    "p75_salary_vnd": 24000000.0,
+    "p90_salary_vnd": 30000000.0,
+    "max_salary_vnd": 350000000.0,
+    "avg_salary_vnd": 21148817.0
+  },
+  {
+    "level": "Director",
+    "sample_size": 112,
+    "min_salary_vnd": 4000000.0,
+    "p25_salary_vnd": 11500000.0,
+    "median_salary_vnd": 15000000.0,
+    "p75_salary_vnd": 23500000.0,
+    "p90_salary_vnd": 42500000.0,
+    "max_salary_vnd": 140000000.0,
+    "avg_salary_vnd": 22324107.0
+  },
+  {
+    "level": "Junior/Mid",
+    "sample_size": 30675,
+    "min_salary_vnd": 1000000.0,
+    "p25_salary_vnd": 10500000.0,
+    "median_salary_vnd": 13000000.0,
+    "p75_salary_vnd": 17500000.0,
+    "p90_salary_vnd": 23500000.0,
+    "max_salary_vnd": 500000000.0,
+    "avg_salary_vnd": 15509171.0
+  },
+  {
+    "level": "Fresher",
+    "sample_size": 35,
+    "min_salary_vnd": 4000000.0,
+    "p25_salary_vnd": 8750000.0,
+    "median_salary_vnd": 11000000.0,
+    "p75_salary_vnd": 13500000.0,
+    "p90_salary_vnd": 15000000.0,
+    "max_salary_vnd": 23000000.0,
+    "avg_salary_vnd": 11471429.0
+  },
+  {
+    "level": "Intern",
+    "sample_size": 1118,
+    "min_salary_vnd": 1000000.0,
+    "p25_salary_vnd": 2500000.0,
+    "median_salary_vnd": 3050000.0,
+    "p75_salary_vnd": 5000000.0,
+    "p90_salary_vnd": 10000000.0,
+    "max_salary_vnd": 75000000.0,
+    "avg_salary_vnd": 4640698.0
+  }
+]

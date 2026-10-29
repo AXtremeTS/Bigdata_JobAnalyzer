@@ -1,0 +1,52 @@
+[
+  {
+    "skill": "Python",
+    "job_count": 41,
+    "pct": 34.2
+  },
+  {
+    "skill": "AWS",
+    "job_count": 38,
+    "pct": 31.7
+  },
+  {
+    "skill": "SQL",
+    "job_count": 30,
+    "pct": 25.0
+  },
+  {
+    "skill": "Snowflake",
+    "job_count": 30,
+    "pct": 25.0
+  },
+  {
+    "skill": "dbt",
+    "job_count": 30,
+    "pct": 25.0
+  },
+  {
+    "skill": "Spark",
+    "job_count": 30,
+    "pct": 25.0
+  },
+  {
+    "skill": "Airflow",
+    "job_count": 30,
+    "pct": 25.0
+  },
+  {
+    "skill": "PyTorch",
+    "job_count": 21,
+    "pct": 17.5
+  },
+  {
+    "skill": "TensorFlow",
+    "job_count": 21,
+    "pct": 17.5
+  },
+  {
+    "skill": "Scikit-Learn",
+    "job_count": 21,
+    "pct": 17.5
+  }
+]

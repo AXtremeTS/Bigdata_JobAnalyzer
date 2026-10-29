@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "sample_count": 34349,
+  "features": [
+    "province",
+    "level",
+    "category",
+    "exp_min_years",
+    "skill_count"
+  ],
+  "model_type": "RandomForestRegressor",
+  "hyperparameters": {
+    "numTrees": 30,
+    "maxDepth": 6,
+    "seed": 42
+  },
+  "rmse_vnd": 10495704.0,
+  "mae_vnd": 5329868.0,
+  "r2_score": 0.1184,
+  "baseline_rmse_vnd": 11179092.0,
+  "baseline_mae_vnd": 6044405.0,
+  "improvement_over_baseline_pct": 6.11
+}

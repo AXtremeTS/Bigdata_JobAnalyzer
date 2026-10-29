@@ -1,0 +1,121 @@
+job_title,company_name,job_location,salary_estimate,experience_level,required_skills,posted_date
+Product Manager,Salesforce,"Chicago, IL","$135,000 a year",Director,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-02
+QA Automation Engineer,Apple Inc,"Seattle, WA","$120,000 - $160,000 / yr",Director,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-25
+Machine Learning Engineer,Salesforce,"San Francisco, CA","$140,000 a year",Senior,"React, TypeScript, Next.js, Tailwind CSS, GraphQL",2026-03-07
+Full Stack Developer,Google Cloud,"Chicago, IL","$135,000 a year",Staff,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-06
+Cybersecurity Analyst,Amazon Web Services,"Austin, TX","$110,000 - $145,000 / yr",Senior,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-19
+Data Engineer,Databricks,"San Francisco, CA",$80 - $110 / hr,Mid-Level,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-10
+DevOps Engineer,Netflix Inc,"Seattle, WA",$80 - $110 / hr,Director,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-07
+Cybersecurity Analyst,Databricks,"Seattle, WA","$180,000 - $220,000 / yr",Lead,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-08
+Data Scientist,Snowflake,"Remote, US","$180,000 - $220,000 / yr",Senior,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-06
+Machine Learning Engineer,Apple Inc,"Seattle, WA","$165,000 - $195,000 / yr",Staff,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-15
+Data Scientist,Snowflake,"Remote, US","$180,000 - $220,000 / yr",Lead,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-24
+Product Manager,Apple Inc,"Austin, TX","$110,000 - $145,000 / yr",Senior,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-04
+Cybersecurity Analyst,Databricks,"Boston, MA","$140,000 a year",Staff,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-04
+QA Automation Engineer,Snowflake,"San Francisco, CA","$180,000 - $220,000 / yr",Lead,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-19
+Data Engineer,Salesforce,"Remote, US","$135,000 a year",Staff,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-13
+QA Automation Engineer,Meta Platforms,"Chicago, IL","$120,000 - $160,000 / yr",Staff,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-20
+Backend Engineer,Google Cloud,"Boston, MA","$180,000 - $220,000 / yr",Senior,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-05
+Backend Engineer,Microsoft Corp,"Austin, TX","$180,000 - $220,000 / yr",Staff,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-26
+Full Stack Developer,Meta Platforms,"Seattle, WA","$135,000 a year",Staff,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-05
+Senior Software Engineer,Google Cloud,"Chicago, IL","$110,000 - $145,000 / yr",Staff,"React, TypeScript, Next.js, Tailwind CSS, GraphQL",2026-03-23
+QA Automation Engineer,Netflix Inc,"Boston, MA","$95,000 - $130,000 / year",Senior,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-12
+Machine Learning Engineer,Stripe Inc,"Seattle, WA","$140,000 a year",Staff,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-16
+Data Engineer,Apple Inc,"Seattle, WA","$120,000 - $160,000 / yr",Director,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-03
+QA Automation Engineer,Stripe Inc,"Chicago, IL","$95,000 - $130,000 / year",Mid-Level,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-09
+Data Scientist,Meta Platforms,"New York, NY","$110,000 - $145,000 / yr",Entry-Level,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-20
+QA Automation Engineer,Microsoft Corp,"San Francisco, CA","$120,000 - $160,000 / yr",Director,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-04
+DevOps Engineer,Stripe Inc,"San Francisco, CA","$135,000 a year",Mid-Level,"React, TypeScript, Next.js, Tailwind CSS, GraphQL",2026-03-20
+Senior Software Engineer,Apple Inc,"New York, NY",$80 - $110 / hr,Entry-Level,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-06
+Frontend Developer,Stripe Inc,"Seattle, WA","$180,000 - $220,000 / yr",Lead,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-04
+Frontend Developer,Apple Inc,"Boston, MA","$180,000 - $220,000 / yr",Entry-Level,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-07
+Cloud Solutions Architect,Snowflake,"Seattle, WA","$140,000 a year",Entry-Level,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-15
+Frontend Developer,Google Cloud,"Austin, TX","$140,000 a year",Lead,"React, TypeScript, Next.js, Tailwind CSS, GraphQL",2026-03-26
+Data Engineer,Netflix Inc,"San Francisco, CA",$80 - $110 / hr,Entry-Level,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-13
+Machine Learning Engineer,Snowflake,"Boston, MA","$110,000 - $145,000 / yr",Senior,"React, TypeScript, Next.js, Tailwind CSS, GraphQL",2026-03-01
+Product Manager,Apple Inc,"Seattle, WA","$165,000 - $195,000 / yr",Director,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-10
+Cloud Solutions Architect,Meta Platforms,"Remote, US","$165,000 - $195,000 / yr",Lead,"React, TypeScript, Next.js, Tailwind CSS, GraphQL",2026-03-17
+Data Scientist,Google Cloud,"Seattle, WA","$120,000 - $160,000 / yr",Senior,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-12
+QA Automation Engineer,Databricks,"San Francisco, CA","$180,000 - $220,000 / yr",Staff,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-25
+Product Manager,Meta Platforms,"Chicago, IL","$140,000 a year",Senior,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-28
+Senior Software Engineer,Netflix Inc,"Chicago, IL","$165,000 - $195,000 / yr",Lead,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-21
+Data Engineer,Salesforce,"San Francisco, CA","$120,000 - $160,000 / yr",Entry-Level,"React, TypeScript, Next.js, Tailwind CSS, GraphQL",2026-03-17
+Product Manager,Stripe Inc,"Seattle, WA","$140,000 a year",Lead,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-03
+Cybersecurity Analyst,Databricks,"New York, NY","$120,000 - $160,000 / yr",Staff,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-10
+Data Engineer,Netflix Inc,"Los Angeles, CA","$180,000 - $220,000 / yr",Senior,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-04
+Full Stack Developer,Salesforce,"Remote, US","$95,000 - $130,000 / year",Entry-Level,"React, TypeScript, Next.js, Tailwind CSS, GraphQL",2026-03-10
+Cybersecurity Analyst,Salesforce,"San Francisco, CA","$120,000 - $160,000 / yr",Entry-Level,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-26
+DevOps Engineer,Microsoft Corp,"Boston, MA","$110,000 - $145,000 / yr",Entry-Level,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-18
+Cloud Solutions Architect,Snowflake,"Seattle, WA","$120,000 - $160,000 / yr",Mid-Level,"React, TypeScript, Next.js, Tailwind CSS, GraphQL",2026-03-27
+Cybersecurity Analyst,Databricks,"San Francisco, CA","$135,000 a year",Mid-Level,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-02
+Product Manager,Stripe Inc,"Austin, TX","$95,000 - $130,000 / year",Staff,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-11
+Product Manager,Amazon Web Services,"Austin, TX","$95,000 - $130,000 / year",Senior,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-07
+Product Manager,Microsoft Corp,"New York, NY","$95,000 - $130,000 / year",Mid-Level,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-28
+Senior Software Engineer,Google Cloud,"Boston, MA","$180,000 - $220,000 / yr",Staff,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-10
+Cybersecurity Analyst,Netflix Inc,"New York, NY","$120,000 - $160,000 / yr",Mid-Level,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-17
+Data Engineer,Meta Platforms,"Chicago, IL","$165,000 - $195,000 / yr",Entry-Level,"React, TypeScript, Next.js, Tailwind CSS, GraphQL",2026-03-12
+DevOps Engineer,Apple Inc,"San Francisco, CA","$140,000 a year",Staff,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-10
+Backend Engineer,Meta Platforms,"Los Angeles, CA","$120,000 - $160,000 / yr",Lead,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-12
+Data Engineer,Snowflake,"Los Angeles, CA","$135,000 a year",Senior,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-05
+Frontend Developer,Netflix Inc,"Boston, MA","$140,000 a year",Entry-Level,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-04
+Senior Software Engineer,Stripe Inc,"San Francisco, CA","$140,000 a year",Mid-Level,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-05
+Full Stack Developer,Netflix Inc,"San Francisco, CA","$140,000 a year",Senior,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-27
+QA Automation Engineer,Databricks,"Chicago, IL","$140,000 a year",Director,"React, TypeScript, Next.js, Tailwind CSS, GraphQL",2026-03-11
+Frontend Developer,Meta Platforms,"Austin, TX","$110,000 - $145,000 / yr",Entry-Level,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-27
+Product Manager,Google Cloud,"Los Angeles, CA","$95,000 - $130,000 / year",Staff,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-10
+Machine Learning Engineer,Netflix Inc,"Austin, TX","$95,000 - $130,000 / year",Lead,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-04
+Frontend Developer,Databricks,"New York, NY","$165,000 - $195,000 / yr",Mid-Level,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-08
+Senior Software Engineer,Meta Platforms,"San Francisco, CA","$165,000 - $195,000 / yr",Mid-Level,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-06
+Backend Engineer,Apple Inc,"Chicago, IL","$135,000 a year",Entry-Level,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-05
+Senior Software Engineer,Amazon Web Services,"Remote, US","$140,000 a year",Entry-Level,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-24
+Full Stack Developer,Stripe Inc,"Seattle, WA","$135,000 a year",Director,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-20
+DevOps Engineer,Salesforce,"Austin, TX",$80 - $110 / hr,Staff,"React, TypeScript, Next.js, Tailwind CSS, GraphQL",2026-03-13
+Data Scientist,Google Cloud,"Austin, TX","$120,000 - $160,000 / yr",Senior,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-04
+Data Scientist,Snowflake,"Los Angeles, CA","$135,000 a year",Mid-Level,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-28
+Frontend Developer,Snowflake,"Chicago, IL","$135,000 a year",Lead,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-25
+DevOps Engineer,Microsoft Corp,"Chicago, IL","$135,000 a year",Staff,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-28
+Machine Learning Engineer,Apple Inc,"San Francisco, CA","$165,000 - $195,000 / yr",Mid-Level,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-20
+Data Scientist,Meta Platforms,"Denver, CO","$110,000 - $145,000 / yr",Director,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-12
+Senior Software Engineer,Salesforce,"San Francisco, CA",$80 - $110 / hr,Senior,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-08
+Frontend Developer,Snowflake,"Remote, US","$140,000 a year",Staff,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-27
+Data Scientist,Apple Inc,"Austin, TX","$165,000 - $195,000 / yr",Lead,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-24
+Cloud Solutions Architect,Netflix Inc,"Boston, MA","$180,000 - $220,000 / yr",Staff,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-21
+QA Automation Engineer,Stripe Inc,"New York, NY","$180,000 - $220,000 / yr",Mid-Level,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-22
+QA Automation Engineer,Salesforce,"Remote, US","$180,000 - $220,000 / yr",Director,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-09
+Data Scientist,Microsoft Corp,"Seattle, WA","$110,000 - $145,000 / yr",Mid-Level,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-19
+Backend Engineer,Apple Inc,"Chicago, IL","$110,000 - $145,000 / yr",Senior,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-28
+QA Automation Engineer,Netflix Inc,"Seattle, WA",$80 - $110 / hr,Senior,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-28
+Frontend Developer,Apple Inc,"Austin, TX","$140,000 a year",Director,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-24
+Product Manager,Microsoft Corp,"Boston, MA","$140,000 a year",Lead,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-17
+DevOps Engineer,Meta Platforms,"Boston, MA","$165,000 - $195,000 / yr",Lead,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-06
+Frontend Developer,Google Cloud,"San Francisco, CA","$120,000 - $160,000 / yr",Senior,"React, TypeScript, Next.js, Tailwind CSS, GraphQL",2026-03-17
+Frontend Developer,Apple Inc,"Denver, CO","$135,000 a year",Entry-Level,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-02
+QA Automation Engineer,Amazon Web Services,"Los Angeles, CA","$140,000 a year",Senior,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-03
+QA Automation Engineer,Amazon Web Services,"Seattle, WA","$180,000 - $220,000 / yr",Staff,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-10
+DevOps Engineer,Netflix Inc,"Denver, CO","$135,000 a year",Director,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-23
+Cloud Solutions Architect,Databricks,"Seattle, WA","$110,000 - $145,000 / yr",Mid-Level,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-13
+Machine Learning Engineer,Apple Inc,"Austin, TX","$140,000 a year",Senior,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-03
+Cybersecurity Analyst,Netflix Inc,"Denver, CO","$180,000 - $220,000 / yr",Entry-Level,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-17
+Cybersecurity Analyst,Microsoft Corp,"Denver, CO","$135,000 a year",Lead,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-02
+Full Stack Developer,Google Cloud,"Austin, TX","$95,000 - $130,000 / year",Mid-Level,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-09
+Data Scientist,Salesforce,"Austin, TX",$80 - $110 / hr,Staff,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-03
+Cybersecurity Analyst,Meta Platforms,"Los Angeles, CA","$165,000 - $195,000 / yr",Staff,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-23
+QA Automation Engineer,Google Cloud,"Boston, MA","$180,000 - $220,000 / yr",Entry-Level,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-16
+QA Automation Engineer,Amazon Web Services,"Austin, TX","$165,000 - $195,000 / yr",Senior,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-17
+Data Engineer,Google Cloud,"Denver, CO","$110,000 - $145,000 / yr",Entry-Level,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-18
+Frontend Developer,Meta Platforms,"San Francisco, CA","$165,000 - $195,000 / yr",Entry-Level,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-18
+Full Stack Developer,Amazon Web Services,"Boston, MA","$110,000 - $145,000 / yr",Lead,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-10
+Senior Software Engineer,Microsoft Corp,"Boston, MA","$95,000 - $130,000 / year",Mid-Level,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-12
+Backend Engineer,Microsoft Corp,"Boston, MA","$180,000 - $220,000 / yr",Director,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-08
+QA Automation Engineer,Stripe Inc,"New York, NY","$140,000 a year",Senior,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-13
+Data Scientist,Apple Inc,"Los Angeles, CA","$120,000 - $160,000 / yr",Lead,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-01
+Product Manager,Salesforce,"Denver, CO","$120,000 - $160,000 / yr",Senior,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-25
+QA Automation Engineer,Google Cloud,"Austin, TX","$180,000 - $220,000 / yr",Staff,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-22
+QA Automation Engineer,Databricks,"New York, NY",$80 - $110 / hr,Staff,"Python, AWS, Docker, Kubernetes, PostgreSQL",2026-03-04
+Cloud Solutions Architect,Stripe Inc,"New York, NY","$110,000 - $145,000 / yr",Staff,"React, TypeScript, Next.js, Tailwind CSS, GraphQL",2026-03-06
+Cloud Solutions Architect,Amazon Web Services,"Chicago, IL","$180,000 - $220,000 / yr",Entry-Level,"Python, PyTorch, TensorFlow, Scikit-learn, MLOps",2026-03-22
+Full Stack Developer,Meta Platforms,"Austin, TX","$135,000 a year",Director,"Java, Spring Boot, Microservices, Kafka, Redis",2026-03-08
+Product Manager,Snowflake,"Denver, CO","$95,000 - $130,000 / year",Entry-Level,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-24
+QA Automation Engineer,Microsoft Corp,"Denver, CO","$120,000 - $160,000 / yr",Senior,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-14
+DevOps Engineer,Apple Inc,"San Francisco, CA","$165,000 - $195,000 / yr",Entry-Level,"Terraform, AWS, CI/CD, Linux, Prometheus",2026-03-01
+Full Stack Developer,Snowflake,"Seattle, WA","$120,000 - $160,000 / yr",Senior,"SQL, Snowflake, dbt, Apache Spark, Airflow",2026-03-05

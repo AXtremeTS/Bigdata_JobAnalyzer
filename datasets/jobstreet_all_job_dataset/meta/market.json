@@ -1,0 +1,12 @@
+{
+  "country": "MY",
+  "country_name": "Malaysia",
+  "currency": "MYR",
+  "language": "en",
+  "confidence": 0.99,
+  "evidence": [
+    "Detected 77 Malaysia geographic tokens",
+    "Detected 66 MYR currency signals",
+    "Detected 179 English keyword markers"
+  ]
+}

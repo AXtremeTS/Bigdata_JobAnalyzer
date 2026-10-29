@@ -1,0 +1,138 @@
+{
+  "total_records": 59306,
+  "column_count": 11,
+  "columns": {
+    "job_id": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 56637,
+      "sample_values": [
+        "74679363",
+        "74677668",
+        "74664838",
+        "74673679",
+        "74658688"
+      ]
+    },
+    "job_title": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 34285,
+      "sample_values": [
+        "PURCHASING EXECUTIVE",
+        "Finance Executive",
+        "Account cum Admin Executive",
+        "Business Executive (Work From Home)",
+        "Finance Specialist/Senior Account Executive"
+      ]
+    },
+    "company": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 16752,
+      "sample_values": [
+        "Acoustic & Lighting System Sdn Bhd",
+        "AGENSI PEKERJAAN JS STAFFING SERVICES SDN BHD",
+        "Direct Access Solutions Sdn. Bhd.",
+        "Classic Mode Sdn Bhd",
+        "Bio Harvest Sdn Bhd"
+      ]
+    },
+    "descriptions": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 51302,
+      "sample_values": [
+        "Job Responsibilities\nResponsible for ensuring the normal operation of servers\nAble to promptly address customer issues and provide timely feedback\nCapable of independently writing scripts to improve and optimize operational efficiency\nResponsible for the installation, debugging, and daily maintenance of network and desktop equipment\nCapable of handling and resolving complex malfunction issues, as well as performing network environment monitoring, alarm, and trace work\nCan undertake the construction, update, and expansion of medium-sized network projects\nJob Requirements\nBachelor's degree or higher in computer science, communication, or related fields\nExperience in automation operations and maintenance using Python, shell, or similar is preferred\nPrior experience in constructing or maintaining data center networks is preferred\nExperience in futures or securities-related work is preferred\nStrong communication, coordination, responsibility, and dedication, as well as strong problem expression and overall planning abilities are required\nSolid knowledge of computer networks, familiarity with mainstream vendors' equipment such as switches, routers, firewalls, etc.\nExperience with Linux environments is preferred\n运维工程师\n岗位职责\n负责保障服务器正常运行\n能够第一时间处理客户问题，并及时给予反馈\n有独立编写脚本能力改善优化运维工作效率\n负责日常网络设备、桌面设备的安装调试、日常运维工作\n能处理和解决复杂的故障问题，并做好网络环境的监控报警及溯源工作\n能承担中型网络项目的建设、更新、扩容等实施。\n岗位要求\n计算机、通信等相关专业本科以上\n具备Python、shell等自动化运维经历优先\n有建设或运维数据中心网络的经历优先\n期货行业经历优先\n具有较强的沟通协调能力、责任心和敬业精神、具有较强的问题表达能力和总体规划能力\n具有扎实的计算机网络知识，并熟悉主流厂商的交换机、路由器、防火墙等设备\nLinux环境经历优先",
+        "Qualifications & experience\ncan speak Chinese and English\nTasks & responsibilities\nHelp companies with invoicing and quoting\nBenefits\nHarmonious office environment",
+        "RESPONSIBILITES\nTo generate conceptual & details drawing for machine.\nTo test & evaluate machine performance & guide technician on assembly tasks.\nTo perform sub system hardware integration on the machine.\nTo follow up part on fabricated part as well as standard parts.\nTo prepare BOM & make sure that BOM is updated with the latest version.\nTo make sure that all drawings are updated with document control department.\nTo document the machine operation in machine manual.\nTo prepare machine spare part list.\nTo liaise with supplier on special or urgent request.\nTo ensure that the project is delivered on time.\nAny other job as assigned by the Management from time to time.\nREQUIREMENTS\nDiploma / Degree in Mechanical Engineering\nAdded advantage if possess with CAD software, Solidworks knowledge.\nAble to converse in Mandarin language will be an added advantage",
+        "Responsible for management, performance and completion of simple to moderate projects in new product development, product lifecycle management, including continuous process improvement projects.\nResponsible for the overall management of the project management scope, including communication and collaboration with external partners within the project context.\nHelps to strategize amongst the project management scope.\nOrganize project teams, assigns individual responsibilities, create and maintain detailed project plans, proposals and estimates, scope documents, risk assessments, specifications, project schedules, change requests and determines resources needed.\nEnsures completion of detailed schedules for projects from initiation to delivery and keeps stakeholders and management informed of any deviations.\nMonitors status of projects including cost, scope, timing and staffing.\nProvides stewardship to the project teams to ensure success and on-time delivery of continuous improvement projects in administration by identifying proactive measures for further potential in all aspects in the assigned projects.\nThis position requires a combination of business acumen, organization savvy, networking capabilities and expertise in certain technical areas.\nJob Requirements:\nBachelor's Degree in Engineering or equivalent\nAt least 3 years of experience in Project Management with experience seeing projects through the full life cycle.\nExperience working with multiple functions/levels of the organization.\nProven track record of project management and project leadership/\nWill be advantage experience in manufacturing industries (eg: medical, medical assembly or molding)\nWill be advantage candidate knowledge in ISO 13485, FDA 21 CFR Part 820, Design Control).",
+        "Client Background\nThe company is established in 2016 in Johor. They has been growing rapidly into a full-fledged E-commerce enabler, riding the wave of the booming E-commerce industry in Malaysia. They take the guesswork out of E-commerce operations for their partners by working hand-in-hand with brands to handle E-commerce operations through their full-fledged management system and fulfilment solutions. They are also the official E-distributor for Nestle Malaysia, carrying on-board the full range of Nestle products, with a focus on serving their business partners in the E-businesses.\nWorking Location\nEco Perindustrian, Puncak Alam\nWorking Mode\nFully work in office\nWorking Hours\nMon – Fri, 9am – 6pm\nTenure\nPermanent\nJob Description\nAnalyze and interpret key indicators in e-commerce such as sales performance, SKU sales, traffic, conversion rates, buying behavior, pricing, etc.\nProvide valuable insights and identify trends based on the sales data and suggest recommendations and key action plans\nProvide competitor analysis\nEvaluation of the effectiveness of sales and marketing tools and mechanics\nCreating and developing tools for analysis and information processing\nPresenting the results of reports and graphical modeling of data\nWork closely with the E-Commerce sales team to increase sales and revenue\nDevelop and maintain data pipelines to ensure data accuracy, integrity, and availability.\nDevelop and maintain E-Commerce dashboards as per client’s requests.\nProviding insight to the E-Commerce sales team to optimize marketing expenses.\nData Review: reviewing and validating data from various sources (e.g. Lazada, Shopee, etc.) to ensure data quality and accuracy.\nJob Requirements\nCandidates must possess at least a Bachelor’s degree in Data Science, Statistics, Computer Science, or a related field\nMin. 1-2 years of experience as a Data Analyst/Business Analyst/Category Management preferably in E-Commerce or FMCG role\nAdvanced Excel and data mining skills\nProficient in data visualization tools (e.g. Power BI) and database query languages (e.g. SQL)\nKnowledge of Cloud Computing is an added advantage (e.g. Azure)\nFamiliarity with Azure Data Factory and Azure Synapse Pipelines is an added advantage\nAbility to work independently and take the lead in projects\nStrong presentation skills"
+      ]
+    },
+    "location": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 201,
+      "sample_values": [
+        "Hulu Langat",
+        "Shah Alam/Subang",
+        "Bukit Jalil",
+        "Penang",
+        "KL Eco City"
+      ]
+    },
+    "category": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 28,
+      "sample_values": [
+        "Manufacturing, Transport & Logistics",
+        "Banking & Financial Services",
+        "Trades & Services",
+        "Government & Defence",
+        "Legal"
+      ]
+    },
+    "subcategory": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 316,
+      "sample_values": [
+        "Purchasing, Procurement & Inventory",
+        "Project Engineering",
+        "Mechanical Engineering",
+        "PA, EA & Secretarial",
+        "Audit - Internal"
+      ]
+    },
+    "role": {
+      "null_count": 1936,
+      "null_pct": 3.26,
+      "approx_distinct": 4756,
+      "sample_values": [
+        "purchasing-assistant",
+        "Accounts-and-Administration-Executive",
+        "mechanical-design-engineer",
+        "Human-Resources-and-Administration-Manager",
+        "quality-assurance-analyst"
+      ]
+    },
+    "type": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 4,
+      "sample_values": [
+        "Contract/Temp",
+        "Part time",
+        "Casual/Vacation",
+        "Full time"
+      ]
+    },
+    "salary": {
+      "null_count": 32665,
+      "null_pct": 55.08,
+      "approx_distinct": 1826,
+      "sample_values": [
+        "RM 3,000 – RM 3,500 per month",
+        "RM 3,000 – RM 4,000 per month",
+        "RM 10,000 – RM 15,000 per month",
+        "RM 4,000 – RM 4,500 per month",
+        "RM 2,500 – RM 3,750 per month"
+      ]
+    },
+    "listingdate": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 50182,
+      "sample_values": [
+        "2024-03-23T00:22:28Z",
+        "2024-03-22T05:49:27Z",
+        "2024-03-22T07:01:09Z",
+        "2024-03-22T09:52:58Z",
+        "2024-03-22T13:41:04Z"
+      ]
+    }
+  },
+  "profiled_at": "2026-10-29T00:50:50Z"
+}

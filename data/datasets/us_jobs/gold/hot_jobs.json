@@ -1,0 +1,74 @@
+[
+  {
+    "clean_title": "QA Automation Engineer",
+    "job_count": 19,
+    "median_salary": 3563000000,
+    "hot_score": 94.7
+  },
+  {
+    "clean_title": "Product Manager",
+    "job_count": 12,
+    "median_salary": 296916667,
+    "hot_score": 75.9
+  },
+  {
+    "clean_title": "Frontend Developer",
+    "job_count": 12,
+    "median_salary": 3244875000,
+    "hot_score": 85.0
+  },
+  {
+    "clean_title": "Data Scientist",
+    "job_count": 11,
+    "median_salary": 3563000000,
+    "hot_score": 84.7
+  },
+  {
+    "clean_title": "Cybersecurity Analyst",
+    "job_count": 10,
+    "median_salary": 3563000000,
+    "hot_score": 83.5
+  },
+  {
+    "clean_title": "Full Stack Developer",
+    "job_count": 9,
+    "median_salary": 286312500,
+    "hot_score": 72.1
+  },
+  {
+    "clean_title": "Data Engineer",
+    "job_count": 9,
+    "median_salary": 3244875000,
+    "hot_score": 81.2
+  },
+  {
+    "clean_title": "DevOps Engineer",
+    "job_count": 9,
+    "median_salary": 286312500,
+    "hot_score": 72.1
+  },
+  {
+    "clean_title": "Senior Software Engineer",
+    "job_count": 9,
+    "median_salary": 296916667,
+    "hot_score": 72.2
+  },
+  {
+    "clean_title": "Machine Learning Engineer",
+    "job_count": 7,
+    "median_salary": 296916667,
+    "hot_score": 69.7
+  },
+  {
+    "clean_title": "Cloud Solutions Architect",
+    "job_count": 7,
+    "median_salary": 3563000000,
+    "hot_score": 79.7
+  },
+  {
+    "clean_title": "Backend Engineer",
+    "job_count": 6,
+    "median_salary": 5090000000,
+    "hot_score": 83.2
+  }
+]

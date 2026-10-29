@@ -1,0 +1,42 @@
+[
+  {
+    "company": "Apple Inc",
+    "job_count": 17
+  },
+  {
+    "company": "Meta Platforms",
+    "job_count": 14
+  },
+  {
+    "company": "Google Cloud",
+    "job_count": 13
+  },
+  {
+    "company": "Netflix Inc",
+    "job_count": 13
+  },
+  {
+    "company": "Snowflake",
+    "job_count": 12
+  },
+  {
+    "company": "Salesforce",
+    "job_count": 11
+  },
+  {
+    "company": "Microsoft Corp",
+    "job_count": 11
+  },
+  {
+    "company": "Stripe Inc",
+    "job_count": 11
+  },
+  {
+    "company": "Databricks",
+    "job_count": 10
+  },
+  {
+    "company": "Amazon Web Services",
+    "job_count": 8
+  }
+]

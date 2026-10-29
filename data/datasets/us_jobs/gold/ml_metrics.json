@@ -1,0 +1,8 @@
+{
+  "rmse": 1190044,
+  "mae": 830632,
+  "r2": 0.4942,
+  "baseline_rmse": 1673381,
+  "improvement_pct": 28.88,
+  "samples_trained": 120
+}

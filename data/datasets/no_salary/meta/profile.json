@@ -1,0 +1,21 @@
+{
+  "total_rows": 80,
+  "null_rates": {
+    "position_title": 0.0,
+    "organization": 0.0,
+    "work_location": 0.0,
+    "job_level": 0.0,
+    "skills_required": 0.0,
+    "education_level": 0.0,
+    "created_at": 0.0
+  },
+  "columns": [
+    "position_title",
+    "organization",
+    "work_location",
+    "job_level",
+    "skills_required",
+    "education_level",
+    "created_at"
+  ]
+}

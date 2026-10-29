@@ -1,0 +1,42 @@
+[
+  {
+    "level": "Thực tập sinh (Intern)",
+    "job_count": 1,
+    "median_salary": 973462500,
+    "min_salary": 681423750,
+    "max_salary": 1557540000,
+    "pct": 0.8
+  },
+  {
+    "level": "Nhân viên / Fresher",
+    "job_count": 1,
+    "median_salary": 2271412500,
+    "min_salary": 1589988750,
+    "max_salary": 3634260000,
+    "pct": 0.8
+  },
+  {
+    "level": "Chuyên viên / Senior",
+    "job_count": 1,
+    "median_salary": 4542825000,
+    "min_salary": 3179977500,
+    "max_salary": 7268520000,
+    "pct": 0.8
+  },
+  {
+    "level": "Trưởng nhóm / Lead",
+    "job_count": 1,
+    "median_salary": 8112187500,
+    "min_salary": 5678531250,
+    "max_salary": 12979500000,
+    "pct": 0.8
+  },
+  {
+    "level": "Giám đốc (Director)",
+    "job_count": 1,
+    "median_salary": 8112187500,
+    "min_salary": 5678531250,
+    "max_salary": 12979500000,
+    "pct": 0.8
+  }
+]

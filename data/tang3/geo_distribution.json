@@ -1,0 +1,1352 @@
+[
+  {
+    "province": "Hà Nội",
+    "region": "Bắc",
+    "job_count": 20119,
+    "share_pct": 42.29,
+    "salary_samples": 15864,
+    "median_salary_vnd": 13500000.0,
+    "avg_salary_vnd": 15782194.0
+  },
+  {
+    "province": "TP Hồ Chí Minh",
+    "region": "Nam",
+    "job_count": 17081,
+    "share_pct": 35.91,
+    "salary_samples": 11356,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 15509180.0
+  },
+  {
+    "province": "Hải Phòng",
+    "region": "Bắc",
+    "job_count": 990,
+    "share_pct": 2.08,
+    "salary_samples": 652,
+    "median_salary_vnd": 13500000.0,
+    "avg_salary_vnd": 16317178.0
+  },
+  {
+    "province": "Bắc Ninh",
+    "region": "Bắc",
+    "job_count": 985,
+    "share_pct": 2.07,
+    "salary_samples": 651,
+    "median_salary_vnd": 14000000.0,
+    "avg_salary_vnd": 15999770.0
+  },
+  {
+    "province": "Đà Nẵng",
+    "region": "Trung",
+    "job_count": 970,
+    "share_pct": 2.04,
+    "salary_samples": 652,
+    "median_salary_vnd": 11500000.0,
+    "avg_salary_vnd": 14712883.0
+  },
+  {
+    "province": "hưng yên",
+    "region": "Khác",
+    "job_count": 655,
+    "share_pct": 1.38,
+    "salary_samples": 507,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 14824655.0
+  },
+  {
+    "province": "Đồng Nai",
+    "region": "Nam",
+    "job_count": 581,
+    "share_pct": 1.22,
+    "salary_samples": 333,
+    "median_salary_vnd": 12000000.0,
+    "avg_salary_vnd": 14404204.0
+  },
+  {
+    "province": "tây ninh",
+    "region": "Khác",
+    "job_count": 475,
+    "share_pct": 1.0,
+    "salary_samples": 285,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 14430351.0
+  },
+  {
+    "province": "ninh bình",
+    "region": "Khác",
+    "job_count": 439,
+    "share_pct": 0.92,
+    "salary_samples": 263,
+    "median_salary_vnd": 15000000.0,
+    "avg_salary_vnd": 17752852.0
+  },
+  {
+    "province": "thanh hoá",
+    "region": "Khác",
+    "job_count": 194,
+    "share_pct": 0.41,
+    "salary_samples": 142,
+    "median_salary_vnd": 15000000.0,
+    "avg_salary_vnd": 16586268.0
+  },
+  {
+    "province": "Cần Thơ",
+    "region": "Nam",
+    "job_count": 186,
+    "share_pct": 0.39,
+    "salary_samples": 102,
+    "median_salary_vnd": 11500000.0,
+    "avg_salary_vnd": 13610784.0
+  },
+  {
+    "province": "gia lai",
+    "region": "Khác",
+    "job_count": 175,
+    "share_pct": 0.37,
+    "salary_samples": 59,
+    "median_salary_vnd": 12000000.0,
+    "avg_salary_vnd": 12266949.0
+  },
+  {
+    "province": "nghệ an",
+    "region": "Khác",
+    "job_count": 175,
+    "share_pct": 0.37,
+    "salary_samples": 118,
+    "median_salary_vnd": 13500000.0,
+    "avg_salary_vnd": 15989407.0
+  },
+  {
+    "province": "tp vinh",
+    "region": "Khác",
+    "job_count": 172,
+    "share_pct": 0.36,
+    "salary_samples": 133,
+    "median_salary_vnd": 11000000.0,
+    "avg_salary_vnd": 13058271.0
+  },
+  {
+    "province": "bắc từ liêm",
+    "region": "Khác",
+    "job_count": 168,
+    "share_pct": 0.35,
+    "salary_samples": 137,
+    "median_salary_vnd": 12000000.0,
+    "avg_salary_vnd": 14996715.0
+  },
+  {
+    "province": "phú thọ",
+    "region": "Khác",
+    "job_count": 168,
+    "share_pct": 0.35,
+    "salary_samples": 111,
+    "median_salary_vnd": 13000000.0,
+    "avg_salary_vnd": 14458108.0
+  },
+  {
+    "province": "thủ đức",
+    "region": "Khác",
+    "job_count": 149,
+    "share_pct": 0.31,
+    "salary_samples": 104,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 14114904.0
+  },
+  {
+    "province": "nam từ liêm",
+    "region": "Khác",
+    "job_count": 133,
+    "share_pct": 0.28,
+    "salary_samples": 115,
+    "median_salary_vnd": 13500000.0,
+    "avg_salary_vnd": 15319565.0
+  },
+  {
+    "province": "quảng ninh",
+    "region": "Khác",
+    "job_count": 133,
+    "share_pct": 0.28,
+    "salary_samples": 93,
+    "median_salary_vnd": 13000000.0,
+    "avg_salary_vnd": 15395161.0
+  },
+  {
+    "province": "thừa thiên huế",
+    "region": "Khác",
+    "job_count": 126,
+    "share_pct": 0.26,
+    "salary_samples": 89,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 14991573.0
+  },
+  {
+    "province": "thái nguyên",
+    "region": "Khác",
+    "job_count": 119,
+    "share_pct": 0.25,
+    "salary_samples": 79,
+    "median_salary_vnd": 12000000.0,
+    "avg_salary_vnd": 14163291.0
+  },
+  {
+    "province": "quận 7",
+    "region": "Khác",
+    "job_count": 115,
+    "share_pct": 0.24,
+    "salary_samples": 68,
+    "median_salary_vnd": 13500000.0,
+    "avg_salary_vnd": 16287500.0
+  },
+  {
+    "province": "bình thạnh",
+    "region": "Khác",
+    "job_count": 102,
+    "share_pct": 0.21,
+    "salary_samples": 69,
+    "median_salary_vnd": 13500000.0,
+    "avg_salary_vnd": 21708696.0
+  },
+  {
+    "province": "lâm đồng",
+    "region": "Khác",
+    "job_count": 94,
+    "share_pct": 0.2,
+    "salary_samples": 59,
+    "median_salary_vnd": 15500000.0,
+    "avg_salary_vnd": 17580508.0
+  },
+  {
+    "province": "vĩnh long",
+    "region": "Khác",
+    "job_count": 94,
+    "share_pct": 0.2,
+    "salary_samples": 40,
+    "median_salary_vnd": 11500000.0,
+    "avg_salary_vnd": 13803750.0
+  },
+  {
+    "province": "an giang",
+    "region": "Khác",
+    "job_count": 91,
+    "share_pct": 0.19,
+    "salary_samples": 57,
+    "median_salary_vnd": 13000000.0,
+    "avg_salary_vnd": 14317544.0
+  },
+  {
+    "province": "khánh hoà",
+    "region": "Khác",
+    "job_count": 89,
+    "share_pct": 0.19,
+    "salary_samples": 49,
+    "median_salary_vnd": 15000000.0,
+    "avg_salary_vnd": 15222449.0
+  },
+  {
+    "province": "US / Remote",
+    "region": "Khác",
+    "job_count": 88,
+    "share_pct": 0.18,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "nhà bè",
+    "region": "Khác",
+    "job_count": 85,
+    "share_pct": 0.18,
+    "salary_samples": 58,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 15405172.0
+  },
+  {
+    "province": "củ chi",
+    "region": "Khác",
+    "job_count": 83,
+    "share_pct": 0.17,
+    "salary_samples": 51,
+    "median_salary_vnd": 12000000.0,
+    "avg_salary_vnd": 12416667.0
+  },
+  {
+    "province": "đắk lắk",
+    "region": "Khác",
+    "job_count": 81,
+    "share_pct": 0.17,
+    "salary_samples": 59,
+    "median_salary_vnd": 12050000.0,
+    "avg_salary_vnd": 14001695.0
+  },
+  {
+    "province": "đồng tháp",
+    "region": "Khác",
+    "job_count": 81,
+    "share_pct": 0.17,
+    "salary_samples": 34,
+    "median_salary_vnd": 15000000.0,
+    "avg_salary_vnd": 14977941.0
+  },
+  {
+    "province": "đống đa",
+    "region": "Khác",
+    "job_count": 75,
+    "share_pct": 0.16,
+    "salary_samples": 61,
+    "median_salary_vnd": 14000000.0,
+    "avg_salary_vnd": 15745082.0
+  },
+  {
+    "province": "hóc môn",
+    "region": "Khác",
+    "job_count": 63,
+    "share_pct": 0.13,
+    "salary_samples": 54,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 15029630.0
+  },
+  {
+    "province": "nha trang",
+    "region": "Khác",
+    "job_count": 62,
+    "share_pct": 0.13,
+    "salary_samples": 34,
+    "median_salary_vnd": 9000000.0,
+    "avg_salary_vnd": 16666176.0
+  },
+  {
+    "province": "tân bình",
+    "region": "Khác",
+    "job_count": 59,
+    "share_pct": 0.12,
+    "salary_samples": 49,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 15872449.0
+  },
+  {
+    "province": "bến cát",
+    "region": "Khác",
+    "job_count": 58,
+    "share_pct": 0.12,
+    "salary_samples": 49,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 13104082.0
+  },
+  {
+    "province": "quận 12",
+    "region": "Khác",
+    "job_count": 56,
+    "share_pct": 0.12,
+    "salary_samples": 47,
+    "median_salary_vnd": 15000000.0,
+    "avg_salary_vnd": 14957447.0
+  },
+  {
+    "province": "đông anh",
+    "region": "Khác",
+    "job_count": 56,
+    "share_pct": 0.12,
+    "salary_samples": 40,
+    "median_salary_vnd": 11500000.0,
+    "avg_salary_vnd": 11412500.0
+  },
+  {
+    "province": "long biên",
+    "region": "Khác",
+    "job_count": 53,
+    "share_pct": 0.11,
+    "salary_samples": 50,
+    "median_salary_vnd": 14000000.0,
+    "avg_salary_vnd": 14440000.0
+  },
+  {
+    "province": "quảng ngãi",
+    "region": "Khác",
+    "job_count": 53,
+    "share_pct": 0.11,
+    "salary_samples": 18,
+    "median_salary_vnd": 11000000.0,
+    "avg_salary_vnd": 12569444.0
+  },
+  {
+    "province": "tp nha trang",
+    "region": "Khác",
+    "job_count": 52,
+    "share_pct": 0.11,
+    "salary_samples": 31,
+    "median_salary_vnd": 11000000.0,
+    "avg_salary_vnd": 11598387.0
+  },
+  {
+    "province": "cà mau",
+    "region": "Khác",
+    "job_count": 49,
+    "share_pct": 0.1,
+    "salary_samples": 28,
+    "median_salary_vnd": 11500000.0,
+    "avg_salary_vnd": 13214286.0
+  },
+  {
+    "province": "tp buôn ma thuột",
+    "region": "Khác",
+    "job_count": 49,
+    "share_pct": 0.1,
+    "salary_samples": 33,
+    "median_salary_vnd": 9250000.0,
+    "avg_salary_vnd": 10181818.0
+  },
+  {
+    "province": "bình tân",
+    "region": "Khác",
+    "job_count": 48,
+    "share_pct": 0.1,
+    "salary_samples": 37,
+    "median_salary_vnd": 15000000.0,
+    "avg_salary_vnd": 17918919.0
+  },
+  {
+    "province": "quận 1",
+    "region": "Khác",
+    "job_count": 48,
+    "share_pct": 0.1,
+    "salary_samples": 30,
+    "median_salary_vnd": 13000000.0,
+    "avg_salary_vnd": 14916667.0
+  },
+  {
+    "province": "biên hoà",
+    "region": "Khác",
+    "job_count": 45,
+    "share_pct": 0.09,
+    "salary_samples": 19,
+    "median_salary_vnd": 13000000.0,
+    "avg_salary_vnd": 12184211.0
+  },
+  {
+    "province": "hà tĩnh",
+    "region": "Khác",
+    "job_count": 45,
+    "share_pct": 0.09,
+    "salary_samples": 22,
+    "median_salary_vnd": 13000000.0,
+    "avg_salary_vnd": 14136364.0
+  },
+  {
+    "province": "gia lâm",
+    "region": "Khác",
+    "job_count": 42,
+    "share_pct": 0.09,
+    "salary_samples": 35,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 13771429.0
+  },
+  {
+    "province": "quảng trị",
+    "region": "Khác",
+    "job_count": 42,
+    "share_pct": 0.09,
+    "salary_samples": 30,
+    "median_salary_vnd": 11000000.0,
+    "avg_salary_vnd": 12401667.0
+  },
+  {
+    "province": "gò vấp",
+    "region": "Khác",
+    "job_count": 41,
+    "share_pct": 0.09,
+    "salary_samples": 32,
+    "median_salary_vnd": 10500000.0,
+    "avg_salary_vnd": 10468750.0
+  },
+  {
+    "province": "thanh xuân",
+    "region": "Khác",
+    "job_count": 39,
+    "share_pct": 0.08,
+    "salary_samples": 35,
+    "median_salary_vnd": 15000000.0,
+    "avg_salary_vnd": 16771429.0
+  },
+  {
+    "province": "dĩ an",
+    "region": "Khác",
+    "job_count": 38,
+    "share_pct": 0.08,
+    "salary_samples": 25,
+    "median_salary_vnd": 13000000.0,
+    "avg_salary_vnd": 17780000.0
+  },
+  {
+    "province": "lào cai",
+    "region": "Khác",
+    "job_count": 36,
+    "share_pct": 0.08,
+    "salary_samples": 27,
+    "median_salary_vnd": 13500000.0,
+    "avg_salary_vnd": 15870370.0
+  },
+  {
+    "province": "quận 2",
+    "region": "Khác",
+    "job_count": 35,
+    "share_pct": 0.07,
+    "salary_samples": 24,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 17562500.0
+  },
+  {
+    "province": "quận 3",
+    "region": "Khác",
+    "job_count": 32,
+    "share_pct": 0.07,
+    "salary_samples": 20,
+    "median_salary_vnd": 10300000.0,
+    "avg_salary_vnd": 14865000.0
+  },
+  {
+    "province": "chương mỹ",
+    "region": "Khác",
+    "job_count": 31,
+    "share_pct": 0.07,
+    "salary_samples": 25,
+    "median_salary_vnd": 14000000.0,
+    "avg_salary_vnd": 14060000.0
+  },
+  {
+    "province": "phú quốc",
+    "region": "Khác",
+    "job_count": 31,
+    "share_pct": 0.07,
+    "salary_samples": 15,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 14366667.0
+  },
+  {
+    "province": "đà lạt",
+    "region": "Khác",
+    "job_count": 31,
+    "share_pct": 0.07,
+    "salary_samples": 22,
+    "median_salary_vnd": 8000000.0,
+    "avg_salary_vnd": 12477273.0
+  },
+  {
+    "province": "ba đình",
+    "region": "Khác",
+    "job_count": 30,
+    "share_pct": 0.06,
+    "salary_samples": 21,
+    "median_salary_vnd": 11000000.0,
+    "avg_salary_vnd": 12440476.0
+  },
+  {
+    "province": "long khánh",
+    "region": "Khác",
+    "job_count": 29,
+    "share_pct": 0.06,
+    "salary_samples": 23,
+    "median_salary_vnd": 12000000.0,
+    "avg_salary_vnd": 12347826.0
+  },
+  {
+    "province": "tp đà lạt",
+    "region": "Khác",
+    "job_count": 28,
+    "share_pct": 0.06,
+    "salary_samples": 12,
+    "median_salary_vnd": 8500000.0,
+    "avg_salary_vnd": 10375000.0
+  },
+  {
+    "province": "tân phú",
+    "region": "Khác",
+    "job_count": 28,
+    "share_pct": 0.06,
+    "salary_samples": 22,
+    "median_salary_vnd": 11000000.0,
+    "avg_salary_vnd": 12000000.0
+  },
+  {
+    "province": "hai bà trưng",
+    "region": "Khác",
+    "job_count": 27,
+    "share_pct": 0.06,
+    "salary_samples": 20,
+    "median_salary_vnd": 11500000.0,
+    "avg_salary_vnd": 13875000.0
+  },
+  {
+    "province": "hoà bình",
+    "region": "Khác",
+    "job_count": 27,
+    "share_pct": 0.06,
+    "salary_samples": 16,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 16859375.0
+  },
+  {
+    "province": "hoàng mai",
+    "region": "Khác",
+    "job_count": 25,
+    "share_pct": 0.05,
+    "salary_samples": 23,
+    "median_salary_vnd": 12000000.0,
+    "avg_salary_vnd": 13565217.0
+  },
+  {
+    "province": "hạ long",
+    "region": "Khác",
+    "job_count": 25,
+    "share_pct": 0.05,
+    "salary_samples": 22,
+    "median_salary_vnd": 10000000.0,
+    "avg_salary_vnd": 13920455.0
+  },
+  {
+    "province": "quận 10",
+    "region": "Khác",
+    "job_count": 25,
+    "share_pct": 0.05,
+    "salary_samples": 12,
+    "median_salary_vnd": 12000000.0,
+    "avg_salary_vnd": 14058333.0
+  },
+  {
+    "province": "biên hòa",
+    "region": "Khác",
+    "job_count": 24,
+    "share_pct": 0.05,
+    "salary_samples": 10,
+    "median_salary_vnd": 10000000.0,
+    "avg_salary_vnd": 11350000.0
+  },
+  {
+    "province": "phú nhuận",
+    "region": "Khác",
+    "job_count": 23,
+    "share_pct": 0.05,
+    "salary_samples": 11,
+    "median_salary_vnd": 12000000.0,
+    "avg_salary_vnd": 14045455.0
+  },
+  {
+    "province": "thường tín",
+    "region": "Khác",
+    "job_count": 23,
+    "share_pct": 0.05,
+    "salary_samples": 16,
+    "median_salary_vnd": 17000000.0,
+    "avg_salary_vnd": 19000000.0
+  },
+  {
+    "province": "bình chánh",
+    "region": "Khác",
+    "job_count": 21,
+    "share_pct": 0.04,
+    "salary_samples": 17,
+    "median_salary_vnd": 13500000.0,
+    "avg_salary_vnd": 14514706.0
+  },
+  {
+    "province": "quận 9",
+    "region": "Khác",
+    "job_count": 21,
+    "share_pct": 0.04,
+    "salary_samples": 12,
+    "median_salary_vnd": 8500000.0,
+    "avg_salary_vnd": 14625000.0
+  },
+  {
+    "province": "mỹ hào",
+    "region": "Khác",
+    "job_count": 19,
+    "share_pct": 0.04,
+    "salary_samples": 11,
+    "median_salary_vnd": 11500000.0,
+    "avg_salary_vnd": 11272727.0
+  },
+  {
+    "province": "tp phủ lý",
+    "region": "Khác",
+    "job_count": 19,
+    "share_pct": 0.04,
+    "salary_samples": 16,
+    "median_salary_vnd": 6000000.0,
+    "avg_salary_vnd": 10281250.0
+  },
+  {
+    "province": "điện bàn",
+    "region": "Khác",
+    "job_count": 19,
+    "share_pct": 0.04,
+    "salary_samples": 10,
+    "median_salary_vnd": 8500000.0,
+    "avg_salary_vnd": 9150000.0
+  },
+  {
+    "province": "ninh thuận",
+    "region": "Khác",
+    "job_count": 17,
+    "share_pct": 0.04,
+    "salary_samples": 8,
+    "median_salary_vnd": 20000000.0,
+    "avg_salary_vnd": 16687500.0
+  },
+  {
+    "province": "thủ dầu một",
+    "region": "Khác",
+    "job_count": 17,
+    "share_pct": 0.04,
+    "salary_samples": 12,
+    "median_salary_vnd": 11000000.0,
+    "avg_salary_vnd": 12000000.0
+  },
+  {
+    "province": "tp quy nhơn",
+    "region": "Khác",
+    "job_count": 17,
+    "share_pct": 0.04,
+    "salary_samples": 13,
+    "median_salary_vnd": 10000000.0,
+    "avg_salary_vnd": 9461538.0
+  },
+  {
+    "province": "long thành",
+    "region": "Khác",
+    "job_count": 16,
+    "share_pct": 0.03,
+    "salary_samples": 13,
+    "median_salary_vnd": 13500000.0,
+    "avg_salary_vnd": 15153846.0
+  },
+  {
+    "province": "quốc oai",
+    "region": "Khác",
+    "job_count": 16,
+    "share_pct": 0.03,
+    "salary_samples": 9,
+    "median_salary_vnd": 13000000.0,
+    "avg_salary_vnd": 14777778.0
+  },
+  {
+    "province": "tuyên quang",
+    "region": "Khác",
+    "job_count": 16,
+    "share_pct": 0.03,
+    "salary_samples": 15,
+    "median_salary_vnd": 15000000.0,
+    "avg_salary_vnd": 15333333.0
+  },
+  {
+    "province": "bến lức",
+    "region": "Khác",
+    "job_count": 15,
+    "share_pct": 0.03,
+    "salary_samples": 6,
+    "median_salary_vnd": 22500000.0,
+    "avg_salary_vnd": 28250000.0
+  },
+  {
+    "province": "nhật bản",
+    "region": "Khác",
+    "job_count": 15,
+    "share_pct": 0.03,
+    "salary_samples": 11,
+    "median_salary_vnd": 50000000.0,
+    "avg_salary_vnd": 57972727.0
+  },
+  {
+    "province": "nước ngoài",
+    "region": "Khác",
+    "job_count": 15,
+    "share_pct": 0.03,
+    "salary_samples": 7,
+    "median_salary_vnd": 45000000.0,
+    "avg_salary_vnd": 37142857.0
+  },
+  {
+    "province": "quận 11",
+    "region": "Khác",
+    "job_count": 15,
+    "share_pct": 0.03,
+    "salary_samples": 14,
+    "median_salary_vnd": 15000000.0,
+    "avg_salary_vnd": 14125000.0
+  },
+  {
+    "province": "quận 4",
+    "region": "Khác",
+    "job_count": 15,
+    "share_pct": 0.03,
+    "salary_samples": 7,
+    "median_salary_vnd": 16500000.0,
+    "avg_salary_vnd": 23428571.0
+  },
+  {
+    "province": "thanh hoá, quảng ninh",
+    "region": "Khác",
+    "job_count": 15,
+    "share_pct": 0.03,
+    "salary_samples": 14,
+    "median_salary_vnd": 17500000.0,
+    "avg_salary_vnd": 17678571.0
+  },
+  {
+    "province": "yên mỹ",
+    "region": "Khác",
+    "job_count": 15,
+    "share_pct": 0.03,
+    "salary_samples": 8,
+    "median_salary_vnd": 17500000.0,
+    "avg_salary_vnd": 16562500.0
+  },
+  {
+    "province": "đắc nông",
+    "region": "Khác",
+    "job_count": 15,
+    "share_pct": 0.03,
+    "salary_samples": 8,
+    "median_salary_vnd": 11000000.0,
+    "avg_salary_vnd": 12312500.0
+  },
+  {
+    "province": "thuận an",
+    "region": "Khác",
+    "job_count": 14,
+    "share_pct": 0.03,
+    "salary_samples": 10,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 13100000.0
+  },
+  {
+    "province": "tp cam ranh",
+    "region": "Khác",
+    "job_count": 14,
+    "share_pct": 0.03,
+    "salary_samples": 12,
+    "median_salary_vnd": 10000000.0,
+    "avg_salary_vnd": 14625000.0
+  },
+  {
+    "province": "sơn la",
+    "region": "Khác",
+    "job_count": 13,
+    "share_pct": 0.03,
+    "salary_samples": 6,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 15666667.0
+  },
+  {
+    "province": "tp hạ long",
+    "region": "Khác",
+    "job_count": 13,
+    "share_pct": 0.03,
+    "salary_samples": 12,
+    "median_salary_vnd": 16500000.0,
+    "avg_salary_vnd": 15166667.0
+  },
+  {
+    "province": "đan phượng",
+    "region": "Khác",
+    "job_count": 13,
+    "share_pct": 0.03,
+    "salary_samples": 13,
+    "median_salary_vnd": 13000000.0,
+    "avg_salary_vnd": 15269231.0
+  },
+  {
+    "province": "bảo lộc",
+    "region": "Khác",
+    "job_count": 12,
+    "share_pct": 0.03,
+    "salary_samples": 7,
+    "median_salary_vnd": 9500000.0,
+    "avg_salary_vnd": 9892857.0
+  },
+  {
+    "province": "điện biên",
+    "region": "Khác",
+    "job_count": 12,
+    "share_pct": 0.03,
+    "salary_samples": 12,
+    "median_salary_vnd": 9850000.0,
+    "avg_salary_vnd": 14362500.0
+  },
+  {
+    "province": "cẩm giàng",
+    "region": "Khác",
+    "job_count": 11,
+    "share_pct": 0.02,
+    "salary_samples": 5,
+    "median_salary_vnd": 13500000.0,
+    "avg_salary_vnd": 13700000.0
+  },
+  {
+    "province": "quận 6",
+    "region": "Khác",
+    "job_count": 11,
+    "share_pct": 0.02,
+    "salary_samples": 10,
+    "median_salary_vnd": 10500000.0,
+    "avg_salary_vnd": 15150000.0
+  },
+  {
+    "province": "tp mỹ tho",
+    "region": "Khác",
+    "job_count": 11,
+    "share_pct": 0.02,
+    "salary_samples": 8,
+    "median_salary_vnd": 10500000.0,
+    "avg_salary_vnd": 22750000.0
+  },
+  {
+    "province": "tp tuy hoà",
+    "region": "Khác",
+    "job_count": 11,
+    "share_pct": 0.02,
+    "salary_samples": 11,
+    "median_salary_vnd": 9000000.0,
+    "avg_salary_vnd": 10227273.0
+  },
+  {
+    "province": "tây hồ",
+    "region": "Khác",
+    "job_count": 11,
+    "share_pct": 0.02,
+    "salary_samples": 10,
+    "median_salary_vnd": 15000000.0,
+    "avg_salary_vnd": 14350000.0
+  },
+  {
+    "province": "bình xuyên",
+    "region": "Khác",
+    "job_count": 10,
+    "share_pct": 0.02,
+    "salary_samples": 6,
+    "median_salary_vnd": 10000000.0,
+    "avg_salary_vnd": 14166667.0
+  },
+  {
+    "province": "hội an",
+    "region": "Khác",
+    "job_count": 10,
+    "share_pct": 0.02,
+    "salary_samples": 2,
+    "median_salary_vnd": 8500000.0,
+    "avg_salary_vnd": 8500000.0
+  },
+  {
+    "province": "tân an",
+    "region": "Khác",
+    "job_count": 10,
+    "share_pct": 0.02,
+    "salary_samples": 8,
+    "median_salary_vnd": 15000000.0,
+    "avg_salary_vnd": 16125000.0
+  },
+  {
+    "province": "đơn dương",
+    "region": "Khác",
+    "job_count": 10,
+    "share_pct": 0.02,
+    "salary_samples": 2,
+    "median_salary_vnd": 8500000.0,
+    "avg_salary_vnd": 8500000.0
+  },
+  {
+    "province": "cái răng",
+    "region": "Khác",
+    "job_count": 9,
+    "share_pct": 0.02,
+    "salary_samples": 1,
+    "median_salary_vnd": 7000000.0,
+    "avg_salary_vnd": 7000000.0
+  },
+  {
+    "province": "hoàn kiếm",
+    "region": "Khác",
+    "job_count": 9,
+    "share_pct": 0.02,
+    "salary_samples": 9,
+    "median_salary_vnd": 7000000.0,
+    "avg_salary_vnd": 11444444.0
+  },
+  {
+    "province": "lạng sơn",
+    "region": "Khác",
+    "job_count": 9,
+    "share_pct": 0.02,
+    "salary_samples": 5,
+    "median_salary_vnd": 13500000.0,
+    "avg_salary_vnd": 16800000.0
+  },
+  {
+    "province": "phúc yên",
+    "region": "Khác",
+    "job_count": 9,
+    "share_pct": 0.02,
+    "salary_samples": 5,
+    "median_salary_vnd": 22500000.0,
+    "avg_salary_vnd": 51500000.0
+  },
+  {
+    "province": "quy nhơn",
+    "region": "Khác",
+    "job_count": 9,
+    "share_pct": 0.02,
+    "salary_samples": 4,
+    "median_salary_vnd": 7000000.0,
+    "avg_salary_vnd": 8562500.0
+  },
+  {
+    "province": "tp hoà bình",
+    "region": "Khác",
+    "job_count": 9,
+    "share_pct": 0.02,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "từ sơn",
+    "region": "Khác",
+    "job_count": 9,
+    "share_pct": 0.02,
+    "salary_samples": 6,
+    "median_salary_vnd": 14000000.0,
+    "avg_salary_vnd": 13583333.0
+  },
+  {
+    "province": "cao bằng",
+    "region": "Khác",
+    "job_count": 8,
+    "share_pct": 0.02,
+    "salary_samples": 8,
+    "median_salary_vnd": 10500000.0,
+    "avg_salary_vnd": 13625000.0
+  },
+  {
+    "province": "cẩm phả",
+    "region": "Khác",
+    "job_count": 8,
+    "share_pct": 0.02,
+    "salary_samples": 6,
+    "median_salary_vnd": 10000000.0,
+    "avg_salary_vnd": 10750000.0
+  },
+  {
+    "province": "nhơn trạch",
+    "region": "Khác",
+    "job_count": 8,
+    "share_pct": 0.02,
+    "salary_samples": 3,
+    "median_salary_vnd": 16000000.0,
+    "avg_salary_vnd": 11750000.0
+  },
+  {
+    "province": "tp móng cái",
+    "region": "Khác",
+    "job_count": 8,
+    "share_pct": 0.02,
+    "salary_samples": 2,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 12500000.0
+  },
+  {
+    "province": "tp rạch giá",
+    "region": "Khác",
+    "job_count": 8,
+    "share_pct": 0.02,
+    "salary_samples": 3,
+    "median_salary_vnd": 7500000.0,
+    "avg_salary_vnd": 7500000.0
+  },
+  {
+    "province": "tp vinh, nghệ an",
+    "region": "Khác",
+    "job_count": 8,
+    "share_pct": 0.02,
+    "salary_samples": 7,
+    "median_salary_vnd": 17500000.0,
+    "avg_salary_vnd": 24250000.0
+  },
+  {
+    "province": "duy tiên",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 4,
+    "median_salary_vnd": 11000000.0,
+    "avg_salary_vnd": 13250000.0
+  },
+  {
+    "province": "ngọc lặc",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "quảng ninh, thanh hoá",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 7,
+    "median_salary_vnd": 17500000.0,
+    "avg_salary_vnd": 17642857.0
+  },
+  {
+    "province": "quận 5",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 2,
+    "median_salary_vnd": 14500000.0,
+    "avg_salary_vnd": 14500000.0
+  },
+  {
+    "province": "tp hội an",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 6,
+    "median_salary_vnd": 10000000.0,
+    "avg_salary_vnd": 13000000.0
+  },
+  {
+    "province": "tp phan rang tháp chàm",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 7,
+    "median_salary_vnd": 10000000.0,
+    "avg_salary_vnd": 11214286.0
+  },
+  {
+    "province": "tp đồng hới",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 3,
+    "median_salary_vnd": 8500000.0,
+    "avg_salary_vnd": 8500000.0
+  },
+  {
+    "province": "đại kim, hoàng mai",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 5,
+    "median_salary_vnd": 40000000.0,
+    "avg_salary_vnd": 29100000.0
+  },
+  {
+    "province": "quận 9, thủ đức",
+    "region": "Khác",
+    "job_count": 6,
+    "share_pct": 0.01,
+    "salary_samples": 4,
+    "median_salary_vnd": 14000000.0,
+    "avg_salary_vnd": 14000000.0
+  },
+  {
+    "province": "tp pleiku",
+    "region": "Khác",
+    "job_count": 6,
+    "share_pct": 0.01,
+    "salary_samples": 2,
+    "median_salary_vnd": 7500000.0,
+    "avg_salary_vnd": 8500000.0
+  },
+  {
+    "province": "tp sông công",
+    "region": "Khác",
+    "job_count": 6,
+    "share_pct": 0.01,
+    "salary_samples": 2,
+    "median_salary_vnd": 12000000.0,
+    "avg_salary_vnd": 12250000.0
+  },
+  {
+    "province": "tp vĩnh yên",
+    "region": "Khác",
+    "job_count": 6,
+    "share_pct": 0.01,
+    "salary_samples": 1,
+    "median_salary_vnd": 12000000.0,
+    "avg_salary_vnd": 12000000.0
+  },
+  {
+    "province": "văn giang",
+    "region": "Khác",
+    "job_count": 6,
+    "share_pct": 0.01,
+    "salary_samples": 5,
+    "median_salary_vnd": 8000000.0,
+    "avg_salary_vnd": 11200000.0
+  },
+  {
+    "province": "bình lợi, phường 13, bình thạnh",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 5,
+    "median_salary_vnd": 15000000.0,
+    "avg_salary_vnd": 15600000.0
+  },
+  {
+    "province": "bỉm sơn",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 5,
+    "median_salary_vnd": 17500000.0,
+    "avg_salary_vnd": 23200000.0
+  },
+  {
+    "province": "hà tĩnh, nghệ an",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 5,
+    "median_salary_vnd": 7500000.0,
+    "avg_salary_vnd": 8500000.0
+  },
+  {
+    "province": "hồng bàng",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 3,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 11666667.0
+  },
+  {
+    "province": "phú mỹ",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 2,
+    "median_salary_vnd": 10500000.0,
+    "avg_salary_vnd": 17750000.0
+  },
+  {
+    "province": "phổ yên",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 3,
+    "median_salary_vnd": 9500000.0,
+    "avg_salary_vnd": 9500000.0
+  },
+  {
+    "province": "sa pa",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "thành phố thủ đức",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 4,
+    "median_salary_vnd": 3500000.0,
+    "avg_salary_vnd": 8625000.0
+  },
+  {
+    "province": "tiên lãng",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 1,
+    "median_salary_vnd": 14500000.0,
+    "avg_salary_vnd": 14500000.0
+  },
+  {
+    "province": "tp cẩm phả",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 4,
+    "median_salary_vnd": 8000000.0,
+    "avg_salary_vnd": 8687500.0
+  },
+  {
+    "province": "tp huế",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 1,
+    "median_salary_vnd": 17500000.0,
+    "avg_salary_vnd": 17500000.0
+  },
+  {
+    "province": "tp quy nhơn, gia lai",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 2,
+    "median_salary_vnd": 7000000.0,
+    "avg_salary_vnd": 7500000.0
+  },
+  {
+    "province": "tp việt trì",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 4,
+    "median_salary_vnd": 10500000.0,
+    "avg_salary_vnd": 10875000.0
+  },
+  {
+    "province": "tây ninh, đồng tháp",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 5,
+    "median_salary_vnd": 21500000.0,
+    "avg_salary_vnd": 19100000.0
+  },
+  {
+    "province": "vĩnh yên",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 4,
+    "median_salary_vnd": 7000000.0,
+    "avg_salary_vnd": 16625000.0
+  },
+  {
+    "province": "đức",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 5,
+    "median_salary_vnd": 84000000.0,
+    "avg_salary_vnd": 75800000.0
+  },
+  {
+    "province": "đức hoà",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 4,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 15750000.0
+  },
+  {
+    "province": "đức trọng",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 3,
+    "median_salary_vnd": 8000000.0,
+    "avg_salary_vnd": 8000000.0
+  }
+]

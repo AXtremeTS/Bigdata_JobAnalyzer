@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ========================================================================= */
+  /* ANTHROPIC CLAUDE DESIGN SYSTEM COLOR SCHEDULE                             */
+  /* ========================================================================= */
+  --colors-primary: #cc785c;
+  --colors-primary-active: #a9583e;
+  --colors-primary-disabled: #e6dfd8;
+  
+  --colors-ink: #141413;
+  --colors-body: #3d3d3a;
+  --colors-body-strong: #252523;
+  --colors-muted: #6c6a64;
+  --colors-muted-soft: #8e8b82;
+  
+  --colors-hairline: #e6dfd8;
+  --colors-hairline-soft: #ebe6df;
+  
+  --colors-canvas: #faf9f5;
+  --colors-surface-soft: #f5f0e8;
+  --colors-surface-card: #efe9de;
+  --colors-surface-cream-strong: #e8e0d2;
+  
+  --colors-surface-dark: #181715;
+  --colors-surface-dark-elevated: #252320;
+  --colors-surface-dark-soft: #1f1e1b;
+  
+  --colors-on-primary: #ffffff;
+  --colors-on-dark: #faf9f5;
+  --colors-on-dark-soft: #a09d96;
+  
+  --colors-accent-teal: #5db8a6;
+  --colors-accent-amber: #e8a55a;
+  --colors-success: #5db872;
+  --colors-warning: #d4a017;
+  --colors-error: #c64545;
+
+  /* Typography */
+  --font-serif: "Copernicus", "Tiempos Headline", "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  --font-sans: "StyreneB", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Border Radii */
+  --rounded-xs: 4px;
+  --rounded-sm: 6px;
+  --rounded-md: 8px;
+  --rounded-lg: 12px;
+  --rounded-xl: 16px;
+  --rounded-pill: 9999px;
+  --rounded-full: 9999px;
+
+  /* Spacing */
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  --spacing-section: 96px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--colors-canvas);
+  color: var(--colors-ink);
+  font-family: var(--font-sans);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar for inner panes */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--colors-hairline);
+  border-radius: var(--rounded-pill);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--colors-muted-soft);
+}
+
+/* 1. Full Page App Shell (100% Viewport Width & Height) */
+.fullpage-app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--colors-canvas);
+}
+
+/* 2. Top Navigation Bar (64px tall, Cream Canvas) */
+.top-nav-claude {
+  height: 64px;
+  background-color: var(--colors-canvas);
+  border-bottom: 1px solid var(--colors-hairline);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.75rem;
+  flex-shrink: 0;
+  z-index: 50;
+}
+
+.brand-cluster {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-spike-glyph {
+  color: var(--colors-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-title {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: var(--colors-ink);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-tag {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: var(--rounded-pill);
+  background: var(--colors-surface-card);
+  color: var(--colors-body);
+}
+
+/* Nav Menu Items */
+.top-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-tab-btn {
+  padding: 8px 14px;
+  border-radius: var(--rounded-md);
+  border: none;
+  background: transparent;
+  color: var(--colors-muted);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+
+.nav-tab-btn:hover {
+  color: var(--colors-ink);
+  background: var(--colors-surface-soft);
+}
+
+.nav-tab-btn.active {
+  background: var(--colors-surface-card);
+  color: var(--colors-ink);
+}
+
+/* Top Nav Right Cluster */
+.nav-right-cluster {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dataset-select-claude {
+  padding: 7px 14px;
+  border-radius: var(--rounded-md);
+  border: 1px solid var(--colors-hairline);
+  background: var(--colors-canvas);
+  color: var(--colors-ink);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.dataset-select-claude:focus {
+  border-color: var(--colors-primary);
+}
+
+/* Signature Claude Coral Button */
+.button-primary-coral {
+  background-color: var(--colors-primary);
+  color: var(--colors-on-primary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: var(--rounded-md);
+  border: none;
+  padding: 0 18px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.button-primary-coral:hover {
+  background-color: var(--colors-primary-active);
+}
+
+.button-primary-coral:disabled {
+  background-color: var(--colors-primary-disabled);
+  color: var(--colors-muted);
+  cursor: not-allowed;
+}
+
+.button-secondary-cream {
+  background-color: var(--colors-canvas);
+  color: var(--colors-ink);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: var(--rounded-md);
+  border: 1px solid var(--colors-hairline);
+  padding: 0 16px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.button-secondary-cream:hover {
+  background-color: var(--colors-surface-soft);
+  border-color: var(--colors-muted-soft);
+}
+
+/* 3. Main Full Page Workspace */
+.workspace-fullpage {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--colors-canvas);
+}
+
+/* Master Jobs List Pane (390px, Cream Background) */
+.jobs-master-pane {
+  width: 410px;
+  background-color: var(--colors-surface-soft);
+  border-right: 1px solid var(--colors-hairline);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.master-pane-header {
+  padding: 1.25rem 1.5rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pane-title-serif {
+  font-family: var(--font-serif);
+  font-size: 1.65rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+  color: var(--colors-ink);
+}
+
+/* Segmented Category Pills */
+.category-tabs-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--colors-surface-card);
+  padding: 3px;
+  border-radius: var(--rounded-md);
+}
+
+.category-tab-btn {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: var(--rounded-sm);
+  border: none;
+  background: transparent;
+  color: var(--colors-muted);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.category-tab-btn:hover {
+  color: var(--colors-ink);
+}
+
+.category-tab-btn.active {
+  background: var(--colors-canvas);
+  color: var(--colors-ink);
+  box-shadow: 0 1px 3px rgba(20, 20, 19, 0.08);
+}
+
+/* Search & State Filter Controls */
+.search-filter-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.text-input-claude {
+  width: 100%;
+  padding: 9px 12px 9px 34px;
+  border-radius: var(--rounded-md);
+  border: 1px solid var(--colors-hairline);
+  background: var(--colors-canvas);
+  color: var(--colors-ink);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.text-input-claude:focus {
+  border-color: var(--colors-primary);
+  box-shadow: 0 0 0 3px rgba(204, 120, 92, 0.15);
+}
+
+.select-input-claude {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: var(--rounded-md);
+  border: 1px solid var(--colors-hairline);
+  background: var(--colors-canvas);
+  color: var(--colors-body-strong);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Job Cards Scroll Area */
+.jobs-cards-flow {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.75rem 1.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Unselected Job Card (Light Cream Card) */
+.job-card-claude {
+  padding: 14px 16px;
+  border-radius: var(--rounded-lg);
+  background: var(--colors-canvas);
+  border: 1px solid var(--colors-hairline);
+  cursor: pointer;
+  transition: all 0.18s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.job-card-claude:hover {
+  border-color: var(--colors-muted-soft);
+  background: var(--colors-surface-card);
+  transform: translateY(-1px);
+}
+
+/* Active Selected Job Card (Dark Navy Product Surface or Coral Highlighted) */
+.job-card-active-claude {
+  padding: 18px;
+  border-radius: var(--rounded-lg);
+  background: var(--colors-surface-dark);
+  color: var(--colors-on-dark);
+  border: 1px solid var(--colors-surface-dark-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(20, 20, 19, 0.15);
+}
+
+/* Badges */
+.badge-pill-cream {
+  background: var(--colors-surface-card);
+  color: var(--colors-ink);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: var(--rounded-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge-coral-claude {
+  background: var(--colors-primary);
+  color: var(--colors-on-primary);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: var(--rounded-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge-teal-claude {
+  background: rgba(93, 184, 166, 0.2);
+  color: var(--colors-accent-teal);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: var(--rounded-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* 4-Metric Grid in Active Card */
+.active-grid-claude {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(230, 223, 216, 0.15);
+}
+
+.cell-claude {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cell-label-claude {
+  font-size: 11px;
+  color: var(--colors-on-dark-soft);
+  font-family: var(--font-sans);
+}
+
+.cell-val-claude {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--colors-on-dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Recruiter Row */
+.recruiter-row-claude {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid rgba(230, 223, 216, 0.15);
+}
+
+.recruiter-avatar-claude {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--rounded-full);
+  background: var(--colors-surface-dark-elevated);
+  border: 1px solid rgba(230, 223, 216, 0.2);
+  color: var(--colors-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* 4. Right Detail Canvas (Warm Tinted Cream Canvas) */
+.canvas-claude-pane {
+  flex: 1;
+  background-color: var(--colors-canvas);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.canvas-header-claude {
+  padding: 1.75rem 2.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--colors-hairline);
+  background: var(--colors-canvas);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.state-chips-band {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.75rem 2.5rem;
+  background: var(--colors-surface-soft);
+  border-bottom: 1px solid var(--colors-hairline);
+  overflow-x: auto;
+}
+
+.chip-claude {
+  padding: 6px 14px;
+  border-radius: var(--rounded-pill);
+  border: 1px solid var(--colors-hairline);
+  background: var(--colors-canvas);
+  color: var(--colors-body);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.chip-claude:hover {
+  background: var(--colors-surface-card);
+  border-color: var(--colors-muted-soft);
+  color: var(--colors-ink);
+}
+
+.chip-claude.active {
+  background: var(--colors-ink);
+  color: var(--colors-canvas);
+  border-color: var(--colors-ink);
+}
+
+/* Main Canvas Content Flow */
+.canvas-inner-flow {
+  padding: 2rem 2.5rem 7.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Claude Feature Card / Dark Mockup Card */
+.feature-card-claude {
+  background: var(--colors-surface-card);
+  border: 1px solid var(--colors-hairline);
+  border-radius: var(--rounded-lg);
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dark-product-card-claude {
+  background: var(--colors-surface-dark);
+  color: var(--colors-on-dark);
+  border-radius: var(--rounded-lg);
+  padding: var(--spacing-xl);
+  border: 1px solid var(--colors-surface-dark-soft);
+}
+
+/* Charts Grid */
+.charts-grid-claude {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.chart-box-claude {
+  background: var(--colors-surface-card);
+  border: 1px solid var(--colors-hairline);
+  border-radius: var(--rounded-lg);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 5. Floating Bottom Details Drawer (Dark Navy Surface with Coral CTA) */
+.floating-drawer-claude {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2.5rem;
+  right: 2.5rem;
+  background: var(--colors-surface-dark);
+  color: var(--colors-on-dark);
+  border-radius: var(--rounded-lg);
+  padding: 1.25rem 1.75rem;
+  border: 1px solid var(--colors-surface-dark-soft);
+  box-shadow: 0 16px 40px -8px rgba(20, 20, 19, 0.3);
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.floating-grid-claude {
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr 1fr 1.2fr 1.2fr;
+  gap: 16px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(230, 223, 216, 0.15);
+}
+
+.floating-cell-claude {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.floating-label-claude {
+  font-size: 11px;
+  color: var(--colors-on-dark-soft);
+  font-family: var(--font-sans);
+}
+
+.floating-value-claude {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--colors-on-dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,21 @@
+{
+  "total_rows": 120,
+  "null_rates": {
+    "job_title": 0.0,
+    "company_name": 0.0,
+    "job_location": 0.0,
+    "salary_estimate": 0.0,
+    "experience_level": 0.0,
+    "required_skills": 0.0,
+    "posted_date": 0.0
+  },
+  "columns": [
+    "job_title",
+    "company_name",
+    "job_location",
+    "salary_estimate",
+    "experience_level",
+    "required_skills",
+    "posted_date"
+  ]
+}

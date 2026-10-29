@@ -1,0 +1,37 @@
+{
+  "job_title": {
+    "target": "job_title",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'job_title'"
+  },
+  "company_name": {
+    "target": "company",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'company_name'"
+  },
+  "job_location": {
+    "target": "location",
+    "confidence": 0.9,
+    "reason": "Keyword match with alias 'location'"
+  },
+  "salary_estimate": {
+    "target": "salary",
+    "confidence": 0.9,
+    "reason": "Keyword match with alias 'salary'"
+  },
+  "experience_level": {
+    "target": "experience",
+    "confidence": 0.9,
+    "reason": "Keyword match with alias 'experience'"
+  },
+  "required_skills": {
+    "target": "technical_skills",
+    "confidence": 0.92,
+    "reason": "Content heuristic: skill header identifier"
+  },
+  "posted_date": {
+    "target": "posted_date",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'posted_date'"
+  }
+}

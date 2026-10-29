@@ -1,0 +1,1206 @@
+{
+  "silhouette_score": 0.4039,
+  "k": 3,
+  "clusters": [
+    {
+      "province": "Hải Phòng",
+      "job_count": 990,
+      "avg_salary_vnd": 16317178.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "TP Hồ Chí Minh",
+      "job_count": 17081,
+      "avg_salary_vnd": 15509180.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Đồng Nai",
+      "job_count": 581,
+      "avg_salary_vnd": 14404204.0,
+      "avg_exp_years": 1.4,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "Hà Nội",
+      "job_count": 20119,
+      "avg_salary_vnd": 15782194.0,
+      "avg_exp_years": 1.8,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Bắc Ninh",
+      "job_count": 985,
+      "avg_salary_vnd": 15999770.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "Cần Thơ",
+      "job_count": 186,
+      "avg_salary_vnd": 13610784.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "thanh xuân",
+      "job_count": 39,
+      "avg_salary_vnd": 16771429.0,
+      "avg_exp_years": 1.8,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "quận 3",
+      "job_count": 32,
+      "avg_salary_vnd": 14865000.0,
+      "avg_exp_years": 1.7,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "quận 4",
+      "job_count": 15,
+      "avg_salary_vnd": 23428571.0,
+      "avg_exp_years": 2.1,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tuyên quang",
+      "job_count": 16,
+      "avg_salary_vnd": 15333333.0,
+      "avg_exp_years": 1.2,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "tp cam ranh",
+      "job_count": 14,
+      "avg_salary_vnd": 14625000.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tp đà lạt",
+      "job_count": 28,
+      "avg_salary_vnd": 10375000.0,
+      "avg_exp_years": 1.4,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "mỹ hào",
+      "job_count": 19,
+      "avg_salary_vnd": 11272727.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "lào cai",
+      "job_count": 36,
+      "avg_salary_vnd": 15870370.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "sa pa",
+      "job_count": 5,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 1.2,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "cà mau",
+      "job_count": 49,
+      "avg_salary_vnd": 13214286.0,
+      "avg_exp_years": 1.8,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "phú nhuận",
+      "job_count": 23,
+      "avg_salary_vnd": 14045455.0,
+      "avg_exp_years": 1.9,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "đan phượng",
+      "job_count": 13,
+      "avg_salary_vnd": 15269231.0,
+      "avg_exp_years": 1.2,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "hồng bàng",
+      "job_count": 5,
+      "avg_salary_vnd": 11666667.0,
+      "avg_exp_years": 1.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "tp phan rang tháp chàm",
+      "job_count": 7,
+      "avg_salary_vnd": 11214286.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "quận 5",
+      "job_count": 7,
+      "avg_salary_vnd": 14500000.0,
+      "avg_exp_years": 1.4,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "biên hoà",
+      "job_count": 45,
+      "avg_salary_vnd": 12184211.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tp vinh",
+      "job_count": 172,
+      "avg_salary_vnd": 13058271.0,
+      "avg_exp_years": 1.3,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "long thành",
+      "job_count": 16,
+      "avg_salary_vnd": 15153846.0,
+      "avg_exp_years": 2.3,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "ninh bình",
+      "job_count": 439,
+      "avg_salary_vnd": 17752852.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "hà tĩnh",
+      "job_count": 45,
+      "avg_salary_vnd": 14136364.0,
+      "avg_exp_years": 1.1,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "thanh hoá",
+      "job_count": 194,
+      "avg_salary_vnd": 16586268.0,
+      "avg_exp_years": 1.3,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "gia lai",
+      "job_count": 175,
+      "avg_salary_vnd": 12266949.0,
+      "avg_exp_years": 1.3,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "ninh thuận",
+      "job_count": 17,
+      "avg_salary_vnd": 16687500.0,
+      "avg_exp_years": 1.9,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "thừa thiên huế",
+      "job_count": 126,
+      "avg_salary_vnd": 14991573.0,
+      "avg_exp_years": 1.4,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "quận 7",
+      "job_count": 115,
+      "avg_salary_vnd": 16287500.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "hạ long",
+      "job_count": 25,
+      "avg_salary_vnd": 13920455.0,
+      "avg_exp_years": 1.1,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "tp hạ long",
+      "job_count": 13,
+      "avg_salary_vnd": 15166667.0,
+      "avg_exp_years": 2.4,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "vĩnh yên",
+      "job_count": 5,
+      "avg_salary_vnd": 16625000.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tân bình",
+      "job_count": 59,
+      "avg_salary_vnd": 15872449.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tp hoà bình",
+      "job_count": 9,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 0.7,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "thường tín",
+      "job_count": 23,
+      "avg_salary_vnd": 19000000.0,
+      "avg_exp_years": 2.3,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "lạng sơn",
+      "job_count": 9,
+      "avg_salary_vnd": 16800000.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "nhật bản",
+      "job_count": 15,
+      "avg_salary_vnd": 57972727.0,
+      "avg_exp_years": 1.3,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "ngọc lặc",
+      "job_count": 7,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 3.0,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tân an",
+      "job_count": 10,
+      "avg_salary_vnd": 16125000.0,
+      "avg_exp_years": 0.7,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "tp đồng hới",
+      "job_count": 7,
+      "avg_salary_vnd": 8500000.0,
+      "avg_exp_years": 0.6,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "cái răng",
+      "job_count": 9,
+      "avg_salary_vnd": 7000000.0,
+      "avg_exp_years": 1.1,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "phúc yên",
+      "job_count": 9,
+      "avg_salary_vnd": 51500000.0,
+      "avg_exp_years": 0.3,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "vĩnh long",
+      "job_count": 94,
+      "avg_salary_vnd": 13803750.0,
+      "avg_exp_years": 1.1,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "hoàng mai",
+      "job_count": 25,
+      "avg_salary_vnd": 13565217.0,
+      "avg_exp_years": 1.1,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "củ chi",
+      "job_count": 83,
+      "avg_salary_vnd": 12416667.0,
+      "avg_exp_years": 1.8,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "thủ đức",
+      "job_count": 149,
+      "avg_salary_vnd": 14114904.0,
+      "avg_exp_years": 1.9,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "nhà bè",
+      "job_count": 85,
+      "avg_salary_vnd": 15405172.0,
+      "avg_exp_years": 1.7,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "hai bà trưng",
+      "job_count": 27,
+      "avg_salary_vnd": 13875000.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "hoàn kiếm",
+      "job_count": 9,
+      "avg_salary_vnd": 11444444.0,
+      "avg_exp_years": 0.9,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "long khánh",
+      "job_count": 29,
+      "avg_salary_vnd": 12347826.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "hà tĩnh, nghệ an",
+      "job_count": 5,
+      "avg_salary_vnd": 8500000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "biên hòa",
+      "job_count": 24,
+      "avg_salary_vnd": 11350000.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "quận 9, thủ đức",
+      "job_count": 6,
+      "avg_salary_vnd": 14000000.0,
+      "avg_exp_years": 0.3,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "điện bàn",
+      "job_count": 19,
+      "avg_salary_vnd": 9150000.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tp sông công",
+      "job_count": 6,
+      "avg_salary_vnd": 12250000.0,
+      "avg_exp_years": 2.2,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "đức hoà",
+      "job_count": 5,
+      "avg_salary_vnd": 15750000.0,
+      "avg_exp_years": 1.8,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "cẩm giàng",
+      "job_count": 11,
+      "avg_salary_vnd": 13700000.0,
+      "avg_exp_years": 0.7,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "tp cẩm phả",
+      "job_count": 5,
+      "avg_salary_vnd": 8687500.0,
+      "avg_exp_years": 0.6,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "thủ dầu một",
+      "job_count": 17,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 1.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "phổ yên",
+      "job_count": 5,
+      "avg_salary_vnd": 9500000.0,
+      "avg_exp_years": 0.4,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "bỉm sơn",
+      "job_count": 5,
+      "avg_salary_vnd": 23200000.0,
+      "avg_exp_years": 1.4,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tây ninh, đồng tháp",
+      "job_count": 5,
+      "avg_salary_vnd": 19100000.0,
+      "avg_exp_years": 2.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "quảng ninh",
+      "job_count": 133,
+      "avg_salary_vnd": 15395161.0,
+      "avg_exp_years": 1.2,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "nước ngoài",
+      "job_count": 15,
+      "avg_salary_vnd": 37142857.0,
+      "avg_exp_years": 0.7,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "đà lạt",
+      "job_count": 31,
+      "avg_salary_vnd": 12477273.0,
+      "avg_exp_years": 1.2,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "đống đa",
+      "job_count": 75,
+      "avg_salary_vnd": 15745082.0,
+      "avg_exp_years": 1.8,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "nha trang",
+      "job_count": 62,
+      "avg_salary_vnd": 16666176.0,
+      "avg_exp_years": 1.1,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "văn giang",
+      "job_count": 6,
+      "avg_salary_vnd": 11200000.0,
+      "avg_exp_years": 0.8,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "dĩ an",
+      "job_count": 38,
+      "avg_salary_vnd": 17780000.0,
+      "avg_exp_years": 1.1,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "gia lâm",
+      "job_count": 42,
+      "avg_salary_vnd": 13771429.0,
+      "avg_exp_years": 1.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "phú quốc",
+      "job_count": 31,
+      "avg_salary_vnd": 14366667.0,
+      "avg_exp_years": 2.3,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "quận 10",
+      "job_count": 25,
+      "avg_salary_vnd": 14058333.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tp móng cái",
+      "job_count": 8,
+      "avg_salary_vnd": 12500000.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "quận 11",
+      "job_count": 15,
+      "avg_salary_vnd": 14125000.0,
+      "avg_exp_years": 1.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "bình lợi, phường 13, bình thạnh",
+      "job_count": 5,
+      "avg_salary_vnd": 15600000.0,
+      "avg_exp_years": 2.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "thuận an",
+      "job_count": 14,
+      "avg_salary_vnd": 13100000.0,
+      "avg_exp_years": 1.1,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "tp huế",
+      "job_count": 5,
+      "avg_salary_vnd": 17500000.0,
+      "avg_exp_years": 1.8,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tp quy nhơn, gia lai",
+      "job_count": 5,
+      "avg_salary_vnd": 7500000.0,
+      "avg_exp_years": 3.8,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "gò vấp",
+      "job_count": 41,
+      "avg_salary_vnd": 10468750.0,
+      "avg_exp_years": 0.8,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "hưng yên",
+      "job_count": 655,
+      "avg_salary_vnd": 14824655.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "đơn dương",
+      "job_count": 10,
+      "avg_salary_vnd": 8500000.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tp tuy hoà",
+      "job_count": 11,
+      "avg_salary_vnd": 10227273.0,
+      "avg_exp_years": 1.2,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "quận 9",
+      "job_count": 21,
+      "avg_salary_vnd": 14625000.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "quận 1",
+      "job_count": 48,
+      "avg_salary_vnd": 14916667.0,
+      "avg_exp_years": 2.4,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tp hội an",
+      "job_count": 7,
+      "avg_salary_vnd": 13000000.0,
+      "avg_exp_years": 1.7,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "bình tân",
+      "job_count": 48,
+      "avg_salary_vnd": 17918919.0,
+      "avg_exp_years": 1.9,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "bảo lộc",
+      "job_count": 12,
+      "avg_salary_vnd": 9892857.0,
+      "avg_exp_years": 1.2,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "đại kim, hoàng mai",
+      "job_count": 7,
+      "avg_salary_vnd": 29100000.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "nhơn trạch",
+      "job_count": 8,
+      "avg_salary_vnd": 11750000.0,
+      "avg_exp_years": 0.5,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "lâm đồng",
+      "job_count": 94,
+      "avg_salary_vnd": 17580508.0,
+      "avg_exp_years": 1.8,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "hoà bình",
+      "job_count": 27,
+      "avg_salary_vnd": 16859375.0,
+      "avg_exp_years": 1.4,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tây ninh",
+      "job_count": 475,
+      "avg_salary_vnd": 14430351.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "ba đình",
+      "job_count": 30,
+      "avg_salary_vnd": 12440476.0,
+      "avg_exp_years": 1.4,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tp nha trang",
+      "job_count": 52,
+      "avg_salary_vnd": 11598387.0,
+      "avg_exp_years": 1.8,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "quảng trị",
+      "job_count": 42,
+      "avg_salary_vnd": 12401667.0,
+      "avg_exp_years": 0.6,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "quận 2",
+      "job_count": 35,
+      "avg_salary_vnd": 17562500.0,
+      "avg_exp_years": 1.9,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "quy nhơn",
+      "job_count": 9,
+      "avg_salary_vnd": 8562500.0,
+      "avg_exp_years": 0.3,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "hội an",
+      "job_count": 10,
+      "avg_salary_vnd": 8500000.0,
+      "avg_exp_years": 2.0,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tp rạch giá",
+      "job_count": 8,
+      "avg_salary_vnd": 7500000.0,
+      "avg_exp_years": 0.5,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "chương mỹ",
+      "job_count": 31,
+      "avg_salary_vnd": 14060000.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tp việt trì",
+      "job_count": 5,
+      "avg_salary_vnd": 10875000.0,
+      "avg_exp_years": 0.8,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "đông anh",
+      "job_count": 56,
+      "avg_salary_vnd": 11412500.0,
+      "avg_exp_years": 1.3,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "tp vinh, nghệ an",
+      "job_count": 8,
+      "avg_salary_vnd": 24250000.0,
+      "avg_exp_years": 1.4,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "đức trọng",
+      "job_count": 5,
+      "avg_salary_vnd": 8000000.0,
+      "avg_exp_years": 0.8,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "từ sơn",
+      "job_count": 9,
+      "avg_salary_vnd": 13583333.0,
+      "avg_exp_years": 1.8,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "Đà Nẵng",
+      "job_count": 970,
+      "avg_salary_vnd": 14712883.0,
+      "avg_exp_years": 1.3,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "nghệ an",
+      "job_count": 175,
+      "avg_salary_vnd": 15989407.0,
+      "avg_exp_years": 1.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "đắk lắk",
+      "job_count": 81,
+      "avg_salary_vnd": 14001695.0,
+      "avg_exp_years": 1.3,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "thái nguyên",
+      "job_count": 119,
+      "avg_salary_vnd": 14163291.0,
+      "avg_exp_years": 1.8,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tp vĩnh yên",
+      "job_count": 6,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 2.0,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "sơn la",
+      "job_count": 13,
+      "avg_salary_vnd": 15666667.0,
+      "avg_exp_years": 1.7,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "khánh hoà",
+      "job_count": 89,
+      "avg_salary_vnd": 15222449.0,
+      "avg_exp_years": 2.1,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "quận 12",
+      "job_count": 56,
+      "avg_salary_vnd": 14957447.0,
+      "avg_exp_years": 1.7,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tp quy nhơn",
+      "job_count": 17,
+      "avg_salary_vnd": 9461538.0,
+      "avg_exp_years": 2.1,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "bình thạnh",
+      "job_count": 102,
+      "avg_salary_vnd": 21708696.0,
+      "avg_exp_years": 1.4,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tp phủ lý",
+      "job_count": 19,
+      "avg_salary_vnd": 10281250.0,
+      "avg_exp_years": 2.1,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "phú mỹ",
+      "job_count": 5,
+      "avg_salary_vnd": 17750000.0,
+      "avg_exp_years": 0.8,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "thành phố thủ đức",
+      "job_count": 5,
+      "avg_salary_vnd": 8625000.0,
+      "avg_exp_years": 1.8,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tân phú",
+      "job_count": 28,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 0.9,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "điện biên",
+      "job_count": 12,
+      "avg_salary_vnd": 14362500.0,
+      "avg_exp_years": 0.7,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "quảng ninh, thanh hoá",
+      "job_count": 7,
+      "avg_salary_vnd": 17642857.0,
+      "avg_exp_years": 0.3,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "US / Remote",
+      "job_count": 88,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 3.2,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tây hồ",
+      "job_count": 11,
+      "avg_salary_vnd": 14350000.0,
+      "avg_exp_years": 1.1,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "tiên lãng",
+      "job_count": 5,
+      "avg_salary_vnd": 14500000.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "bình chánh",
+      "job_count": 21,
+      "avg_salary_vnd": 14514706.0,
+      "avg_exp_years": 1.2,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "duy tiên",
+      "job_count": 7,
+      "avg_salary_vnd": 13250000.0,
+      "avg_exp_years": 1.1,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "bến cát",
+      "job_count": 58,
+      "avg_salary_vnd": 13104082.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "đồng tháp",
+      "job_count": 81,
+      "avg_salary_vnd": 14977941.0,
+      "avg_exp_years": 1.1,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "bắc từ liêm",
+      "job_count": 168,
+      "avg_salary_vnd": 14996715.0,
+      "avg_exp_years": 1.7,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "phú thọ",
+      "job_count": 168,
+      "avg_salary_vnd": 14458108.0,
+      "avg_exp_years": 1.4,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "an giang",
+      "job_count": 91,
+      "avg_salary_vnd": 14317544.0,
+      "avg_exp_years": 1.3,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "tp pleiku",
+      "job_count": 6,
+      "avg_salary_vnd": 8500000.0,
+      "avg_exp_years": 0.5,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "quảng ngãi",
+      "job_count": 53,
+      "avg_salary_vnd": 12569444.0,
+      "avg_exp_years": 1.3,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "nam từ liêm",
+      "job_count": 133,
+      "avg_salary_vnd": 15319565.0,
+      "avg_exp_years": 1.7,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "tp buôn ma thuột",
+      "job_count": 49,
+      "avg_salary_vnd": 10181818.0,
+      "avg_exp_years": 1.4,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "đức",
+      "job_count": 5,
+      "avg_salary_vnd": 75800000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "long biên",
+      "job_count": 53,
+      "avg_salary_vnd": 14440000.0,
+      "avg_exp_years": 1.9,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "hóc môn",
+      "job_count": 63,
+      "avg_salary_vnd": 15029630.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "cẩm phả",
+      "job_count": 8,
+      "avg_salary_vnd": 10750000.0,
+      "avg_exp_years": 0.5,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "quốc oai",
+      "job_count": 16,
+      "avg_salary_vnd": 14777778.0,
+      "avg_exp_years": 1.8,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "quận 6",
+      "job_count": 11,
+      "avg_salary_vnd": 15150000.0,
+      "avg_exp_years": 0.5,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "tp mỹ tho",
+      "job_count": 11,
+      "avg_salary_vnd": 22750000.0,
+      "avg_exp_years": 0.5,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "yên mỹ",
+      "job_count": 15,
+      "avg_salary_vnd": 16562500.0,
+      "avg_exp_years": 1.7,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "bến lức",
+      "job_count": 15,
+      "avg_salary_vnd": 28250000.0,
+      "avg_exp_years": 2.9,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "bình xuyên",
+      "job_count": 10,
+      "avg_salary_vnd": 14166667.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "thanh hoá, quảng ninh",
+      "job_count": 15,
+      "avg_salary_vnd": 17678571.0,
+      "avg_exp_years": 0.3,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "đắc nông",
+      "job_count": 15,
+      "avg_salary_vnd": 12312500.0,
+      "avg_exp_years": 1.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "cao bằng",
+      "job_count": 8,
+      "avg_salary_vnd": 13625000.0,
+      "avg_exp_years": 1.9,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    }
+  ]
+}

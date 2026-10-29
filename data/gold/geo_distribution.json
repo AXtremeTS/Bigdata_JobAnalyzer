@@ -1,0 +1,83 @@
+[
+  {
+    "province": "Hà Nội",
+    "region": "Bắc",
+    "job_count": 20119,
+    "share_pct": 41.84,
+    "salary_samples": 15863,
+    "median_salary_vnd": 13500000.0,
+    "avg_salary_vnd": 15786716.0
+  },
+  {
+    "province": "TP Hồ Chí Minh",
+    "region": "Nam",
+    "job_count": 17081,
+    "share_pct": 35.52,
+    "salary_samples": 11356,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 15512901.0
+  },
+  {
+    "province": "Toàn quốc",
+    "region": "Khác",
+    "job_count": 7088,
+    "share_pct": 14.74,
+    "salary_samples": 4736,
+    "median_salary_vnd": 12500000.0,
+    "avg_salary_vnd": 15101826.0
+  },
+  {
+    "province": "Hải Phòng",
+    "region": "Bắc",
+    "job_count": 990,
+    "share_pct": 2.06,
+    "salary_samples": 652,
+    "median_salary_vnd": 13500000.0,
+    "avg_salary_vnd": 16319862.0
+  },
+  {
+    "province": "Bắc Ninh",
+    "region": "Bắc",
+    "job_count": 985,
+    "share_pct": 2.05,
+    "salary_samples": 651,
+    "median_salary_vnd": 14000000.0,
+    "avg_salary_vnd": 15998848.0
+  },
+  {
+    "province": "Đà Nẵng",
+    "region": "Trung",
+    "job_count": 970,
+    "share_pct": 2.02,
+    "salary_samples": 652,
+    "median_salary_vnd": 11500000.0,
+    "avg_salary_vnd": 14714034.0
+  },
+  {
+    "province": "Đồng Nai",
+    "region": "Nam",
+    "job_count": 581,
+    "share_pct": 1.21,
+    "salary_samples": 333,
+    "median_salary_vnd": 12250000.0,
+    "avg_salary_vnd": 14416967.0
+  },
+  {
+    "province": "Cần Thơ",
+    "region": "Nam",
+    "job_count": 186,
+    "share_pct": 0.39,
+    "salary_samples": 102,
+    "median_salary_vnd": 11500000.0,
+    "avg_salary_vnd": 13610784.0
+  },
+  {
+    "province": "US / Remote",
+    "region": "Khác",
+    "job_count": 88,
+    "share_pct": 0.18,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  }
+]

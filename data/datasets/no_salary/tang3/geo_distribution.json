@@ -1,0 +1,32 @@
+[
+  {
+    "province": "Hà Nội",
+    "job_count": 25,
+    "pct": 31.2,
+    "median_salary": 0
+  },
+  {
+    "province": "Hồ Chí Minh",
+    "job_count": 21,
+    "pct": 26.2,
+    "median_salary": 0
+  },
+  {
+    "province": "Bình Dương",
+    "job_count": 16,
+    "pct": 20.0,
+    "median_salary": 0
+  },
+  {
+    "province": "Đà Nẵng",
+    "job_count": 11,
+    "pct": 13.8,
+    "median_salary": 0
+  },
+  {
+    "province": "Cần Thơ",
+    "job_count": 7,
+    "pct": 8.8,
+    "median_salary": 0
+  }
+]

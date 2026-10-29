@@ -1,0 +1,182 @@
+[
+  {
+    "job_title": "Account Executive",
+    "category": "Khác",
+    "job_count": 596,
+    "application_count": 0.0,
+    "demand_share_pct": 3.13,
+    "avg_salary_vnd": 20419000.0,
+    "avg_salary_usd": 802.32
+  },
+  {
+    "job_title": "Accounts Executive",
+    "category": "Khác",
+    "job_count": 467,
+    "application_count": 0.0,
+    "demand_share_pct": 2.46,
+    "avg_salary_vnd": 21227704.0,
+    "avg_salary_usd": 834.09
+  },
+  {
+    "job_title": "Sales Executive",
+    "category": "Khác",
+    "job_count": 362,
+    "application_count": 0.0,
+    "demand_share_pct": 1.9,
+    "avg_salary_vnd": 23950869.0,
+    "avg_salary_usd": 941.1
+  },
+  {
+    "job_title": "Admin Assistant",
+    "category": "Khác",
+    "job_count": 316,
+    "application_count": 0.0,
+    "demand_share_pct": 1.66,
+    "avg_salary_vnd": 13324306.0,
+    "avg_salary_usd": 523.55
+  },
+  {
+    "job_title": "Account Assistant",
+    "category": "Khác",
+    "job_count": 259,
+    "application_count": 0.0,
+    "demand_share_pct": 1.36,
+    "avg_salary_vnd": 14829415.0,
+    "avg_salary_usd": 582.69
+  },
+  {
+    "job_title": "Admin Executive",
+    "category": "Khác",
+    "job_count": 228,
+    "application_count": 0.0,
+    "demand_share_pct": 1.2,
+    "avg_salary_vnd": 16897853.0,
+    "avg_salary_usd": 663.96
+  },
+  {
+    "job_title": "Project Engineer",
+    "category": "Khác",
+    "job_count": 222,
+    "application_count": 0.0,
+    "demand_share_pct": 1.17,
+    "avg_salary_vnd": 22821702.0,
+    "avg_salary_usd": 896.73
+  },
+  {
+    "job_title": "Marketing Executive",
+    "category": "Khác",
+    "job_count": 221,
+    "application_count": 0.0,
+    "demand_share_pct": 1.16,
+    "avg_salary_vnd": 20245599.0,
+    "avg_salary_usd": 795.5
+  },
+  {
+    "job_title": "Finance Executive",
+    "category": "Khác",
+    "job_count": 209,
+    "application_count": 0.0,
+    "demand_share_pct": 1.1,
+    "avg_salary_vnd": 21257146.0,
+    "avg_salary_usd": 835.25
+  },
+  {
+    "job_title": "ACCOUNT EXECUTIVE",
+    "category": "Khác",
+    "job_count": 191,
+    "application_count": 0.0,
+    "demand_share_pct": 1.0,
+    "avg_salary_vnd": 20402692.0,
+    "avg_salary_usd": 801.68
+  },
+  {
+    "job_title": "Purchasing Executive",
+    "category": "Khác",
+    "job_count": 176,
+    "application_count": 0.0,
+    "demand_share_pct": 0.93,
+    "avg_salary_vnd": 22129253.0,
+    "avg_salary_usd": 869.52
+  },
+  {
+    "job_title": "Accountant",
+    "category": "Khác",
+    "job_count": 173,
+    "application_count": 0.0,
+    "demand_share_pct": 0.91,
+    "avg_salary_vnd": 34058024.0,
+    "avg_salary_usd": 1338.23
+  },
+  {
+    "job_title": "Accounts Assistant",
+    "category": "Khác",
+    "job_count": 173,
+    "application_count": 0.0,
+    "demand_share_pct": 0.91,
+    "avg_salary_vnd": 15231370.0,
+    "avg_salary_usd": 598.48
+  },
+  {
+    "job_title": "Project Manager",
+    "category": "Khác",
+    "job_count": 165,
+    "application_count": 0.0,
+    "demand_share_pct": 0.87,
+    "avg_salary_vnd": 50334712.0,
+    "avg_salary_usd": 1977.79
+  },
+  {
+    "job_title": "Customer Service Executive",
+    "category": "Khác",
+    "job_count": 158,
+    "application_count": 0.0,
+    "demand_share_pct": 0.83,
+    "avg_salary_vnd": 18371821.0,
+    "avg_salary_usd": 721.88
+  },
+  {
+    "job_title": "Business Development Executive",
+    "category": "Khác",
+    "job_count": 154,
+    "application_count": 0.0,
+    "demand_share_pct": 0.81,
+    "avg_salary_vnd": 27751531.0,
+    "avg_salary_usd": 1090.43
+  },
+  {
+    "job_title": "Software Engineer",
+    "category": "Khác",
+    "job_count": 150,
+    "application_count": 0.0,
+    "demand_share_pct": 0.79,
+    "avg_salary_vnd": 29382939.0,
+    "avg_salary_usd": 1154.54
+  },
+  {
+    "job_title": "HR Executive",
+    "category": "Khác",
+    "job_count": 143,
+    "application_count": 0.0,
+    "demand_share_pct": 0.75,
+    "avg_salary_vnd": 21076671.0,
+    "avg_salary_usd": 828.16
+  },
+  {
+    "job_title": "Finance Manager",
+    "category": "Khác",
+    "job_count": 140,
+    "application_count": 0.0,
+    "demand_share_pct": 0.74,
+    "avg_salary_vnd": 53290147.0,
+    "avg_salary_usd": 2093.92
+  },
+  {
+    "job_title": "Technician",
+    "category": "Khác",
+    "job_count": 132,
+    "application_count": 0.0,
+    "demand_share_pct": 0.69,
+    "avg_salary_vnd": 12900036.0,
+    "avg_salary_usd": 506.88
+  }
+]

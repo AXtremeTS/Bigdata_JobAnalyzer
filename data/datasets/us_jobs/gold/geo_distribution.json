@@ -1,0 +1,56 @@
+[
+  {
+    "province": "Seattle, Wa",
+    "job_count": 19,
+    "pct": 15.8,
+    "median_salary": 3244875000
+  },
+  {
+    "province": "San Francisco, Ca",
+    "job_count": 19,
+    "pct": 15.8,
+    "median_salary": 3244875000
+  },
+  {
+    "province": "Austin, Tx",
+    "job_count": 18,
+    "pct": 15.0,
+    "median_salary": 3244875000
+  },
+  {
+    "province": "Boston, Ma",
+    "job_count": 15,
+    "pct": 12.5,
+    "median_salary": 3244875000
+  },
+  {
+    "province": "Chicago, Il",
+    "job_count": 14,
+    "pct": 11.7,
+    "median_salary": 3244875000
+  },
+  {
+    "province": "New York, Ny",
+    "job_count": 10,
+    "pct": 8.3,
+    "median_salary": 3244875000
+  },
+  {
+    "province": "Denver, Co",
+    "job_count": 9,
+    "pct": 7.5,
+    "median_salary": 3244875000
+  },
+  {
+    "province": "Remote, Us",
+    "job_count": 8,
+    "pct": 6.7,
+    "median_salary": 3244875000
+  },
+  {
+    "province": "Los Angeles, Ca",
+    "job_count": 8,
+    "pct": 6.7,
+    "median_salary": 3244875000
+  }
+]

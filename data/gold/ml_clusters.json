@@ -1,0 +1,78 @@
+{
+  "silhouette_score": 0.6991,
+  "k": 3,
+  "clusters": [
+    {
+      "province": "Hải Phòng",
+      "job_count": 990,
+      "avg_salary_vnd": 16319862.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "TP Hồ Chí Minh",
+      "job_count": 17081,
+      "avg_salary_vnd": 15512901.0,
+      "avg_exp_years": 1.6,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Đồng Nai",
+      "job_count": 581,
+      "avg_salary_vnd": 14416967.0,
+      "avg_exp_years": 1.4,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "Hà Nội",
+      "job_count": 20119,
+      "avg_salary_vnd": 15786716.0,
+      "avg_exp_years": 1.8,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Bắc Ninh",
+      "job_count": 985,
+      "avg_salary_vnd": 15998848.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "Cần Thơ",
+      "job_count": 186,
+      "avg_salary_vnd": 13610784.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "Toàn quốc",
+      "job_count": 7088,
+      "avg_salary_vnd": 15101826.0,
+      "avg_exp_years": 1.5,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "Đà Nẵng",
+      "job_count": 970,
+      "avg_salary_vnd": 14714034.0,
+      "avg_exp_years": 1.3,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "US / Remote",
+      "job_count": 88,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 3.2,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    }
+  ]
+}

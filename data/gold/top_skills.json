@@ -1,0 +1,152 @@
+[
+  {
+    "skill": "Excel",
+    "frequency": 4790,
+    "prevalence_pct": 11.5
+  },
+  {
+    "skill": "Photoshop",
+    "frequency": 2326,
+    "prevalence_pct": 5.58
+  },
+  {
+    "skill": "Tin học văn phòng",
+    "frequency": 1619,
+    "prevalence_pct": 3.89
+  },
+  {
+    "skill": "Kỹ năng giao tiếp",
+    "frequency": 1516,
+    "prevalence_pct": 3.64
+  },
+  {
+    "skill": "AutoCAD",
+    "frequency": 1227,
+    "prevalence_pct": 2.95
+  },
+  {
+    "skill": "Word",
+    "frequency": 1226,
+    "prevalence_pct": 2.94
+  },
+  {
+    "skill": "PowerPoint)",
+    "frequency": 1107,
+    "prevalence_pct": 2.66
+  },
+  {
+    "skill": "Illustrator",
+    "frequency": 1037,
+    "prevalence_pct": 2.49
+  },
+  {
+    "skill": "Kỹ năng đàm phán",
+    "frequency": 898,
+    "prevalence_pct": 2.16
+  },
+  {
+    "skill": "Canva",
+    "frequency": 880,
+    "prevalence_pct": 2.11
+  },
+  {
+    "skill": "Autocad",
+    "frequency": 854,
+    "prevalence_pct": 2.05
+  },
+  {
+    "skill": "Thành thạo tin học văn phòng",
+    "frequency": 829,
+    "prevalence_pct": 1.99
+  },
+  {
+    "skill": "After Effects",
+    "frequency": 800,
+    "prevalence_pct": 1.92
+  },
+  {
+    "skill": "Tin học văn phòng (Word",
+    "frequency": 796,
+    "prevalence_pct": 1.91
+  },
+  {
+    "skill": "Capcut",
+    "frequency": 734,
+    "prevalence_pct": 1.76
+  },
+  {
+    "skill": "Adobe Premiere",
+    "frequency": 707,
+    "prevalence_pct": 1.7
+  },
+  {
+    "skill": "Premiere",
+    "frequency": 703,
+    "prevalence_pct": 1.69
+  },
+  {
+    "skill": "Adobe Photoshop",
+    "frequency": 642,
+    "prevalence_pct": 1.54
+  },
+  {
+    "skill": "Kỹ năng bán hàng",
+    "frequency": 620,
+    "prevalence_pct": 1.49
+  },
+  {
+    "skill": "Revit",
+    "frequency": 585,
+    "prevalence_pct": 1.4
+  },
+  {
+    "skill": "PowerPoint",
+    "frequency": 553,
+    "prevalence_pct": 1.33
+  },
+  {
+    "skill": "CapCut",
+    "frequency": 522,
+    "prevalence_pct": 1.25
+  },
+  {
+    "skill": "SEO",
+    "frequency": 519,
+    "prevalence_pct": 1.25
+  },
+  {
+    "skill": "Excel)",
+    "frequency": 488,
+    "prevalence_pct": 1.17
+  },
+  {
+    "skill": "Final Cut Pro",
+    "frequency": 449,
+    "prevalence_pct": 1.08
+  },
+  {
+    "skill": "Microsoft Office",
+    "frequency": 433,
+    "prevalence_pct": 1.04
+  },
+  {
+    "skill": "Kỹ năng thuyết phục",
+    "frequency": 431,
+    "prevalence_pct": 1.03
+  },
+  {
+    "skill": "Google Ads",
+    "frequency": 428,
+    "prevalence_pct": 1.03
+  },
+  {
+    "skill": "Adobe Illustrator",
+    "frequency": 426,
+    "prevalence_pct": 1.02
+  },
+  {
+    "skill": "Sketchup",
+    "frequency": 424,
+    "prevalence_pct": 1.02
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "month": "1",
+    "job_count": 529,
+    "application_count": 0.0
+  },
+  {
+    "month": "2",
+    "job_count": 6633,
+    "application_count": 0.0
+  },
+  {
+    "month": "3",
+    "job_count": 22169,
+    "application_count": 0.0
+  },
+  {
+    "month": "4",
+    "job_count": 10666,
+    "application_count": 0.0
+  },
+  {
+    "month": "5",
+    "job_count": 10933,
+    "application_count": 0.0
+  },
+  {
+    "month": "6",
+    "job_count": 7011,
+    "application_count": 0.0
+  },
+  {
+    "month": "7",
+    "job_count": 140,
+    "application_count": 0.0
+  },
+  {
+    "month": "8",
+    "job_count": 113,
+    "application_count": 0.0
+  },
+  {
+    "month": "9",
+    "job_count": 341,
+    "application_count": 0.0
+  },
+  {
+    "month": "10",
+    "job_count": 244,
+    "application_count": 0.0
+  },
+  {
+    "month": "11",
+    "job_count": 217,
+    "application_count": 0.0
+  },
+  {
+    "month": "12",
+    "job_count": 310,
+    "application_count": 0.0
+  }
+]

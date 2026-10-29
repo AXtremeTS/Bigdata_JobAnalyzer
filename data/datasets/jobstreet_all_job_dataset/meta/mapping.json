@@ -1,0 +1,57 @@
+{
+  "job_id": {
+    "target": null,
+    "confidence": 0.0,
+    "reason": "Unmapped field 'job_id'"
+  },
+  "job_title": {
+    "target": "job_title",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'job_title'"
+  },
+  "company": {
+    "target": "company",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'company'"
+  },
+  "descriptions": {
+    "target": "description",
+    "confidence": 0.96,
+    "reason": "Fuzzy header match with 'description' (score=0.96)"
+  },
+  "location": {
+    "target": "location",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'location'"
+  },
+  "category": {
+    "target": "category",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'category'"
+  },
+  "subcategory": {
+    "target": null,
+    "confidence": 0.0,
+    "reason": "Duplicate target 'category' already assigned to 'category'"
+  },
+  "role": {
+    "target": null,
+    "confidence": 0.0,
+    "reason": "Duplicate target 'job_title' already assigned to 'job_title'"
+  },
+  "type": {
+    "target": null,
+    "confidence": 0.0,
+    "reason": "Unmapped field 'type'"
+  },
+  "salary": {
+    "target": "salary",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'salary'"
+  },
+  "listingdate": {
+    "target": null,
+    "confidence": 0.0,
+    "reason": "Unmapped field 'listingdate'"
+  }
+}

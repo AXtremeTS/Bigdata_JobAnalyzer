@@ -1,0 +1,92 @@
+{
+  "job_title": {
+    "target": "job_title",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'job_title'"
+  },
+  "location": {
+    "target": "location",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'location'"
+  },
+  "country": {
+    "target": "country",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'country'"
+  },
+  "qualifications": {
+    "target": "education",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'qualifications'"
+  },
+  "technical_skills": {
+    "target": "technical_skills",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'technical_skills'"
+  },
+  "soft_skills": {
+    "target": "soft_skills",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'soft_skills'"
+  },
+  "languages_required": {
+    "target": null,
+    "confidence": 0.0,
+    "reason": "Unmapped field 'languages_required'"
+  },
+  "experience_required": {
+    "target": "experience",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'experience_required'"
+  },
+  "salary": {
+    "target": "salary",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'salary'"
+  },
+  "contract_type": {
+    "target": "contract_type",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'contract_type'"
+  },
+  "working_hours": {
+    "target": null,
+    "confidence": 0.0,
+    "reason": "Unmapped field 'working_hours'"
+  },
+  "benefits": {
+    "target": null,
+    "confidence": 0.0,
+    "reason": "Duplicate target 'salary' already assigned to 'salary'"
+  },
+  "description": {
+    "target": "description",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'description'"
+  },
+  "requirements_text": {
+    "target": "requirements",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'requirements_text'"
+  },
+  "category": {
+    "target": "category",
+    "confidence": 1.0,
+    "reason": "Exact alias match with 'category'"
+  },
+  "salary_min": {
+    "target": null,
+    "confidence": 0.0,
+    "reason": "Duplicate target 'salary' already assigned to 'salary'"
+  },
+  "salary_max": {
+    "target": null,
+    "confidence": 0.0,
+    "reason": "Duplicate target 'salary' already assigned to 'salary'"
+  },
+  "salary_avg": {
+    "target": null,
+    "confidence": 0.0,
+    "reason": "Duplicate target 'salary' already assigned to 'salary'"
+  }
+}

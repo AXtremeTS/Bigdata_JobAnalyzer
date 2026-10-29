@@ -1,0 +1,223 @@
+{
+  "total_records": 48092,
+  "column_count": 18,
+  "columns": {
+    "job_title": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 17566,
+      "sample_values": [
+        "Giám Đốc Nông Trại (Chuyên Ngành Cà Phê)",
+        "Chuyên Viên Tư Vấn Môi Trường",
+        "Nhân Viên HSE",
+        "Kỹ Sư An Toàn (HSE)",
+        "Nhân Viên Kỹ Thuật Quảng Bá–Thuốc Bảo Vệ Thực Vật"
+      ]
+    },
+    "location": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 1019,
+      "sample_values": [
+        "bắc ninh",
+        "hải phòng",
+        "thanh xuân",
+        "lâm hà",
+        "nhà bè, hồ chí minh"
+      ]
+    },
+    "country": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 10,
+      "sample_values": [
+        "Campuchia",
+        "Mozambique",
+        "Nhật Bản",
+        "Anh",
+        "Philippines"
+      ]
+    },
+    "qualifications": {
+      "null_count": 370,
+      "null_pct": 0.77,
+      "approx_distinct": 17672,
+      "sample_values": [
+        "['Tốt nghiệp Trung cấp trở lên', 'Chuyên ngành Môi trường, Cấp thoát nước, cơ điện, điện tự động hoặc các ngành liên quan']",
+        "['Đại học chuyên ngành Nông nghiệp', 'Trồng trọt', 'Khoa học cây trồng']",
+        "['Trung cấp', 'Cao đẳng', 'Đại học']",
+        "['Tốt nghiệp đại học chuyên nghành hoá dầu']",
+        "['Tốt nghiệp Đại học chính quy trở lên các chuyên ngành: Bảo Hộ Lao Động hoặc Chuyên ngành Môi trường, Xây Dựng, Điện, Cơ Khí (mong muốn làm GS Bảo Hộ Lao Động) có chứng chỉ HSSE']"
+      ]
+    },
+    "technical_skills": {
+      "null_count": 6437,
+      "null_pct": 13.38,
+      "approx_distinct": 26673,
+      "sample_values": [
+        "['Quản lý quy trình kỹ thuật nông nghiệp', 'Chăm sóc cây trồng', 'Tưới tiêu', 'Phòng trừ sâu bệnh', 'Quản lý ngân sách']",
+        "['AutoCAD', 'MS Project']",
+        "['Hiểu biết về luật vệ sinh an toàn lao động', 'Kỹ năng xử lý tình huống', 'Kỹ năng báo cáo sự cố', 'Kỹ năng đào tạo nội bộ']",
+        "['Kiến thức về An toàn lao động', 'PCCC', 'Vệ sinh', 'Môi trường lao động', 'Thành thạo tin học văn phòng']",
+        "['Kiến thức về xử lý nước cấp lò hơi', 'Nước & khí thải công nghiệp', 'Các tiêu chuẩn nước', 'Hóa chất bảo vệ lò hơi', 'Máy móc thiết bị liên quan đến ngành xử lý nước']"
+      ]
+    },
+    "soft_skills": {
+      "null_count": 2641,
+      "null_pct": 5.49,
+      "approx_distinct": 30631,
+      "sample_values": [
+        "['Chăm chỉ', 'Có tinh thần trách nhiệm cao']",
+        "['Kỹ năng phân tích', 'Tổng hợp dữ liệu', 'Khả năng làm việc độc lập', 'Làm việc nhóm', 'Kỹ năng làm việc logic', 'Sắp xếp công việc', 'Nhạy bén trong xử lý tình huống', 'Trao đổi thông tin với khách hàng', 'Chịu được áp lực công việc cao']",
+        "['Kỹ năng giao tiếp, trình bày tốt', 'Có khả năng làm việc nhóm và phối hợp tốt với các bộ phận khác', 'Kỹ năng giải quyết vấn đề linh hoạt, chịu áp lực công việc ngoài hiện trường']",
+        "['Kỹ năng giao tiếp tốt', 'Trách nhiệm', 'Cầu tiến']",
+        "['Chịu khó', 'Tỉ mỉ', 'Chỉnh chu', 'Khả năng làm việc độc lập', 'Quản lý nhóm', 'Báo cáo công việc']"
+      ]
+    },
+    "languages_required": {
+      "null_count": 35796,
+      "null_pct": 74.43,
+      "approx_distinct": 128,
+      "sample_values": [
+        "tiếng việt,tiếng anh",
+        "tiếng anh,tiếng đức,tiếng pháp,tiếng tây ban nha,tiếng ý",
+        "tiếng hàn,tiếng anh",
+        "tiếng anh,tiếng pháp,tiếng đức,tiếng tây ban nha",
+        "tiếng anh,tiếng đức"
+      ]
+    },
+    "experience_required": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 19,
+      "sample_values": [
+        "3 năm",
+        "15 năm",
+        "1 năm",
+        "Không yêu cầu",
+        "6 tháng"
+      ]
+    },
+    "salary": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 811,
+      "sample_values": [
+        "12.0 - 15.0 triệu",
+        "15.0 - 25.0 triệu",
+        "10.0 - 20.0 triệu",
+        "10.0 - 14.0 triệu",
+        "11.0 - 16.0 triệu"
+      ]
+    },
+    "contract_type": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 9,
+      "sample_values": [
+        "Thực tập",
+        "Khác",
+        "Thời vụ",
+        "Toàn thời gian, Bán thời gian",
+        "Toàn thời gian, Thực tập"
+      ]
+    },
+    "working_hours": {
+      "null_count": 4982,
+      "null_pct": 10.36,
+      "approx_distinct": 9537,
+      "sample_values": [
+        "Thứ 2 - Thứ 6 (từ 08:00 đến 17:00), Sáng Thứ 7 từ 8h-12h",
+        "Thứ 2 - Thứ 6 (từ 07:30 đến 17:00), Thứ 7 (từ 07:30 đến 11:30)",
+        "Thứ 2 - Thứ 6 (từ 08:15 đến 17:15), Thứ 7: Linh hoạt (theo lịch cá nhân đăng ký)",
+        "Thứ 2 - Thứ 6 (từ 08:00 đến 17:00); Thứ 7 (08h00 - 17h00) cách tuần",
+        "Thứ 2 - Thứ 6 (từ 07:30 đến 16:30), Thứ 7 (từ 07:30 đến 12:00)"
+      ]
+    },
+    "benefits": {
+      "null_count": 39,
+      "null_pct": 0.08,
+      "approx_distinct": 38201,
+      "sample_values": [
+        "['Chế độ phụ cấp công trình', 'Hưởng đầy đủ các chế độ BHXH, BHYT, BHTN theo quy định', 'Tăng ca và thưởng lễ/Tết theo quy định của luật lao động', 'Môi trường làm việc chuyên nghiệp, có cơ hội thăng tiến']",
+        "['Được đào tạo kỹ năng thực tế tại công trình', 'Hưởng đầy đủ chế độ BHXH, BHYT, BHTN theo quy định Nhà nước', 'Thưởng theo dự án', 'Hỗ trợ công tác phí', 'Ăn ở tại công trình']",
+        "['Đóng BHXH sau 01 tháng thử việc', 'Thưởng cuối năm', 'Thưởng kinh doanh', 'Thưởng các ngày lễ tết trong năm', 'Du lịch', 'Khám sức khỏe định kỳ hàng năm']",
+        "['Mức lương cạnh tranh', 'Chế độ bảo hiểm xã hội', 'Bảo hiểm y tế', 'Bảo hiểm thất nghiệp', 'Thưởng các ngày lễ, tết', 'Thưởng hiệu quả công việc', 'Cơ hội thăng tiến và phát triển nghề nghiệp', 'Môi trường làm việc chuyên nghiệp, năng động', 'Được tham gia các khóa đào tạo nâng cao nghiệp vụ', 'Các hoạt động teambuilding, du lịch thường xuyên']",
+        "['BHXH, BHYT, BHTN theo quy định của Nhà nước', 'Thưởng lễ, sinh nhật, hiếu hỷ theo cơ chế của công ty', 'Du lịch hàng năm', 'Xét tăng lương định kỳ và theo hiệu quả công việc']"
+      ]
+    },
+    "description": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 35088,
+      "sample_values": [
+        "- Định kì tự tổ chức kiểm tra công tác ATLĐ-VSMT-PCCN trên công trường.\n- Thực hiện tiếp các đoàn thanh tra, kiểm tra chuyên ngành liên quan.\n- Am hiểu pháp luật liên quan đến phạm vi công việc, quản lý, kiểm soát hồ sơ pháp lý của dự án đảm bảo tuân thủ quy định Pháp luật.\n- Thực hiện quản lý các nhà thầu phụ, tổ đội vào làm việc tại dự án thuộc phạm vi quản lý.\n- Thực hiện báo cáo công việc, sự cố liên quan trong phạm vi công việc định kì hoặc theo yêu cầu.\n- Thực hiện nhận diện mối nguy, đánh giá rủi ro đối với hạng mục/dự án triển khai, từ đó thực hiện các giải pháp phù hợp.\n- Thực hiện huấn luyện kiến thức liên quan đến ATLĐ-VSMT-PCCN trong phạm vi công việc.",
+        "+ Huấn luyện, đào tạo nghiệp vụ, nhận thức về an toàn lao động cho công nhân tại công trình theo định kỳ.\n+ Lập và trình duyệt các hồ sơ, tài liệu liên quan đến công tác An toàn lao động - Sức khỏe tại công trình.\n+ Giám sát chỉ đạo Thầu phụ, tổ đội, công nhân tuân thủ nội quy về đảm bảo an toàn vệ sinh lao động.\n+ Bám sát hiện trường thi công để kiểm soát và phát hiện nguy cơ xảy ra mất an toàn lao động.\n+ Xử lý và phối hợp xử lý các tình huống khẩn cấp tại công trình liên quan đến an toàn lao động - sức khỏe - môi trường.",
+        "Lập kế hoạch, thực hiện và giám sát các hoạt động liên quan đến công tác an toàn - vệ sinh lao động, PCCC trên công trường. Phối hợp giữa Phòng QLTB và BCH để xây dựng hệ thống an toàn vệ sinh lao động và an ninh của công trường. Phân tích an toàn, đánh giá rủi ro và đưa ra các biện pháp đảm bảo an toàn - vệ sinh lao động. Lập bảng phân tích an toàn công việc đối với từng loại hình công việc theo quy định của Pháp luật. Lập các quy trình/biện pháp an toàn cần thiết. Kiểm tra các máy, thiết bị, phương tiện thi công đảm bảo hoạt động an toàn. Phổ biến, hướng dẫn, kiểm tra, giám sát và đôn đốc thực hiện các quy định, tiêu chuẩn về ATVSLĐ, PCCC, BVMT cho người lao động trên công trường. Thường xuyên kiểm tra giám sát, đưa ra những cảnh báo kịp thời hoặc đình chỉ công việc ở những vị trí/máy, thiết bị hoặc biện pháp/hành vi làm việc có nguy cơ mất an toàn hoặc chưa đủ điều kiện an toàn làm việc. Tổ chức lưu trữ, bảo quản các văn bản hồ sơ, tài liệu liên quan đến chức năng, nhiệm vụ theo quy định của pháp luật. Các nhiệm vụ khác và báo cáo theo định kỳ và/hoặc đột xuất theo yêu cầu của Ban Giám đốc Công ty.",
+        "- Xây dựng và triển khai các chiến lược phát triển kinh doanh, xác định và tìm kiếm các cơ hội đầu tư, phát triển các dự án năng lượng tái tạo (Điện mặt trời, điện gió, điện rác v.v..);\n- Tìm và xác định các khách hàng tiềm năng, phát triển và quản lý các mối quan hệ khách hàng;\n- Phối hợp với các phòng ban như tài chính, pháp lý, kỹ thuật trong Công ty để sàng lọc khách hàng, biến các cơ hội thành Hợp đồng dự án, đảm bảo các dự án được phát triển trong phạm vi ngân sách và thời hạn được giao;\n- Tham gia đàm phán với khách hàng, phối hợp với các phòng ban chức năng có liên quan, thúc đẩy việc triển khai dự án thành công;\n- Hỗ trợ dịch thuật và dịch tài liệu (Nếu cần)\n- Một số công việc khác theo yêu cầu của lãnh đạo CT.",
+        "Công việc: Nghiên cứu, đề xuất công thức phân bón, Hỗ trợ kỹ thuật cho Đại lý – Nông dân, Làm mô hình demo, hội thảo, tài liệu kỹ thuật, Phối hợp Marketing – Sales phát triển Sản phẩm. Làm việc tại: Tân Kiên, Bình Chánh, TP.HCM."
+      ]
+    },
+    "requirements_text": {
+      "null_count": 9,
+      "null_pct": 0.02,
+      "approx_distinct": 35663,
+      "sample_values": [
+        "Tốt nghiệp Đại học chuyên ngành liên quan. Có chứng chỉ an toàn lao động. Hiểu biết về luật vệ sinh an toàn lao động. Kỹ năng xử lý tình huống, báo cáo sự cố, đào tạo nội bộ. Kỹ năng giao tiếp và làm việc nhóm trong môi trường công trường.",
+        "Tốt nghiệp các trường , Cao đẳng chuyên ngành liên quan. Có từ 2 năm kinh nghiệm trở lên. Ưu tiên tuổi từ 23-40 tuổi. Có kỹ năng làm việc theo nhóm.",
+        "Kinh nghiệm, Kỹ năng và Kiến thức:\n• Tốt nghiệp đại học về Môi trường hoặc chuyên ngành liên quan như: Thủy văn, Hóa học, Sinh học, khoa học môi trường, quản lý môi trường, kỹ thuật môi trường\n• Có kiến thức về phân tích và quan trắc môi trường nước mặt, nước ngầm, không khí, bụi và tiếng ồn, thủy văn, môi trường đất, chất thải mỏ.\n• Có kinh nghiệm quan trắc, phân tích môi trường tại các phòng thí nghiệm, các mỏ khai thác khoáng sản, khu công nghiệp hoặc trong các nhà máy sản xuất công nghiệp/",
+        "Ứng viên đã từng thiết kế, thi công hoặc vận hành công trình xử lý nước của các nhà máy sản xuất, nước thải y tế, nhà hàng khách sạn, .... Có khả năng nghiên cứu công nghệ mới, có tinh thần học hỏi và phát triển không ngừng. Có ít nhất 1 năm kinh nghiệm làm việc tại các công ty môi trường, đặc biệt trong mảng thiết kế và thi công hệ thống xử lý nước thải/nước cấp/khí thải.",
+        "Tốt nghiệp Cao đẳng/ Đại học chuyên ngành liên quan. Có kinh nghiệm làm trong nhà máy sản xuất dệt may. Ưu tiên biết tiếng trung."
+      ]
+    },
+    "category": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 16,
+      "sample_values": [
+        "du_lịch_nhà_hàng_khách_sạn_dịch_vụ",
+        "công_nghệ_thông_tin_kỹ_thuật_số",
+        "sản_xuất_lao_động_phổ_thông_cơ_khí",
+        "nhóm_nghề_khác",
+        "nông_nghiệp_năng_lượng_môi_trường"
+      ]
+    },
+    "salary_min": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 58,
+      "sample_values": [
+        "1",
+        "80",
+        "16",
+        "14",
+        "5"
+      ]
+    },
+    "salary_max": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 71,
+      "sample_values": [
+        "1",
+        "80",
+        "300",
+        "85",
+        "250"
+      ]
+    },
+    "salary_avg": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "approx_distinct": 82,
+      "sample_values": [
+        "Thoả thuận",
+        "21 triệu",
+        "37 triệu",
+        "60 triệu",
+        "36 triệu"
+      ]
+    }
+  },
+  "profiled_at": "2026-10-29T01:26:08Z"
+}

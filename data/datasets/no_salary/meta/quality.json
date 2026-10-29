@@ -1,0 +1,47 @@
+{
+  "total_records": 80,
+  "overall_score": 100.0,
+  "grade": "A",
+  "duplicate_count": 0,
+  "duplicate_pct": 0.0,
+  "quarantine_count": 0,
+  "quarantine_pct": 0.0,
+  "field_completeness": {
+    "position_title": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "valid_pct": 100.0
+    },
+    "organization": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "valid_pct": 100.0
+    },
+    "work_location": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "valid_pct": 100.0
+    },
+    "job_level": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "valid_pct": 100.0
+    },
+    "skills_required": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "valid_pct": 100.0
+    },
+    "education_level": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "valid_pct": 100.0
+    },
+    "created_at": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "valid_pct": 100.0
+    }
+  },
+  "quarantine_reasons": {}
+}

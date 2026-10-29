@@ -1,0 +1,1424 @@
+[
+  {
+    "province": "Kuala Lumpur",
+    "region": "Khác",
+    "job_count": 13712,
+    "share_pct": 23.16,
+    "salary_samples": 5631,
+    "median_salary_vnd": 23375000.0,
+    "avg_salary_vnd": 31635510.0
+  },
+  {
+    "province": "Petaling",
+    "region": "Khác",
+    "job_count": 9746,
+    "share_pct": 16.46,
+    "salary_samples": 5027,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 26123077.0
+  },
+  {
+    "province": "Johor Bahru District",
+    "region": "Khác",
+    "job_count": 4480,
+    "share_pct": 7.57,
+    "salary_samples": 2455,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 24278824.0
+  },
+  {
+    "province": "Shah Alam/Subang",
+    "region": "Khác",
+    "job_count": 2574,
+    "share_pct": 4.35,
+    "salary_samples": 1126,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 24244099.0
+  },
+  {
+    "province": "Selangor",
+    "region": "Khác",
+    "job_count": 2548,
+    "share_pct": 4.3,
+    "salary_samples": 1188,
+    "median_salary_vnd": 22000000.0,
+    "avg_salary_vnd": 29417932.0
+  },
+  {
+    "province": "Kuala Lumpur City Centre",
+    "region": "Khác",
+    "job_count": 2112,
+    "share_pct": 3.57,
+    "salary_samples": 574,
+    "median_salary_vnd": 23375000.0,
+    "avg_salary_vnd": 29851699.0
+  },
+  {
+    "province": "Penang Island",
+    "region": "Khác",
+    "job_count": 1885,
+    "share_pct": 3.18,
+    "salary_samples": 746,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 24187543.0
+  },
+  {
+    "province": "Seberang Perai",
+    "region": "Khác",
+    "job_count": 1796,
+    "share_pct": 3.03,
+    "salary_samples": 768,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 24798332.0
+  },
+  {
+    "province": "Penang",
+    "region": "Khác",
+    "job_count": 1669,
+    "share_pct": 2.82,
+    "salary_samples": 575,
+    "median_salary_vnd": 23375000.0,
+    "avg_salary_vnd": 31819941.0
+  },
+  {
+    "province": "Klang District",
+    "region": "Khác",
+    "job_count": 1427,
+    "share_pct": 2.41,
+    "salary_samples": 715,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 24890452.0
+  },
+  {
+    "province": "Hulu Langat",
+    "region": "Khác",
+    "job_count": 958,
+    "share_pct": 1.62,
+    "salary_samples": 562,
+    "median_salary_vnd": 18150000.0,
+    "avg_salary_vnd": 20021413.0
+  },
+  {
+    "province": "Kajang/Bangi/Serdang",
+    "region": "Khác",
+    "job_count": 869,
+    "share_pct": 1.47,
+    "salary_samples": 464,
+    "median_salary_vnd": 18700000.0,
+    "avg_salary_vnd": 19874353.0
+  },
+  {
+    "province": "Sepang",
+    "region": "Khác",
+    "job_count": 865,
+    "share_pct": 1.46,
+    "salary_samples": 259,
+    "median_salary_vnd": 23375000.0,
+    "avg_salary_vnd": 28347838.0
+  },
+  {
+    "province": "Kota Kinabalu District",
+    "region": "Khác",
+    "job_count": 805,
+    "share_pct": 1.36,
+    "salary_samples": 281,
+    "median_salary_vnd": 16500000.0,
+    "avg_salary_vnd": 18369658.0
+  },
+  {
+    "province": "Kinta District",
+    "region": "Khác",
+    "job_count": 776,
+    "share_pct": 1.31,
+    "salary_samples": 319,
+    "median_salary_vnd": 16500000.0,
+    "avg_salary_vnd": 19211157.0
+  },
+  {
+    "province": "Kuching Division",
+    "region": "Khác",
+    "job_count": 770,
+    "share_pct": 1.3,
+    "salary_samples": 254,
+    "median_salary_vnd": 15950000.0,
+    "avg_salary_vnd": 18239240.0
+  },
+  {
+    "province": "Johor",
+    "region": "Khác",
+    "job_count": 638,
+    "share_pct": 1.08,
+    "salary_samples": 331,
+    "median_salary_vnd": 22000000.0,
+    "avg_salary_vnd": 29696532.0
+  },
+  {
+    "province": "Seremban District",
+    "region": "Khác",
+    "job_count": 638,
+    "share_pct": 1.08,
+    "salary_samples": 284,
+    "median_salary_vnd": 18335000.0,
+    "avg_salary_vnd": 22476556.0
+  },
+  {
+    "province": "Kulai District",
+    "region": "Khác",
+    "job_count": 628,
+    "share_pct": 1.06,
+    "salary_samples": 302,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 23982520.0
+  },
+  {
+    "province": "Bangsar South",
+    "region": "Khác",
+    "job_count": 514,
+    "share_pct": 0.87,
+    "salary_samples": 286,
+    "median_salary_vnd": 24750000.0,
+    "avg_salary_vnd": 28907535.0
+  },
+  {
+    "province": "Gombak District",
+    "region": "Khác",
+    "job_count": 484,
+    "share_pct": 0.82,
+    "salary_samples": 230,
+    "median_salary_vnd": 18150000.0,
+    "avg_salary_vnd": 19890165.0
+  },
+  {
+    "province": "Kulim District",
+    "region": "Khác",
+    "job_count": 442,
+    "share_pct": 0.75,
+    "salary_samples": 116,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 23706328.0
+  },
+  {
+    "province": "Melaka Tengah",
+    "region": "Khác",
+    "job_count": 425,
+    "share_pct": 0.72,
+    "salary_samples": 147,
+    "median_salary_vnd": 16500000.0,
+    "avg_salary_vnd": 20866803.0
+  },
+  {
+    "province": "Melaka",
+    "region": "Khác",
+    "job_count": 333,
+    "share_pct": 0.56,
+    "salary_samples": 149,
+    "median_salary_vnd": 19250000.0,
+    "avg_salary_vnd": 22628745.0
+  },
+  {
+    "province": "Kuantan District",
+    "region": "Khác",
+    "job_count": 305,
+    "share_pct": 0.52,
+    "salary_samples": 97,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 27580371.0
+  },
+  {
+    "province": "Bukit Jalil",
+    "region": "Khác",
+    "job_count": 304,
+    "share_pct": 0.51,
+    "salary_samples": 85,
+    "median_salary_vnd": 23375000.0,
+    "avg_salary_vnd": 23829588.0
+  },
+  {
+    "province": "Cheras",
+    "region": "Khác",
+    "job_count": 304,
+    "share_pct": 0.51,
+    "salary_samples": 244,
+    "median_salary_vnd": 19250000.0,
+    "avg_salary_vnd": 20601906.0
+  },
+  {
+    "province": "Miri Division",
+    "region": "Khác",
+    "job_count": 302,
+    "share_pct": 0.51,
+    "salary_samples": 51,
+    "median_salary_vnd": 16775000.0,
+    "avg_salary_vnd": 20128020.0
+  },
+  {
+    "province": "Bintulu Division",
+    "region": "Khác",
+    "job_count": 301,
+    "share_pct": 0.51,
+    "salary_samples": 82,
+    "median_salary_vnd": 22000000.0,
+    "avg_salary_vnd": 25028390.0
+  },
+  {
+    "province": "Klang/Port Klang",
+    "region": "Khác",
+    "job_count": 279,
+    "share_pct": 0.47,
+    "salary_samples": 179,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 22172296.0
+  },
+  {
+    "province": "Bangsar",
+    "region": "Khác",
+    "job_count": 254,
+    "share_pct": 0.43,
+    "salary_samples": 136,
+    "median_salary_vnd": 23375000.0,
+    "avg_salary_vnd": 29050640.0
+  },
+  {
+    "province": "Kuala Muda",
+    "region": "Khác",
+    "job_count": 236,
+    "share_pct": 0.4,
+    "salary_samples": 91,
+    "median_salary_vnd": 19250000.0,
+    "avg_salary_vnd": 21433407.0
+  },
+  {
+    "province": "Kepong",
+    "region": "Khác",
+    "job_count": 219,
+    "share_pct": 0.37,
+    "salary_samples": 131,
+    "median_salary_vnd": 19525000.0,
+    "avg_salary_vnd": 20569443.0
+  },
+  {
+    "province": "Putrajaya",
+    "region": "Khác",
+    "job_count": 203,
+    "share_pct": 0.34,
+    "salary_samples": 51,
+    "median_salary_vnd": 23375000.0,
+    "avg_salary_vnd": 27602353.0
+  },
+  {
+    "province": "Kuala Langat",
+    "region": "Khác",
+    "job_count": 199,
+    "share_pct": 0.34,
+    "salary_samples": 93,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 26469495.0
+  },
+  {
+    "province": "Others",
+    "region": "Khác",
+    "job_count": 198,
+    "share_pct": 0.33,
+    "salary_samples": 104,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 21632885.0
+  },
+  {
+    "province": "Muar District",
+    "region": "Khác",
+    "job_count": 193,
+    "share_pct": 0.33,
+    "salary_samples": 47,
+    "median_salary_vnd": 18700000.0,
+    "avg_salary_vnd": 22351362.0
+  },
+  {
+    "province": "Kuala Lumpur Sentral",
+    "region": "Khác",
+    "job_count": 180,
+    "share_pct": 0.3,
+    "salary_samples": 102,
+    "median_salary_vnd": 23375000.0,
+    "avg_salary_vnd": 28280500.0
+  },
+  {
+    "province": "KL Eco City",
+    "region": "Khác",
+    "job_count": 162,
+    "share_pct": 0.27,
+    "salary_samples": 95,
+    "median_salary_vnd": 22000000.0,
+    "avg_salary_vnd": 24139253.0
+  },
+  {
+    "province": "Kuala Selangor District",
+    "region": "Khác",
+    "job_count": 160,
+    "share_pct": 0.27,
+    "salary_samples": 95,
+    "median_salary_vnd": 23375000.0,
+    "avg_salary_vnd": 30014379.0
+  },
+  {
+    "province": "Mid Valley City",
+    "region": "Khác",
+    "job_count": 151,
+    "share_pct": 0.26,
+    "salary_samples": 84,
+    "median_salary_vnd": 23375000.0,
+    "avg_salary_vnd": 26657000.0
+  },
+  {
+    "province": "Mont Kiara",
+    "region": "Khác",
+    "job_count": 148,
+    "share_pct": 0.25,
+    "salary_samples": 92,
+    "median_salary_vnd": 21450000.0,
+    "avg_salary_vnd": 24425685.0
+  },
+  {
+    "province": "Bandar Malaysia",
+    "region": "Khác",
+    "job_count": 135,
+    "share_pct": 0.23,
+    "salary_samples": 70,
+    "median_salary_vnd": 38500000.0,
+    "avg_salary_vnd": 48898271.0
+  },
+  {
+    "province": "Perak",
+    "region": "Khác",
+    "job_count": 134,
+    "share_pct": 0.23,
+    "salary_samples": 55,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 26448582.0
+  },
+  {
+    "province": "Batu Pahat District",
+    "region": "Khác",
+    "job_count": 131,
+    "share_pct": 0.22,
+    "salary_samples": 56,
+    "median_salary_vnd": 18150000.0,
+    "avg_salary_vnd": 25620839.0
+  },
+  {
+    "province": "Sabah",
+    "region": "Khác",
+    "job_count": 125,
+    "share_pct": 0.21,
+    "salary_samples": 56,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 29531554.0
+  },
+  {
+    "province": "Sarawak",
+    "region": "Khác",
+    "job_count": 124,
+    "share_pct": 0.21,
+    "salary_samples": 47,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 25488362.0
+  },
+  {
+    "province": "Bukit Damansara",
+    "region": "Khác",
+    "job_count": 123,
+    "share_pct": 0.21,
+    "salary_samples": 32,
+    "median_salary_vnd": 19250000.0,
+    "avg_salary_vnd": 23916406.0
+  },
+  {
+    "province": "Bentong District",
+    "region": "Khác",
+    "job_count": 106,
+    "share_pct": 0.18,
+    "salary_samples": 42,
+    "median_salary_vnd": 18425000.0,
+    "avg_salary_vnd": 20582452.0
+  },
+  {
+    "province": "Negeri Sembilan",
+    "region": "Khác",
+    "job_count": 103,
+    "share_pct": 0.17,
+    "salary_samples": 42,
+    "median_salary_vnd": 22825000.0,
+    "avg_salary_vnd": 30356738.0
+  },
+  {
+    "province": "Sibu Division",
+    "region": "Khác",
+    "job_count": 99,
+    "share_pct": 0.17,
+    "salary_samples": 35,
+    "median_salary_vnd": 15125000.0,
+    "avg_salary_vnd": 16644029.0
+  },
+  {
+    "province": "Kemaman",
+    "region": "Khác",
+    "job_count": 91,
+    "share_pct": 0.15,
+    "salary_samples": 17,
+    "median_salary_vnd": 23925000.0,
+    "avg_salary_vnd": 26448529.0
+  },
+  {
+    "province": "Kota Bharu District",
+    "region": "Khác",
+    "job_count": 91,
+    "share_pct": 0.15,
+    "salary_samples": 19,
+    "median_salary_vnd": 16500000.0,
+    "avg_salary_vnd": 21331789.0
+  },
+  {
+    "province": "Kota Setar",
+    "region": "Khác",
+    "job_count": 91,
+    "share_pct": 0.15,
+    "salary_samples": 28,
+    "median_salary_vnd": 22275000.0,
+    "avg_salary_vnd": 25277143.0
+  },
+  {
+    "province": "Pontian",
+    "region": "Khác",
+    "job_count": 91,
+    "share_pct": 0.15,
+    "salary_samples": 49,
+    "median_salary_vnd": 19525000.0,
+    "avg_salary_vnd": 20902776.0
+  },
+  {
+    "province": "Taman Tun Dr Ismail",
+    "region": "Khác",
+    "job_count": 84,
+    "share_pct": 0.14,
+    "salary_samples": 41,
+    "median_salary_vnd": 17875000.0,
+    "avg_salary_vnd": 22918927.0
+  },
+  {
+    "province": "Setapak",
+    "region": "Khác",
+    "job_count": 82,
+    "share_pct": 0.14,
+    "salary_samples": 42,
+    "median_salary_vnd": 16775000.0,
+    "avg_salary_vnd": 18746190.0
+  },
+  {
+    "province": "Kluang District",
+    "region": "Khác",
+    "job_count": 81,
+    "share_pct": 0.14,
+    "salary_samples": 23,
+    "median_salary_vnd": 17875000.0,
+    "avg_salary_vnd": 19461304.0
+  },
+  {
+    "province": "Kuala Terengganu District",
+    "region": "Khác",
+    "job_count": 79,
+    "share_pct": 0.13,
+    "salary_samples": 26,
+    "median_salary_vnd": 17050000.0,
+    "avg_salary_vnd": 20640885.0
+  },
+  {
+    "province": "Kedah",
+    "region": "Khác",
+    "job_count": 77,
+    "share_pct": 0.13,
+    "salary_samples": 28,
+    "median_salary_vnd": 20634000.0,
+    "avg_salary_vnd": 31329929.0
+  },
+  {
+    "province": "Alor Gajah District",
+    "region": "Khác",
+    "job_count": 76,
+    "share_pct": 0.13,
+    "salary_samples": 26,
+    "median_salary_vnd": 17050000.0,
+    "avg_salary_vnd": 16504231.0
+  },
+  {
+    "province": "Larut, Matang and Selama District",
+    "region": "Khác",
+    "job_count": 76,
+    "share_pct": 0.13,
+    "salary_samples": 14,
+    "median_salary_vnd": 18425000.0,
+    "avg_salary_vnd": 25850000.0
+  },
+  {
+    "province": "Labuan",
+    "region": "Khác",
+    "job_count": 74,
+    "share_pct": 0.13,
+    "salary_samples": 15,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 28270000.0
+  },
+  {
+    "province": "Bukit Bintang",
+    "region": "Khác",
+    "job_count": 70,
+    "share_pct": 0.12,
+    "salary_samples": 56,
+    "median_salary_vnd": 24750000.0,
+    "avg_salary_vnd": 29606696.0
+  },
+  {
+    "province": "Sri Petaling",
+    "region": "Khác",
+    "job_count": 64,
+    "share_pct": 0.11,
+    "salary_samples": 41,
+    "median_salary_vnd": 19800000.0,
+    "avg_salary_vnd": 25957317.0
+  },
+  {
+    "province": "Manjung District",
+    "region": "Khác",
+    "job_count": 62,
+    "share_pct": 0.1,
+    "salary_samples": 18,
+    "median_salary_vnd": 18700000.0,
+    "avg_salary_vnd": 22863222.0
+  },
+  {
+    "province": "Kuchai Lama",
+    "region": "Khác",
+    "job_count": 61,
+    "share_pct": 0.1,
+    "salary_samples": 51,
+    "median_salary_vnd": 18700000.0,
+    "avg_salary_vnd": 21603686.0
+  },
+  {
+    "province": "Pahang",
+    "region": "Khác",
+    "job_count": 61,
+    "share_pct": 0.1,
+    "salary_samples": 22,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 23295955.0
+  },
+  {
+    "province": "Kota Tinggi District",
+    "region": "Khác",
+    "job_count": 54,
+    "share_pct": 0.09,
+    "salary_samples": 23,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 30899609.0
+  },
+  {
+    "province": "Hulu Selangor",
+    "region": "Khác",
+    "job_count": 52,
+    "share_pct": 0.09,
+    "salary_samples": 15,
+    "median_salary_vnd": 14850000.0,
+    "avg_salary_vnd": 16087600.0
+  },
+  {
+    "province": "Tawau District",
+    "region": "Khác",
+    "job_count": 51,
+    "share_pct": 0.09,
+    "salary_samples": 10,
+    "median_salary_vnd": 13200000.0,
+    "avg_salary_vnd": 15427500.0
+  },
+  {
+    "province": "Sandakan District",
+    "region": "Khác",
+    "job_count": 50,
+    "share_pct": 0.08,
+    "salary_samples": 15,
+    "median_salary_vnd": 22000000.0,
+    "avg_salary_vnd": 21671867.0
+  },
+  {
+    "province": "Langkawi",
+    "region": "Khác",
+    "job_count": 49,
+    "share_pct": 0.08,
+    "salary_samples": 16,
+    "median_salary_vnd": 19113000.0,
+    "avg_salary_vnd": 22171938.0
+  },
+  {
+    "province": "Ampang",
+    "region": "Khác",
+    "job_count": 45,
+    "share_pct": 0.08,
+    "salary_samples": 29,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 22929310.0
+  },
+  {
+    "province": "Kelantan",
+    "region": "Khác",
+    "job_count": 41,
+    "share_pct": 0.07,
+    "salary_samples": 17,
+    "median_salary_vnd": 17875000.0,
+    "avg_salary_vnd": 20265882.0
+  },
+  {
+    "province": "Perak Tengah District",
+    "region": "Khác",
+    "job_count": 41,
+    "share_pct": 0.07,
+    "salary_samples": 1,
+    "median_salary_vnd": 12375000.0,
+    "avg_salary_vnd": 12375000.0
+  },
+  {
+    "province": "Jalan Ipoh",
+    "region": "Khác",
+    "job_count": 40,
+    "share_pct": 0.07,
+    "salary_samples": 38,
+    "median_salary_vnd": 19250000.0,
+    "avg_salary_vnd": 22427000.0
+  },
+  {
+    "province": "Kampung Malaysia Raya",
+    "region": "Khác",
+    "job_count": 35,
+    "share_pct": 0.06,
+    "salary_samples": 17,
+    "median_salary_vnd": 27500000.0,
+    "avg_salary_vnd": 52282353.0
+  },
+  {
+    "province": "Temerloh District",
+    "region": "Khác",
+    "job_count": 35,
+    "share_pct": 0.06,
+    "salary_samples": 5,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 18205000.0
+  },
+  {
+    "province": "Malaysia",
+    "region": "Khác",
+    "job_count": 33,
+    "share_pct": 0.06,
+    "salary_samples": 1,
+    "median_salary_vnd": 34375000.0,
+    "avg_salary_vnd": 34375000.0
+  },
+  {
+    "province": "Sungai Besi",
+    "region": "Khác",
+    "job_count": 33,
+    "share_pct": 0.06,
+    "salary_samples": 23,
+    "median_salary_vnd": 23100000.0,
+    "avg_salary_vnd": 24845696.0
+  },
+  {
+    "province": "Taman Desa",
+    "region": "Khác",
+    "job_count": 33,
+    "share_pct": 0.06,
+    "salary_samples": 15,
+    "median_salary_vnd": 22825000.0,
+    "avg_salary_vnd": 26537533.0
+  },
+  {
+    "province": "Segamat District",
+    "region": "Khác",
+    "job_count": 32,
+    "share_pct": 0.05,
+    "salary_samples": 8,
+    "median_salary_vnd": 17188000.0,
+    "avg_salary_vnd": 24457875.0
+  },
+  {
+    "province": "Sentul",
+    "region": "Khác",
+    "job_count": 32,
+    "share_pct": 0.05,
+    "salary_samples": 22,
+    "median_salary_vnd": 19250000.0,
+    "avg_salary_vnd": 21575000.0
+  },
+  {
+    "province": "Port Dickson District",
+    "region": "Khác",
+    "job_count": 31,
+    "share_pct": 0.05,
+    "salary_samples": 12,
+    "median_salary_vnd": 15125000.0,
+    "avg_salary_vnd": 20693750.0
+  },
+  {
+    "province": "Tun Razak Exchange",
+    "region": "Khác",
+    "job_count": 30,
+    "share_pct": 0.05,
+    "salary_samples": 6,
+    "median_salary_vnd": 15675000.0,
+    "avg_salary_vnd": 16270833.0
+  },
+  {
+    "province": "Kampar District",
+    "region": "Khác",
+    "job_count": 28,
+    "share_pct": 0.05,
+    "salary_samples": 17,
+    "median_salary_vnd": 21450000.0,
+    "avg_salary_vnd": 34844118.0
+  },
+  {
+    "province": "Brickfields",
+    "region": "Khác",
+    "job_count": 27,
+    "share_pct": 0.05,
+    "salary_samples": 13,
+    "median_salary_vnd": 35750000.0,
+    "avg_salary_vnd": 41884692.0
+  },
+  {
+    "province": "Jasin District",
+    "region": "Khác",
+    "job_count": 25,
+    "share_pct": 0.04,
+    "salary_samples": 9,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 19952778.0
+  },
+  {
+    "province": "Samarahan Division",
+    "region": "Khác",
+    "job_count": 25,
+    "share_pct": 0.04,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "Segambut",
+    "region": "Khác",
+    "job_count": 25,
+    "share_pct": 0.04,
+    "salary_samples": 16,
+    "median_salary_vnd": 17050000.0,
+    "avg_salary_vnd": 18253125.0
+  },
+  {
+    "province": "Maluri",
+    "region": "Khác",
+    "job_count": 24,
+    "share_pct": 0.04,
+    "salary_samples": 12,
+    "median_salary_vnd": 16500000.0,
+    "avg_salary_vnd": 17006500.0
+  },
+  {
+    "province": "Muallim District",
+    "region": "Khác",
+    "job_count": 24,
+    "share_pct": 0.04,
+    "salary_samples": 4,
+    "median_salary_vnd": 17600000.0,
+    "avg_salary_vnd": 19181250.0
+  },
+  {
+    "province": "Tampin District",
+    "region": "Khác",
+    "job_count": 24,
+    "share_pct": 0.04,
+    "salary_samples": 7,
+    "median_salary_vnd": 31625000.0,
+    "avg_salary_vnd": 29739286.0
+  },
+  {
+    "province": "Hilir Perak District",
+    "region": "Khác",
+    "job_count": 22,
+    "share_pct": 0.04,
+    "salary_samples": 4,
+    "median_salary_vnd": 19250000.0,
+    "avg_salary_vnd": 27087500.0
+  },
+  {
+    "province": "Penampang District",
+    "region": "Khác",
+    "job_count": 22,
+    "share_pct": 0.04,
+    "salary_samples": 8,
+    "median_salary_vnd": 11000000.0,
+    "avg_salary_vnd": 15279750.0
+  },
+  {
+    "province": "Sri Hartamas",
+    "region": "Khác",
+    "job_count": 22,
+    "share_pct": 0.04,
+    "salary_samples": 13,
+    "median_salary_vnd": 18150000.0,
+    "avg_salary_vnd": 25025000.0
+  },
+  {
+    "province": "Besut",
+    "region": "Khác",
+    "job_count": 21,
+    "share_pct": 0.04,
+    "salary_samples": 3,
+    "median_salary_vnd": 15125000.0,
+    "avg_salary_vnd": 15766667.0
+  },
+  {
+    "province": "Terengganu",
+    "region": "Khác",
+    "job_count": 21,
+    "share_pct": 0.04,
+    "salary_samples": 8,
+    "median_salary_vnd": 27500000.0,
+    "avg_salary_vnd": 33550000.0
+  },
+  {
+    "province": "Baling District",
+    "region": "Khác",
+    "job_count": 20,
+    "share_pct": 0.03,
+    "salary_samples": 3,
+    "median_salary_vnd": 15125000.0,
+    "avg_salary_vnd": 15583333.0
+  },
+  {
+    "province": "Gua Musang",
+    "region": "Khác",
+    "job_count": 20,
+    "share_pct": 0.03,
+    "salary_samples": 5,
+    "median_salary_vnd": 23375000.0,
+    "avg_salary_vnd": 21560000.0
+  },
+  {
+    "province": "Kubang Pasu",
+    "region": "Khác",
+    "job_count": 20,
+    "share_pct": 0.03,
+    "salary_samples": 6,
+    "median_salary_vnd": 27500000.0,
+    "avg_salary_vnd": 29745833.0
+  },
+  {
+    "province": "Bandar Tasik Selatan",
+    "region": "Khác",
+    "job_count": 19,
+    "share_pct": 0.03,
+    "salary_samples": 13,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 22888462.0
+  },
+  {
+    "province": "Tangkak District",
+    "region": "Khác",
+    "job_count": 19,
+    "share_pct": 0.03,
+    "salary_samples": 12,
+    "median_salary_vnd": 19250000.0,
+    "avg_salary_vnd": 28943750.0
+  },
+  {
+    "province": "Lahad Datu District",
+    "region": "Khác",
+    "job_count": 18,
+    "share_pct": 0.03,
+    "salary_samples": 8,
+    "median_salary_vnd": 16500000.0,
+    "avg_salary_vnd": 18734375.0
+  },
+  {
+    "province": "Desa Parkcity",
+    "region": "Khác",
+    "job_count": 17,
+    "share_pct": 0.03,
+    "salary_samples": 14,
+    "median_salary_vnd": 22000000.0,
+    "avg_salary_vnd": 26910714.0
+  },
+  {
+    "province": "Limbang Division",
+    "region": "Khác",
+    "job_count": 17,
+    "share_pct": 0.03,
+    "salary_samples": 4,
+    "median_salary_vnd": 11000000.0,
+    "avg_salary_vnd": 19593750.0
+  },
+  {
+    "province": "Wangsa Maju",
+    "region": "Khác",
+    "job_count": 16,
+    "share_pct": 0.03,
+    "salary_samples": 11,
+    "median_salary_vnd": 19800000.0,
+    "avg_salary_vnd": 21225000.0
+  },
+  {
+    "province": "Bandar Menjalara",
+    "region": "Khác",
+    "job_count": 15,
+    "share_pct": 0.03,
+    "salary_samples": 8,
+    "median_salary_vnd": 13750000.0,
+    "avg_salary_vnd": 14953125.0
+  },
+  {
+    "province": "Pekan District",
+    "region": "Khác",
+    "job_count": 15,
+    "share_pct": 0.03,
+    "salary_samples": 5,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 23375000.0
+  },
+  {
+    "province": "Sabak Bernam",
+    "region": "Khác",
+    "job_count": 15,
+    "share_pct": 0.03,
+    "salary_samples": 11,
+    "median_salary_vnd": 23375000.0,
+    "avg_salary_vnd": 28000000.0
+  },
+  {
+    "province": "Batang Padang District",
+    "region": "Khác",
+    "job_count": 14,
+    "share_pct": 0.02,
+    "salary_samples": 2,
+    "median_salary_vnd": 19250000.0,
+    "avg_salary_vnd": 44000000.0
+  },
+  {
+    "province": "Kepong Baru",
+    "region": "Khác",
+    "job_count": 14,
+    "share_pct": 0.02,
+    "salary_samples": 12,
+    "median_salary_vnd": 18700000.0,
+    "avg_salary_vnd": 19708333.0
+  },
+  {
+    "province": "Pudu",
+    "region": "Khác",
+    "job_count": 14,
+    "share_pct": 0.02,
+    "salary_samples": 7,
+    "median_salary_vnd": 18700000.0,
+    "avg_salary_vnd": 19721429.0
+  },
+  {
+    "province": "Taman Connaught",
+    "region": "Khác",
+    "job_count": 14,
+    "share_pct": 0.02,
+    "salary_samples": 9,
+    "median_salary_vnd": 16225000.0,
+    "avg_salary_vnd": 18761111.0
+  },
+  {
+    "province": "Jerantut District",
+    "region": "Khác",
+    "job_count": 12,
+    "share_pct": 0.02,
+    "salary_samples": 2,
+    "median_salary_vnd": 24200000.0,
+    "avg_salary_vnd": 29975000.0
+  },
+  {
+    "province": "Kerian District",
+    "region": "Khác",
+    "job_count": 12,
+    "share_pct": 0.02,
+    "salary_samples": 1,
+    "median_salary_vnd": 30250000.0,
+    "avg_salary_vnd": 30250000.0
+  },
+  {
+    "province": "Kuala Kangsar District",
+    "region": "Khác",
+    "job_count": 11,
+    "share_pct": 0.02,
+    "salary_samples": 6,
+    "median_salary_vnd": 19250000.0,
+    "avg_salary_vnd": 22550000.0
+  },
+  {
+    "province": "Marang District",
+    "region": "Khác",
+    "job_count": 11,
+    "share_pct": 0.02,
+    "salary_samples": 2,
+    "median_salary_vnd": 23375000.0,
+    "avg_salary_vnd": 24062500.0
+  },
+  {
+    "province": "Bandar Sri Permaisuri",
+    "region": "Khác",
+    "job_count": 10,
+    "share_pct": 0.02,
+    "salary_samples": 7,
+    "median_salary_vnd": 16500000.0,
+    "avg_salary_vnd": 18542857.0
+  },
+  {
+    "province": "Dungun",
+    "region": "Khác",
+    "job_count": 10,
+    "share_pct": 0.02,
+    "salary_samples": 5,
+    "median_salary_vnd": 19250000.0,
+    "avg_salary_vnd": 24983800.0
+  },
+  {
+    "province": "Raub District",
+    "region": "Khác",
+    "job_count": 10,
+    "share_pct": 0.02,
+    "salary_samples": 3,
+    "median_salary_vnd": 23100000.0,
+    "avg_salary_vnd": 25575000.0
+  },
+  {
+    "province": "Shamelin Perkasa",
+    "region": "Khác",
+    "job_count": 10,
+    "share_pct": 0.02,
+    "salary_samples": 6,
+    "median_salary_vnd": 17188000.0,
+    "avg_salary_vnd": 19800333.0
+  },
+  {
+    "province": "Kudat District",
+    "region": "Khác",
+    "job_count": 9,
+    "share_pct": 0.02,
+    "salary_samples": 6,
+    "median_salary_vnd": 13750000.0,
+    "avg_salary_vnd": 15354167.0
+  },
+  {
+    "province": "Maran District",
+    "region": "Khác",
+    "job_count": 9,
+    "share_pct": 0.02,
+    "salary_samples": 2,
+    "median_salary_vnd": 23375000.0,
+    "avg_salary_vnd": 26125000.0
+  },
+  {
+    "province": "Rompin",
+    "region": "Khác",
+    "job_count": 9,
+    "share_pct": 0.02,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "Sipitang District",
+    "region": "Khác",
+    "job_count": 9,
+    "share_pct": 0.02,
+    "salary_samples": 4,
+    "median_salary_vnd": 16500000.0,
+    "avg_salary_vnd": 16500000.0
+  },
+  {
+    "province": "Taman OUG",
+    "region": "Khác",
+    "job_count": 9,
+    "share_pct": 0.02,
+    "salary_samples": 8,
+    "median_salary_vnd": 18700000.0,
+    "avg_salary_vnd": 20831250.0
+  },
+  {
+    "province": "Keningau District",
+    "region": "Khác",
+    "job_count": 8,
+    "share_pct": 0.01,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "Kota Belud District",
+    "region": "Khác",
+    "job_count": 8,
+    "share_pct": 0.01,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "Mersing District",
+    "region": "Khác",
+    "job_count": 8,
+    "share_pct": 0.01,
+    "salary_samples": 5,
+    "median_salary_vnd": 19250000.0,
+    "avg_salary_vnd": 17105000.0
+  },
+  {
+    "province": "Tanah Merah",
+    "region": "Khác",
+    "job_count": 8,
+    "share_pct": 0.01,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "Alam Damai",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 7,
+    "median_salary_vnd": 24750000.0,
+    "avg_salary_vnd": 24278571.0
+  },
+  {
+    "province": "Bandar Baharu",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "Bangsar Baru",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 6,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 26812500.0
+  },
+  {
+    "province": "Cameron Highlands",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 5,
+    "median_salary_vnd": 17875000.0,
+    "avg_salary_vnd": 18928800.0
+  },
+  {
+    "province": "Jempol District",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 3,
+    "median_salary_vnd": 27500000.0,
+    "avg_salary_vnd": 49958333.0
+  },
+  {
+    "province": "Kangar",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "Kuala Pilah District",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 1,
+    "median_salary_vnd": 15400000.0,
+    "avg_salary_vnd": 15400000.0
+  },
+  {
+    "province": "Mukah Division",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 1,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 20625000.0
+  },
+  {
+    "province": "Pantai Dalam",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 1,
+    "median_salary_vnd": 41250000.0,
+    "avg_salary_vnd": 41250000.0
+  },
+  {
+    "province": "Serian Division",
+    "region": "Khác",
+    "job_count": 7,
+    "share_pct": 0.01,
+    "salary_samples": 1,
+    "median_salary_vnd": 8800000.0,
+    "avg_salary_vnd": 8800000.0
+  },
+  {
+    "province": "Bandar Baru Sentul",
+    "region": "Khác",
+    "job_count": 6,
+    "share_pct": 0.01,
+    "salary_samples": 6,
+    "median_salary_vnd": 20625000.0,
+    "avg_salary_vnd": 20250167.0
+  },
+  {
+    "province": "Happy Garden",
+    "region": "Khác",
+    "job_count": 6,
+    "share_pct": 0.01,
+    "salary_samples": 5,
+    "median_salary_vnd": 23375000.0,
+    "avg_salary_vnd": 21065000.0
+  },
+  {
+    "province": "Jelebu District",
+    "region": "Khác",
+    "job_count": 6,
+    "share_pct": 0.01,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "Pasir Puteh",
+    "region": "Khác",
+    "job_count": 6,
+    "share_pct": 0.01,
+    "salary_samples": 2,
+    "median_salary_vnd": 6875000.0,
+    "avg_salary_vnd": 10587500.0
+  },
+  {
+    "province": "Pusat Bandar Damansara",
+    "region": "Khác",
+    "job_count": 6,
+    "share_pct": 0.01,
+    "salary_samples": 2,
+    "median_salary_vnd": 16500000.0,
+    "avg_salary_vnd": 17462500.0
+  },
+  {
+    "province": "Rembau District",
+    "region": "Khác",
+    "job_count": 6,
+    "share_pct": 0.01,
+    "salary_samples": 2,
+    "median_salary_vnd": 11000000.0,
+    "avg_salary_vnd": 17875000.0
+  },
+  {
+    "province": "Setiu",
+    "region": "Khác",
+    "job_count": 6,
+    "share_pct": 0.01,
+    "salary_samples": 1,
+    "median_salary_vnd": 22000000.0,
+    "avg_salary_vnd": 22000000.0
+  },
+  {
+    "province": "Sri Aman Division",
+    "region": "Khác",
+    "job_count": 6,
+    "share_pct": 0.01,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "Beaufort District",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "Desa Petaling",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 5,
+    "median_salary_vnd": 22275000.0,
+    "avg_salary_vnd": 21340000.0
+  },
+  {
+    "province": "Hulu Terengganu",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "Lipis",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 3,
+    "median_salary_vnd": 19525000.0,
+    "avg_salary_vnd": 19341667.0
+  },
+  {
+    "province": "Putatan District",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 0,
+    "median_salary_vnd": null,
+    "avg_salary_vnd": null
+  },
+  {
+    "province": "Ranau District",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 1,
+    "median_salary_vnd": 35750000.0,
+    "avg_salary_vnd": 35750000.0
+  },
+  {
+    "province": "Sarikei Division",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 2,
+    "median_salary_vnd": 11825000.0,
+    "avg_salary_vnd": 15537500.0
+  },
+  {
+    "province": "Seputeh",
+    "region": "Khác",
+    "job_count": 5,
+    "share_pct": 0.01,
+    "salary_samples": 1,
+    "median_salary_vnd": 4950000.0,
+    "avg_salary_vnd": 4950000.0
+  }
+]

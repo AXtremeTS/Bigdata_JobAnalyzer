@@ -1,0 +1,33 @@
+[
+  {
+    "cluster_id": 0,
+    "name": "Thị trường Trọng điểm Siêu cấp",
+    "count": 2,
+    "provinces": [
+      "TP Hồ Chí Minh",
+      "Hà Nội"
+    ]
+  },
+  {
+    "cluster_id": 1,
+    "name": "Đô thị Hạng hai & Khu công nghiệp",
+    "count": 4,
+    "provinces": [
+      "Đà Nẵng",
+      "Bình Dương",
+      "Đồng Nai",
+      "Cần Thơ"
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "name": "Thị trường Vệ tinh & Địa phương",
+    "count": 57,
+    "provinces": [
+      "Hải Phòng",
+      "Bắc Ninh",
+      "Vũng Tàu",
+      "Khác"
+    ]
+  }
+]

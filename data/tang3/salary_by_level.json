@@ -1,0 +1,74 @@
+[
+  {
+    "segment": "Chuyên môn cao",
+    "level": "Chuyên môn cao",
+    "sample_size": 390,
+    "min_salary_vnd": 7000000.0,
+    "p25_salary_vnd": 14500000.0,
+    "median_salary_vnd": 19000000.0,
+    "p75_salary_vnd": 25000000.0,
+    "p90_salary_vnd": 32500000.0,
+    "max_salary_vnd": 350000000.0,
+    "avg_salary_vnd": 25392436.0
+  },
+  {
+    "segment": "Điều hành",
+    "level": "Điều hành",
+    "sample_size": 190,
+    "min_salary_vnd": 4000000.0,
+    "p25_salary_vnd": 12500000.0,
+    "median_salary_vnd": 17500000.0,
+    "p75_salary_vnd": 30000000.0,
+    "p90_salary_vnd": 40000000.0,
+    "max_salary_vnd": 140000000.0,
+    "avg_salary_vnd": 22921316.0
+  },
+  {
+    "segment": "Quản lý / dẫn dắt",
+    "level": "Quản lý / dẫn dắt",
+    "sample_size": 2303,
+    "min_salary_vnd": 1500000.0,
+    "p25_salary_vnd": 13500000.0,
+    "median_salary_vnd": 17500000.0,
+    "p75_salary_vnd": 24000000.0,
+    "p90_salary_vnd": 30000000.0,
+    "max_salary_vnd": 350000000.0,
+    "avg_salary_vnd": 21132696.0
+  },
+  {
+    "segment": "Vai trò phổ thông",
+    "level": "Vai trò phổ thông",
+    "sample_size": 30256,
+    "min_salary_vnd": 1000000.0,
+    "p25_salary_vnd": 10500000.0,
+    "median_salary_vnd": 13000000.0,
+    "p75_salary_vnd": 17500000.0,
+    "p90_salary_vnd": 23000000.0,
+    "max_salary_vnd": 500000000.0,
+    "avg_salary_vnd": 15384706.0
+  },
+  {
+    "segment": "Đầu sự nghiệp",
+    "level": "Đầu sự nghiệp",
+    "sample_size": 85,
+    "min_salary_vnd": 3500000.0,
+    "p25_salary_vnd": 10000000.0,
+    "median_salary_vnd": 11750000.0,
+    "p75_salary_vnd": 15000000.0,
+    "p90_salary_vnd": 22500000.0,
+    "max_salary_vnd": 31000000.0,
+    "avg_salary_vnd": 13332353.0
+  },
+  {
+    "segment": "Mới vào nghề",
+    "level": "Mới vào nghề",
+    "sample_size": 1126,
+    "min_salary_vnd": 1000000.0,
+    "p25_salary_vnd": 2500000.0,
+    "median_salary_vnd": 3350000.0,
+    "p75_salary_vnd": 5000000.0,
+    "p90_salary_vnd": 10000000.0,
+    "max_salary_vnd": 75000000.0,
+    "avg_salary_vnd": 4740764.0
+  }
+]

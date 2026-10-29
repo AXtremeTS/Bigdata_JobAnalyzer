@@ -1,0 +1,82 @@
+[
+  {
+    "province": "Kuala Lumpur",
+    "region": "Khác",
+    "job_count": 13712,
+    "pct": 23.1,
+    "salary_samples": 5638,
+    "median_salary": 3500000000
+  },
+  {
+    "province": "Petaling",
+    "region": "Khác",
+    "job_count": 9746,
+    "pct": 16.4,
+    "salary_samples": 5044,
+    "median_salary": 3500000000
+  },
+  {
+    "province": "Johor Bahru District",
+    "region": "Khác",
+    "job_count": 4480,
+    "pct": 7.6,
+    "salary_samples": 2462,
+    "median_salary": 3500000000
+  },
+  {
+    "province": "Shah Alam/Subang",
+    "region": "Khác",
+    "job_count": 2574,
+    "pct": 4.3,
+    "salary_samples": 1126,
+    "median_salary": 3500000000
+  },
+  {
+    "province": "Selangor",
+    "region": "Khác",
+    "job_count": 2548,
+    "pct": 4.3,
+    "salary_samples": 1182,
+    "median_salary": 3500000000
+  },
+  {
+    "province": "Kuala Lumpur City Centre",
+    "region": "Khác",
+    "job_count": 2112,
+    "pct": 3.6,
+    "salary_samples": 577,
+    "median_salary": 3500000000
+  },
+  {
+    "province": "Penang Island",
+    "region": "Khác",
+    "job_count": 1885,
+    "pct": 3.2,
+    "salary_samples": 747,
+    "median_salary": 3500000000
+  },
+  {
+    "province": "Seberang Perai",
+    "region": "Khác",
+    "job_count": 1796,
+    "pct": 3.0,
+    "salary_samples": 768,
+    "median_salary": 3500000000
+  },
+  {
+    "province": "Penang",
+    "region": "Khác",
+    "job_count": 1669,
+    "pct": 2.8,
+    "salary_samples": 583,
+    "median_salary": 3500000000
+  },
+  {
+    "province": "Klang District",
+    "region": "Khác",
+    "job_count": 1427,
+    "pct": 2.4,
+    "salary_samples": 715,
+    "median_salary": 3500000000
+  }
+]

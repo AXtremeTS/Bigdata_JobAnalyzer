@@ -1,0 +1,30 @@
+# reference/fx_rates.yml
+# Currency exchange rates to VND and USD for job market salary standardization
+# Base reference as of 2026
+
+as_of: "2026-10-27"
+base_currency: "VND"
+
+rates_to_vnd:
+  VND: 1.0
+  USD: 25450.0
+  EUR: 27200.0
+  GBP: 32500.0
+  JPY: 165.0
+  SGD: 19200.0
+  AUD: 16800.0
+  CAD: 18500.0
+  IDR: 1.62
+  THB: 740.0
+
+rates_to_usd:
+  USD: 1.0
+  VND: 0.00003929
+  EUR: 1.0688
+  GBP: 1.2770
+  JPY: 0.00648
+  SGD: 0.7544
+  AUD: 0.6601
+  CAD: 0.7269
+  IDR: 0.0000636
+  THB: 0.02908

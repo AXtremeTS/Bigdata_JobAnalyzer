@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap');
+
+:root {
+  --paper: #f7f8f6;
+  --white: #ffffff;
+  --ink: #1d2421;
+  --muted: #68716c;
+  --faint: #9aa39d;
+  --line: #e2e7e3;
+  --line-strong: #cad3cd;
+  --orange: #e85d2a;
+  --orange-dark: #bb3d16;
+  --orange-wash: #fff0e9;
+  --green: #2f8564;
+  --blue: #4774a8;
+  --night: #202a26;
+  --night-soft: #2b3832;
+  --colors-primary: var(--orange);
+  --colors-ink: var(--ink);
+  --colors-muted: var(--muted);
+  --colors-muted-soft: var(--faint);
+  --colors-hairline: var(--line);
+  --colors-surface-dark: var(--night);
+  --colors-surface-dark-elevated: var(--night-soft);
+  --colors-on-dark: #f6f7f5;
+  --colors-on-dark-soft: #c8d0ca;
+  --colors-accent-teal: var(--green);
+  --colors-surface-cream-strong: #f2e9e1;
+  --colors-surface-soft: #edf2ee;
+  --colors-canvas: var(--paper);
+  --rounded-pill: 999px;
+  --rounded-sm: var(--radius-sm);
+  --rounded-md: var(--radius-md);
+  --font-display: "Newsreader", Georgia, serif;
+  --font-ui: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-data: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --radius-sm: 5px;
+  --radius-md: 9px;
+  --radius-lg: 14px;
+  --shadow: 0 16px 38px rgba(29, 36, 33, 0.08);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { min-height: 100%; width: 100%; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid rgba(232, 93, 42, .28);
+  outline-offset: 2px;
+}
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #cbd4ce; border-radius: 20px; }
+::-webkit-scrollbar-track { background: transparent; }

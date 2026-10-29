@@ -1,0 +1,1270 @@
+{
+  "silhouette_score": 0.7964,
+  "k": 3,
+  "clusters": [
+    {
+      "province": "Hulu Langat",
+      "job_count": 958,
+      "avg_salary_vnd": 20021413.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Shah Alam/Subang",
+      "job_count": 2574,
+      "avg_salary_vnd": 24244099.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Bukit Jalil",
+      "job_count": 304,
+      "avg_salary_vnd": 23829588.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Penang",
+      "job_count": 1669,
+      "avg_salary_vnd": 31819941.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "KL Eco City",
+      "job_count": 162,
+      "avg_salary_vnd": 24139253.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kinta District",
+      "job_count": 776,
+      "avg_salary_vnd": 19211157.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Melaka",
+      "job_count": 333,
+      "avg_salary_vnd": 22628745.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Taman Desa",
+      "job_count": 33,
+      "avg_salary_vnd": 26537533.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Setapak",
+      "job_count": 82,
+      "avg_salary_vnd": 18746190.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kota Kinabalu District",
+      "job_count": 805,
+      "avg_salary_vnd": 18369658.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Sibu Division",
+      "job_count": 99,
+      "avg_salary_vnd": 16644029.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Sri Petaling",
+      "job_count": 64,
+      "avg_salary_vnd": 25957317.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kedah",
+      "job_count": 77,
+      "avg_salary_vnd": 31329929.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Larut, Matang and Selama District",
+      "job_count": 76,
+      "avg_salary_vnd": 25850000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Batu Pahat District",
+      "job_count": 131,
+      "avg_salary_vnd": 25620839.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Bandar Tasik Selatan",
+      "job_count": 19,
+      "avg_salary_vnd": 22888462.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Bintulu Division",
+      "job_count": 301,
+      "avg_salary_vnd": 25028390.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Taman Tun Dr Ismail",
+      "job_count": 84,
+      "avg_salary_vnd": 22918927.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kampung Malaysia Raya",
+      "job_count": 35,
+      "avg_salary_vnd": 52282353.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "Dungun",
+      "job_count": 10,
+      "avg_salary_vnd": 24983800.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Taman Connaught",
+      "job_count": 14,
+      "avg_salary_vnd": 18761111.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Jasin District",
+      "job_count": 25,
+      "avg_salary_vnd": 19952778.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Taman OUG",
+      "job_count": 9,
+      "avg_salary_vnd": 20831250.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Raub District",
+      "job_count": 10,
+      "avg_salary_vnd": 25575000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Batang Padang District",
+      "job_count": 14,
+      "avg_salary_vnd": 44000000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "Mersing District",
+      "job_count": 8,
+      "avg_salary_vnd": 17105000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Beaufort District",
+      "job_count": 5,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kuala Langat",
+      "job_count": 199,
+      "avg_salary_vnd": 26469495.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kuala Muda",
+      "job_count": 236,
+      "avg_salary_vnd": 21433407.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Sabah",
+      "job_count": 125,
+      "avg_salary_vnd": 29531554.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Pahang",
+      "job_count": 61,
+      "avg_salary_vnd": 23295955.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Desa Parkcity",
+      "job_count": 17,
+      "avg_salary_vnd": 26910714.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kemaman",
+      "job_count": 91,
+      "avg_salary_vnd": 26448529.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Sentul",
+      "job_count": 32,
+      "avg_salary_vnd": 21575000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Hilir Perak District",
+      "job_count": 22,
+      "avg_salary_vnd": 27087500.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Serian Division",
+      "job_count": 7,
+      "avg_salary_vnd": 8800000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Maran District",
+      "job_count": 9,
+      "avg_salary_vnd": 26125000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Samarahan Division",
+      "job_count": 25,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Jelebu District",
+      "job_count": 6,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Keningau District",
+      "job_count": 8,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Tangkak District",
+      "job_count": 19,
+      "avg_salary_vnd": 28943750.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Negeri Sembilan",
+      "job_count": 103,
+      "avg_salary_vnd": 30356738.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kajang/Bangi/Serdang",
+      "job_count": 869,
+      "avg_salary_vnd": 19874353.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kuala Lumpur",
+      "job_count": 13712,
+      "avg_salary_vnd": 31635510.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "Bangsar South",
+      "job_count": 514,
+      "avg_salary_vnd": 28907535.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kulai District",
+      "job_count": 628,
+      "avg_salary_vnd": 23982520.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Port Dickson District",
+      "job_count": 31,
+      "avg_salary_vnd": 20693750.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Bukit Bintang",
+      "job_count": 70,
+      "avg_salary_vnd": 29606696.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Bandar Baharu",
+      "job_count": 7,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kepong Baru",
+      "job_count": 14,
+      "avg_salary_vnd": 19708333.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Others",
+      "job_count": 198,
+      "avg_salary_vnd": 21632885.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Gua Musang",
+      "job_count": 20,
+      "avg_salary_vnd": 21560000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Jempol District",
+      "job_count": 7,
+      "avg_salary_vnd": 49958333.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "Kubang Pasu",
+      "job_count": 20,
+      "avg_salary_vnd": 29745833.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Langkawi",
+      "job_count": 49,
+      "avg_salary_vnd": 22171938.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kelantan",
+      "job_count": 41,
+      "avg_salary_vnd": 20265882.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Tampin District",
+      "job_count": 24,
+      "avg_salary_vnd": 29739286.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Seputeh",
+      "job_count": 5,
+      "avg_salary_vnd": 4950000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kuala Pilah District",
+      "job_count": 7,
+      "avg_salary_vnd": 15400000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kangar",
+      "job_count": 7,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Lipis",
+      "job_count": 5,
+      "avg_salary_vnd": 19341667.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Penang Island",
+      "job_count": 1885,
+      "avg_salary_vnd": 24187543.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Sipitang District",
+      "job_count": 9,
+      "avg_salary_vnd": 16500000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Cheras",
+      "job_count": 304,
+      "avg_salary_vnd": 20601906.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Perak",
+      "job_count": 134,
+      "avg_salary_vnd": 26448582.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kulim District",
+      "job_count": 442,
+      "avg_salary_vnd": 23706328.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Bukit Damansara",
+      "job_count": 123,
+      "avg_salary_vnd": 23916406.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kuchai Lama",
+      "job_count": 61,
+      "avg_salary_vnd": 21603686.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Pontian",
+      "job_count": 91,
+      "avg_salary_vnd": 20902776.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Melaka Tengah",
+      "job_count": 425,
+      "avg_salary_vnd": 20866803.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Klang/Port Klang",
+      "job_count": 279,
+      "avg_salary_vnd": 22172296.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kota Bharu District",
+      "job_count": 91,
+      "avg_salary_vnd": 21331789.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Bandar Baru Sentul",
+      "job_count": 6,
+      "avg_salary_vnd": 20250167.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Sabak Bernam",
+      "job_count": 15,
+      "avg_salary_vnd": 28000000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Bandar Sri Permaisuri",
+      "job_count": 10,
+      "avg_salary_vnd": 18542857.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Jalan Ipoh",
+      "job_count": 40,
+      "avg_salary_vnd": 22427000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Setiu",
+      "job_count": 6,
+      "avg_salary_vnd": 22000000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Limbang Division",
+      "job_count": 17,
+      "avg_salary_vnd": 19593750.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kerian District",
+      "job_count": 12,
+      "avg_salary_vnd": 30250000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Besut",
+      "job_count": 21,
+      "avg_salary_vnd": 15766667.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Pusat Bandar Damansara",
+      "job_count": 6,
+      "avg_salary_vnd": 17462500.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Jerantut District",
+      "job_count": 12,
+      "avg_salary_vnd": 29975000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Sarikei Division",
+      "job_count": 5,
+      "avg_salary_vnd": 15537500.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Putatan District",
+      "job_count": 5,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Petaling",
+      "job_count": 9746,
+      "avg_salary_vnd": 26123077.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 2,
+      "cluster_name": "Thị trường Việc làm Địa phương (Regional & Emerging Markets)"
+    },
+    {
+      "province": "Sarawak",
+      "job_count": 124,
+      "avg_salary_vnd": 25488362.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Seberang Perai",
+      "job_count": 1796,
+      "avg_salary_vnd": 24798332.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Johor Bahru District",
+      "job_count": 4480,
+      "avg_salary_vnd": 24278824.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Sepang",
+      "job_count": 865,
+      "avg_salary_vnd": 28347838.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Putrajaya",
+      "job_count": 203,
+      "avg_salary_vnd": 27602353.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Labuan",
+      "job_count": 74,
+      "avg_salary_vnd": 28270000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kluang District",
+      "job_count": 81,
+      "avg_salary_vnd": 19461304.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kuantan District",
+      "job_count": 305,
+      "avg_salary_vnd": 27580371.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Pekan District",
+      "job_count": 15,
+      "avg_salary_vnd": 23375000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Penampang District",
+      "job_count": 22,
+      "avg_salary_vnd": 15279750.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Tawau District",
+      "job_count": 51,
+      "avg_salary_vnd": 15427500.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Sandakan District",
+      "job_count": 50,
+      "avg_salary_vnd": 21671867.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Mukah Division",
+      "job_count": 7,
+      "avg_salary_vnd": 20625000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Desa Petaling",
+      "job_count": 5,
+      "avg_salary_vnd": 21340000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Happy Garden",
+      "job_count": 6,
+      "avg_salary_vnd": 21065000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Hulu Terengganu",
+      "job_count": 5,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kudat District",
+      "job_count": 9,
+      "avg_salary_vnd": 15354167.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Selangor",
+      "job_count": 2548,
+      "avg_salary_vnd": 29417932.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Johor",
+      "job_count": 638,
+      "avg_salary_vnd": 29696532.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kepong",
+      "job_count": 219,
+      "avg_salary_vnd": 20569443.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Mont Kiara",
+      "job_count": 148,
+      "avg_salary_vnd": 24425685.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Segamat District",
+      "job_count": 32,
+      "avg_salary_vnd": 24457875.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Sungai Besi",
+      "job_count": 33,
+      "avg_salary_vnd": 24845696.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Pudu",
+      "job_count": 14,
+      "avg_salary_vnd": 19721429.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Mid Valley City",
+      "job_count": 151,
+      "avg_salary_vnd": 26657000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Terengganu",
+      "job_count": 21,
+      "avg_salary_vnd": 33550000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "Baling District",
+      "job_count": 20,
+      "avg_salary_vnd": 15583333.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Muallim District",
+      "job_count": 24,
+      "avg_salary_vnd": 19181250.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Pantai Dalam",
+      "job_count": 7,
+      "avg_salary_vnd": 41250000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "Kota Setar",
+      "job_count": 91,
+      "avg_salary_vnd": 25277143.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Lahad Datu District",
+      "job_count": 18,
+      "avg_salary_vnd": 18734375.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Bentong District",
+      "job_count": 106,
+      "avg_salary_vnd": 20582452.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kota Belud District",
+      "job_count": 8,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Perak Tengah District",
+      "job_count": 41,
+      "avg_salary_vnd": 12375000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Tanah Merah",
+      "job_count": 8,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Bangsar",
+      "job_count": 254,
+      "avg_salary_vnd": 29050640.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kampar District",
+      "job_count": 28,
+      "avg_salary_vnd": 34844118.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "Kuala Kangsar District",
+      "job_count": 11,
+      "avg_salary_vnd": 22550000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kuching Division",
+      "job_count": 770,
+      "avg_salary_vnd": 18239240.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Shamelin Perkasa",
+      "job_count": 10,
+      "avg_salary_vnd": 19800333.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Wangsa Maju",
+      "job_count": 16,
+      "avg_salary_vnd": 21225000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Alam Damai",
+      "job_count": 7,
+      "avg_salary_vnd": 24278571.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Miri Division",
+      "job_count": 302,
+      "avg_salary_vnd": 20128020.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Bandar Malaysia",
+      "job_count": 135,
+      "avg_salary_vnd": 48898271.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "Maluri",
+      "job_count": 24,
+      "avg_salary_vnd": 17006500.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Manjung District",
+      "job_count": 62,
+      "avg_salary_vnd": 22863222.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Tun Razak Exchange",
+      "job_count": 30,
+      "avg_salary_vnd": 16270833.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Sri Hartamas",
+      "job_count": 22,
+      "avg_salary_vnd": 25025000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Bandar Menjalara",
+      "job_count": 15,
+      "avg_salary_vnd": 14953125.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Rembau District",
+      "job_count": 6,
+      "avg_salary_vnd": 17875000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Pasir Puteh",
+      "job_count": 6,
+      "avg_salary_vnd": 10587500.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Bangsar Baru",
+      "job_count": 7,
+      "avg_salary_vnd": 26812500.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Sri Aman Division",
+      "job_count": 6,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Cameron Highlands",
+      "job_count": 7,
+      "avg_salary_vnd": 18928800.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Klang District",
+      "job_count": 1427,
+      "avg_salary_vnd": 24890452.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kuala Lumpur City Centre",
+      "job_count": 2112,
+      "avg_salary_vnd": 29851699.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kuala Selangor District",
+      "job_count": 160,
+      "avg_salary_vnd": 30014379.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Gombak District",
+      "job_count": 484,
+      "avg_salary_vnd": 19890165.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Seremban District",
+      "job_count": 638,
+      "avg_salary_vnd": 22476556.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Segambut",
+      "job_count": 25,
+      "avg_salary_vnd": 18253125.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Malaysia",
+      "job_count": 33,
+      "avg_salary_vnd": 34375000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "Kuala Lumpur Sentral",
+      "job_count": 180,
+      "avg_salary_vnd": 28280500.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Hulu Selangor",
+      "job_count": 52,
+      "avg_salary_vnd": 16087600.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Muar District",
+      "job_count": 193,
+      "avg_salary_vnd": 22351362.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Ampang",
+      "job_count": 45,
+      "avg_salary_vnd": 22929310.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Brickfields",
+      "job_count": 27,
+      "avg_salary_vnd": 41884692.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "Kuala Terengganu District",
+      "job_count": 79,
+      "avg_salary_vnd": 20640885.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Alor Gajah District",
+      "job_count": 76,
+      "avg_salary_vnd": 16504231.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Kota Tinggi District",
+      "job_count": 54,
+      "avg_salary_vnd": 30899609.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Ranau District",
+      "job_count": 5,
+      "avg_salary_vnd": 35750000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 0,
+      "cluster_name": "Đô thị Trọng điểm (Mega Tech & Commercial Hub)"
+    },
+    {
+      "province": "Temerloh District",
+      "job_count": 35,
+      "avg_salary_vnd": 18205000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Rompin",
+      "job_count": 9,
+      "avg_salary_vnd": 12000000.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    },
+    {
+      "province": "Marang District",
+      "job_count": 11,
+      "avg_salary_vnd": 24062500.0,
+      "avg_exp_years": 0.0,
+      "cluster_id": 1,
+      "cluster_name": "Khu vực Công nghiệp Đang phát triển (Industrial Centers)"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "skill": "Docker",
+    "job_count": 20,
+    "pct": 25.0
+  },
+  {
+    "skill": "React",
+    "job_count": 18,
+    "pct": 22.5
+  },
+  {
+    "skill": "JavaScript",
+    "job_count": 18,
+    "pct": 22.5
+  },
+  {
+    "skill": "HTML5",
+    "job_count": 18,
+    "pct": 22.5
+  },
+  {
+    "skill": "CSS3",
+    "job_count": 18,
+    "pct": 22.5
+  },
+  {
+    "skill": "Python",
+    "job_count": 17,
+    "pct": 21.2
+  },
+  {
+    "skill": "SQL",
+    "job_count": 17,
+    "pct": 21.2
+  },
+  {
+    "skill": "Power BI",
+    "job_count": 17,
+    "pct": 21.2
+  },
+  {
+    "skill": "Excel",
+    "job_count": 17,
+    "pct": 21.2
+  },
+  {
+    "skill": "Architecture",
+    "job_count": 13,
+    "pct": 16.2
+  }
+]

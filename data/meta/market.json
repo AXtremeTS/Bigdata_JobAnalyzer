@@ -1,0 +1,12 @@
+{
+  "country": "VN",
+  "country_name": "Việt Nam",
+  "currency": "VND",
+  "language": "vi",
+  "confidence": 0.99,
+  "evidence": [
+    "Detected 88 Việt Nam geographic tokens",
+    "Detected 102 VND currency signals",
+    "Detected 231 Vietnamese keyword markers"
+  ]
+}

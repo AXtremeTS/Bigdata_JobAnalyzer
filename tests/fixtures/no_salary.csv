@@ -1,0 +1,81 @@
+position_title,organization,work_location,job_level,skills_required,education_level,created_at
+Chuyên viên Phân tích Dữ liệu,Tập đoàn FPT,Đà Nẵng,Senior,"ReactJS, JavaScript, HTML5, CSS3",Cử nhân,2026-04-02
+Chuyên viên An toàn Thông tin,Shopee Vietnam,TP Hồ Chí Minh,Senior,"ReactJS, JavaScript, HTML5, CSS3",Thạc sĩ,2026-04-27
+Kỹ sư Lập trình Java,Viettel Telecom,Hà Nội,Senior,"Linux, Docker, Kubernetes, AWS",Đại học,2026-04-22
+Trưởng nhóm Kỹ thuật (Tech Lead),KMS Technology,"Quận 1, TP Hồ Chí Minh",Fresher,"Java, Spring Boot, Oracle, Docker",Kỹ sư,2026-04-01
+Frontend React Developer,KMS Technology,TP Hồ Chí Minh,Senior,"ReactJS, JavaScript, HTML5, CSS3",Cao đẳng,2026-04-21
+Chuyên viên Phân tích Dữ liệu,Tiki Corporation,Bình Dương,Fresher,"ReactJS, JavaScript, HTML5, CSS3",Thạc sĩ,2026-04-26
+Frontend React Developer,Momo (M-Service),"Cầu Giấy, Hà Nội",Senior,"Architecture, Microservices, Leadership, CI/CD",Cử nhân,2026-04-26
+Frontend React Developer,VNG Corporation,Hà Nội,Senior,"Linux, Docker, Kubernetes, AWS",Kỹ sư,2026-04-08
+Kỹ sư Lập trình Java,Tiki Corporation,TP Hồ Chí Minh,Chuyên viên,"Java, Spring Boot, Oracle, Docker",Cử nhân,2026-04-14
+Lập trình viên Python Backend,Momo (M-Service),"Quận 1, TP Hồ Chí Minh",Fresher,"Java, Spring Boot, Oracle, Docker",Thạc sĩ,2026-04-09
+Trưởng nhóm Kỹ thuật (Tech Lead),Momo (M-Service),Bình Dương,Chuyên viên,"Linux, Docker, Kubernetes, AWS",Kỹ sư,2026-04-11
+Kỹ sư Lập trình Java,Tập đoàn FPT,"Cầu Giấy, Hà Nội",Senior,"Python, SQL, Power BI, Excel",Kỹ sư,2026-04-18
+Kỹ sư DevOps / Cloud,KMS Technology,TP Hồ Chí Minh,Senior,"Python, SQL, Power BI, Excel",Kỹ sư,2026-04-24
+Lập trình viên Python Backend,KMS Technology,"Cầu Giấy, Hà Nội",Trưởng nhóm,"Python, SQL, Power BI, Excel",Thạc sĩ,2026-04-27
+Kỹ sư DevOps / Cloud,Shopee Vietnam,Bình Dương,Chuyên viên,"Python, SQL, Power BI, Excel",Đại học,2026-04-21
+Kỹ sư Lập trình Java,KMS Technology,Bình Dương,Senior,"Manual Testing, Selenium, Postman, JIRA",Thạc sĩ,2026-04-15
+Trưởng nhóm Kỹ thuật (Tech Lead),Tiki Corporation,"Quận 1, TP Hồ Chí Minh",Trưởng nhóm,"ReactJS, JavaScript, HTML5, CSS3",Đại học,2026-04-06
+Frontend React Developer,Viettel Telecom,Bình Dương,Fresher,"Manual Testing, Selenium, Postman, JIRA",Cao đẳng,2026-04-20
+Nhân viên Kiểm thử Phần mềm (QA/QC),Tập đoàn FPT,Bình Dương,Chuyên viên,"ReactJS, JavaScript, HTML5, CSS3",Đại học,2026-04-12
+Lập trình viên Python Backend,Tập đoàn FPT,Cần Thơ,Nhân viên,"Architecture, Microservices, Leadership, CI/CD",Đại học,2026-04-20
+Kỹ sư Lập trình Java,VNG Corporation,"Cầu Giấy, Hà Nội",Chuyên viên,"Python, SQL, Power BI, Excel",Cao đẳng,2026-04-22
+Kỹ sư DevOps / Cloud,Tập đoàn FPT,Cần Thơ,Chuyên viên,"Java, Spring Boot, Oracle, Docker",Cử nhân,2026-04-02
+Trưởng nhóm Kỹ thuật (Tech Lead),VNG Corporation,Hà Nội,Fresher,"Python, SQL, Power BI, Excel",Kỹ sư,2026-04-23
+Chuyên viên An toàn Thông tin,Tập đoàn FPT,TP Hồ Chí Minh,Chuyên viên,"ReactJS, JavaScript, HTML5, CSS3",Đại học,2026-04-25
+Chuyên viên Phân tích Dữ liệu,Viettel Telecom,"Cầu Giấy, Hà Nội",Nhân viên,"Linux, Docker, Kubernetes, AWS",Cao đẳng,2026-04-20
+Nhân viên Kiểm thử Phần mềm (QA/QC),KMS Technology,Cần Thơ,Chuyên viên,"Python, SQL, Power BI, Excel",Cao đẳng,2026-04-27
+Chuyên viên An toàn Thông tin,KMS Technology,Hà Nội,Trưởng nhóm,"ReactJS, JavaScript, HTML5, CSS3",Đại học,2026-04-14
+Kỹ sư Lập trình Java,KMS Technology,Đà Nẵng,Trưởng nhóm,"ReactJS, JavaScript, HTML5, CSS3",Thạc sĩ,2026-04-22
+Kỹ sư DevOps / Cloud,Tập đoàn FPT,Hà Nội,Chuyên viên,"Linux, Docker, Kubernetes, AWS",Đại học,2026-04-09
+Kỹ sư DevOps / Cloud,Shopee Vietnam,Bình Dương,Senior,"Architecture, Microservices, Leadership, CI/CD",Cử nhân,2026-04-03
+Nhân viên Kiểm thử Phần mềm (QA/QC),Tập đoàn FPT,TP Hồ Chí Minh,Fresher,"Manual Testing, Selenium, Postman, JIRA",Cao đẳng,2026-04-27
+Frontend React Developer,Momo (M-Service),Đà Nẵng,Trưởng nhóm,"ReactJS, JavaScript, HTML5, CSS3",Kỹ sư,2026-04-12
+Trưởng nhóm Kỹ thuật (Tech Lead),Momo (M-Service),Hà Nội,Senior,"Java, Spring Boot, Oracle, Docker",Thạc sĩ,2026-04-22
+Nhân viên Kiểm thử Phần mềm (QA/QC),VNG Corporation,Cần Thơ,Chuyên viên,"Architecture, Microservices, Leadership, CI/CD",Cử nhân,2026-04-02
+Chuyên viên Phân tích Dữ liệu,VNG Corporation,Đà Nẵng,Chuyên viên,"Manual Testing, Selenium, Postman, JIRA",Đại học,2026-04-07
+Frontend React Developer,Momo (M-Service),"Quận 1, TP Hồ Chí Minh",Trưởng nhóm,"ReactJS, JavaScript, HTML5, CSS3",Thạc sĩ,2026-04-07
+Kỹ sư DevOps / Cloud,Shopee Vietnam,Đà Nẵng,Chuyên viên,"Java, Spring Boot, Oracle, Docker",Kỹ sư,2026-04-18
+Chuyên viên An toàn Thông tin,Viettel Telecom,"Quận 1, TP Hồ Chí Minh",Nhân viên,"Manual Testing, Selenium, Postman, JIRA",Thạc sĩ,2026-04-17
+Kỹ sư DevOps / Cloud,Viettel Telecom,TP Hồ Chí Minh,Senior,"Manual Testing, Selenium, Postman, JIRA",Kỹ sư,2026-04-25
+Trưởng nhóm Kỹ thuật (Tech Lead),VNPT IT,Đà Nẵng,Nhân viên,"Architecture, Microservices, Leadership, CI/CD",Kỹ sư,2026-04-25
+Chuyên viên Phân tích Dữ liệu,Momo (M-Service),"Cầu Giấy, Hà Nội",Chuyên viên,"Manual Testing, Selenium, Postman, JIRA",Thạc sĩ,2026-04-06
+Nhân viên Kiểm thử Phần mềm (QA/QC),Momo (M-Service),"Quận 1, TP Hồ Chí Minh",Chuyên viên,"Manual Testing, Selenium, Postman, JIRA",Kỹ sư,2026-04-28
+Kỹ sư Lập trình Java,Tập đoàn FPT,Cần Thơ,Fresher,"ReactJS, JavaScript, HTML5, CSS3",Cao đẳng,2026-04-20
+Frontend React Developer,Momo (M-Service),"Cầu Giấy, Hà Nội",Senior,"Linux, Docker, Kubernetes, AWS",Kỹ sư,2026-04-24
+Kỹ sư Lập trình Java,VNPT IT,"Cầu Giấy, Hà Nội",Fresher,"Java, Spring Boot, Oracle, Docker",Cử nhân,2026-04-01
+Kỹ sư DevOps / Cloud,Viettel Telecom,TP Hồ Chí Minh,Nhân viên,"Python, SQL, Power BI, Excel",Cao đẳng,2026-04-03
+Chuyên viên An toàn Thông tin,VNG Corporation,Cần Thơ,Trưởng nhóm,"Python, SQL, Power BI, Excel",Đại học,2026-04-20
+Nhân viên Kiểm thử Phần mềm (QA/QC),KMS Technology,TP Hồ Chí Minh,Chuyên viên,"Python, SQL, Power BI, Excel",Thạc sĩ,2026-04-23
+Chuyên viên Phân tích Dữ liệu,Viettel Telecom,Hà Nội,Nhân viên,"ReactJS, JavaScript, HTML5, CSS3",Cử nhân,2026-04-19
+Kỹ sư DevOps / Cloud,Momo (M-Service),Đà Nẵng,Fresher,"ReactJS, JavaScript, HTML5, CSS3",Cử nhân,2026-04-10
+Kỹ sư DevOps / Cloud,Momo (M-Service),Bình Dương,Trưởng nhóm,"Architecture, Microservices, Leadership, CI/CD",Cử nhân,2026-04-03
+Chuyên viên An toàn Thông tin,Viettel Telecom,Đà Nẵng,Nhân viên,"ReactJS, JavaScript, HTML5, CSS3",Đại học,2026-04-11
+Trưởng nhóm Kỹ thuật (Tech Lead),VNPT IT,Bình Dương,Nhân viên,"Linux, Docker, Kubernetes, AWS",Cử nhân,2026-04-08
+Nhân viên Kiểm thử Phần mềm (QA/QC),VNG Corporation,Hà Nội,Trưởng nhóm,"ReactJS, JavaScript, HTML5, CSS3",Đại học,2026-04-07
+Kỹ sư DevOps / Cloud,VNPT IT,Bình Dương,Senior,"ReactJS, JavaScript, HTML5, CSS3",Cao đẳng,2026-04-21
+Frontend React Developer,Viettel Telecom,"Quận 1, TP Hồ Chí Minh",Senior,"Java, Spring Boot, Oracle, Docker",Cao đẳng,2026-04-05
+Trưởng nhóm Kỹ thuật (Tech Lead),Momo (M-Service),Hà Nội,Nhân viên,"Linux, Docker, Kubernetes, AWS",Cử nhân,2026-04-03
+Lập trình viên Python Backend,Viettel Telecom,"Cầu Giấy, Hà Nội",Fresher,"ReactJS, JavaScript, HTML5, CSS3",Cử nhân,2026-04-13
+Lập trình viên Python Backend,VNG Corporation,Hà Nội,Nhân viên,"Manual Testing, Selenium, Postman, JIRA",Thạc sĩ,2026-04-25
+Lập trình viên Python Backend,Tập đoàn FPT,Bình Dương,Nhân viên,"Architecture, Microservices, Leadership, CI/CD",Thạc sĩ,2026-04-12
+Lập trình viên Python Backend,VNG Corporation,Bình Dương,Senior,"Linux, Docker, Kubernetes, AWS",Thạc sĩ,2026-04-12
+Frontend React Developer,Momo (M-Service),"Cầu Giấy, Hà Nội",Trưởng nhóm,"Architecture, Microservices, Leadership, CI/CD",Đại học,2026-04-17
+Kỹ sư Lập trình Java,VNPT IT,TP Hồ Chí Minh,Nhân viên,"Architecture, Microservices, Leadership, CI/CD",Đại học,2026-04-27
+Nhân viên Kiểm thử Phần mềm (QA/QC),Tập đoàn FPT,"Quận 1, TP Hồ Chí Minh",Nhân viên,"Architecture, Microservices, Leadership, CI/CD",Thạc sĩ,2026-04-18
+Lập trình viên Python Backend,VNPT IT,Đà Nẵng,Senior,"Manual Testing, Selenium, Postman, JIRA",Kỹ sư,2026-04-17
+Trưởng nhóm Kỹ thuật (Tech Lead),VNPT IT,"Cầu Giấy, Hà Nội",Chuyên viên,"Java, Spring Boot, Oracle, Docker",Cử nhân,2026-04-20
+Chuyên viên An toàn Thông tin,Viettel Telecom,"Quận 1, TP Hồ Chí Minh",Trưởng nhóm,"Python, SQL, Power BI, Excel",Thạc sĩ,2026-04-15
+Chuyên viên An toàn Thông tin,Viettel Telecom,Hà Nội,Senior,"Python, SQL, Power BI, Excel",Thạc sĩ,2026-04-07
+Chuyên viên Phân tích Dữ liệu,Tập đoàn FPT,Bình Dương,Nhân viên,"Python, SQL, Power BI, Excel",Đại học,2026-04-28
+Trưởng nhóm Kỹ thuật (Tech Lead),VNG Corporation,Đà Nẵng,Chuyên viên,"Python, SQL, Power BI, Excel",Cử nhân,2026-04-08
+Lập trình viên Python Backend,Tiki Corporation,"Cầu Giấy, Hà Nội",Nhân viên,"Architecture, Microservices, Leadership, CI/CD",Cao đẳng,2026-04-13
+Kỹ sư Lập trình Java,VNPT IT,Hà Nội,Senior,"Manual Testing, Selenium, Postman, JIRA",Đại học,2026-04-24
+Kỹ sư DevOps / Cloud,Momo (M-Service),Bình Dương,Nhân viên,"Python, SQL, Power BI, Excel",Cao đẳng,2026-04-23
+Lập trình viên Python Backend,Tiki Corporation,"Quận 1, TP Hồ Chí Minh",Nhân viên,"Python, SQL, Power BI, Excel",Đại học,2026-04-20
+Frontend React Developer,Tập đoàn FPT,Cần Thơ,Fresher,"Manual Testing, Selenium, Postman, JIRA",Đại học,2026-04-13
+Lập trình viên Python Backend,Tập đoàn FPT,"Cầu Giấy, Hà Nội",Trưởng nhóm,"Python, SQL, Power BI, Excel",Cao đẳng,2026-04-20
+Chuyên viên An toàn Thông tin,Momo (M-Service),Đà Nẵng,Nhân viên,"Java, Spring Boot, Oracle, Docker",Thạc sĩ,2026-04-24
+Chuyên viên Phân tích Dữ liệu,Shopee Vietnam,Bình Dương,Fresher,"Architecture, Microservices, Leadership, CI/CD",Cử nhân,2026-04-03
+Kỹ sư DevOps / Cloud,VNPT IT,TP Hồ Chí Minh,Fresher,"Java, Spring Boot, Oracle, Docker",Thạc sĩ,2026-04-03
+Frontend React Developer,Shopee Vietnam,Bình Dương,Trưởng nhóm,"Architecture, Microservices, Leadership, CI/CD",Cao đẳng,2026-04-11

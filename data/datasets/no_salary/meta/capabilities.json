@@ -1,0 +1,69 @@
+{
+  "total_records": 80,
+  "min_coverage_threshold": 30.0,
+  "modules": {
+    "overview": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 80,
+      "reason": "Dữ liệu có 80 bản ghi",
+      "unlock_hint": ""
+    },
+    "hot_jobs": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 80,
+      "reason": "Đạt độ phủ 100.0% (80 dòng hợp lệ)",
+      "unlock_hint": ""
+    },
+    "salary": {
+      "enabled": false,
+      "coverage_pct": 0.0,
+      "n_rows": 0,
+      "reason": "Độ phủ 0.0% dưới ngưỡng 30.0% hoặc ít hơn 30 dòng",
+      "unlock_hint": "Cần ánh xạ cột mức lương (salary / mức thu nhập) có dữ liệu số hoặc dải lương"
+    },
+    "geo": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 80,
+      "reason": "Đạt độ phủ 100.0% (80 dòng hợp lệ)",
+      "unlock_hint": ""
+    },
+    "requirements": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 80,
+      "reason": "Đạt độ phủ yêu cầu tuyển dụng 100.0% (80 dòng)",
+      "unlock_hint": ""
+    },
+    "skills": {
+      "enabled": true,
+      "coverage_pct": 416.2,
+      "n_rows": 333,
+      "reason": "Đạt độ phủ kỹ năng 416.2% (333 dòng)",
+      "unlock_hint": ""
+    },
+    "trend": {
+      "enabled": true,
+      "coverage_pct": 100.0,
+      "n_rows": 80,
+      "reason": "Đạt độ phủ 100.0% (80 dòng hợp lệ)",
+      "unlock_hint": ""
+    },
+    "ml_salary": {
+      "enabled": false,
+      "coverage_pct": 0.0,
+      "n_rows": 0,
+      "reason": "Chỉ có 0 mẫu lương, chưa đủ tối thiểu 200 mẫu để train mô hình hồi quy",
+      "unlock_hint": "Cần bổ sung dữ liệu có thông tin mức lương rõ ràng để huấn luyện mô hình ML"
+    },
+    "ml_clustering": {
+      "enabled": false,
+      "coverage_pct": 100.0,
+      "n_rows": 80,
+      "reason": "Chưa đủ số lượng dữ liệu địa lý đa dạng để chạy gom cụm",
+      "unlock_hint": "Cần ít nhất 100 bản ghi kèm thông tin tỉnh/thành phố"
+    }
+  }
+}

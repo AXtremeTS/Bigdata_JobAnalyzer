@@ -1,0 +1,11 @@
+[
+  {
+    "total_jobs": 59306,
+    "unique_companies": 17958,
+    "unique_provinces": 203,
+    "pct_with_salary": 44.4,
+    "median_salary": 3500000000,
+    "p25_salary": 2600000000,
+    "p75_salary": 4500000000
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "total_records": 59306,
+  "overall_score": 100.0,
+  "grade": "A",
+  "duplicate_count": 0,
+  "duplicate_pct": 0.0,
+  "quarantine_count": 0,
+  "quarantine_pct": 0.0,
+  "field_completeness": {
+    "salary": {
+      "null_count": 33028,
+      "null_pct": 55.69,
+      "valid_pct": 44.31
+    },
+    "title": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "valid_pct": 100.0
+    }
+  },
+  "quarantine_reasons": {}
+}

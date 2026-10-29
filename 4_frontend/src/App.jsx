@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { animate, stagger } from 'animejs';
 import {
   ResponsiveContainer,
   BarChart,
@@ -49,6 +50,7 @@ import {
   Crosshair,
   SlidersHorizontal,
   Plus,
+  ArrowUp,
   ArrowUpRight,
   TrendingUp,
   Terminal,
@@ -111,6 +113,26 @@ export default function App() {
   const [loading, setLoading] = useState(true);
 
   // Real-time Search & State Explorer
+  const jobsScrollRef = useRef(null);
+  const [jobsScrollPercent, setJobsScrollPercent] = useState(0);
+
+  const handleJobsScroll = (e) => {
+    const { scrollTop, scrollHeight, clientHeight } = e.currentTarget;
+    const total = scrollHeight - clientHeight;
+    if (total > 0) {
+      setJobsScrollPercent(Math.min(100, Math.round((scrollTop / total) * 100)));
+    } else {
+      setJobsScrollPercent(0);
+    }
+  };
+
+  const scrollToTopJobs = () => {
+    if (jobsScrollRef.current) {
+      jobsScrollRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+
   const [jobsList, setJobsList] = useState([]);
   const [selectedJob, setSelectedJob] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
@@ -581,6 +603,54 @@ export default function App() {
     posted_date: '2026-03-24'
   };
 
+  // Anime.js scroll and entrance animation for dedicated jobs window
+  useEffect(() => {
+    if (activeTab !== 'jobs') return;
+
+    const container = jobsScrollRef.current;
+    if (!container) return;
+
+    // Initial stagger entrance for cards
+    const cards = container.querySelectorAll('.job-card-animated');
+    if (cards.length > 0) {
+      animate(cards, {
+        opacity: [0.15, 1],
+        translateY: [14, 0],
+        scale: [0.99, 1],
+        delay: stagger(25, { start: 15 }),
+        duration: 350,
+        ease: 'outCubic',
+      });
+    }
+
+    // Dynamic in/out scroll animation with IntersectionObserver
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animate(entry.target, {
+              opacity: [0.35, 1],
+              translateY: [12, 0],
+              scale: [0.99, 1],
+              duration: 280,
+              ease: 'outCubic',
+            });
+          }
+        });
+      },
+      {
+        root: container,
+        threshold: 0.05,
+      }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [activeTab, filteredJobs, filterMode, selectedState]);
+
   return (
     <div className="fullpage-app">
       
@@ -696,7 +766,8 @@ export default function App() {
       </header>
 
       {/* 2. Main Fullpage Workspace */}
-      <div className="workspace-fullpage">
+      <div className={`workspace-fullpage ${activeTab === 'jobs' ? 'jobs-layout' : ''}`}>
+
 
         {/* ========================================================================= */}
         {/* TAB 1: KHẢO SÁT VIỆC LÀM & BẢN ĐỒ TỈNH/BANG (FULLPAGE EDITORIAL LAYOUT)     */}
@@ -767,15 +838,27 @@ export default function App() {
                 </div>
               </div>
 
-              {/* Scrollable Job Cards Flow */}
-              <div className="jobs-cards-flow">
+              {/* Scroll progress indicator for the dedicated jobs window */}
+              <div className="jobs-window-progress-track">
+                <div
+                  className="jobs-window-progress-bar"
+                  style={{ width: `${jobsScrollPercent}%` }}
+                />
+              </div>
+
+              {/* Dedicated Internal Scrollable Jobs Area */}
+              <div
+                ref={jobsScrollRef}
+                onScroll={handleJobsScroll}
+                className="jobs-cards-flow"
+              >
                 {filteredJobs.map((job) => {
                   const isSelected = activeJob.id === job.id;
 
                   // ACTIVE CARD: Claude Dark Navy Product Surface (#181715)
                   if (isSelected) {
                     return (
-                      <div key={job.id} className="job-card-active-claude">
+                      <div key={job.id} className="job-card-active-claude job-card-animated">
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                           <div>
                             <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.2rem', fontWeight: 500, color: 'var(--colors-on-dark)', lineHeight: 1.2 }}>
@@ -851,7 +934,7 @@ export default function App() {
                   return (
                     <div
                       key={job.id}
-                      className="job-card-claude"
+                      className="job-card-claude job-card-animated"
                       onClick={() => setSelectedJob(job)}
                     >
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -875,6 +958,20 @@ export default function App() {
                     Không tìm thấy việc làm phù hợp với tiêu chí lọc.
                   </div>
                 )}
+              </div>
+
+              {/* Dedicated Window Status & Quick Navigation Footer */}
+              <div className="jobs-window-footer">
+                <span>Hiển thị <b>{filteredJobs.length}</b> vị trí</span>
+                <button
+                  type="button"
+                  onClick={scrollToTopJobs}
+                  className="jobs-scroll-top-btn"
+                  title="Cuộn về đầu danh sách"
+                >
+                  <ArrowUp size={12} />
+                  <span>Đầu trang</span>
+                </button>
               </div>
             </aside>
 

@@ -1,0 +1,196 @@
+%% JobMarket Intelligence - Full Airflow and application workflow
+%% Render with Mermaid Live Editor, GitHub, or a Mermaid-compatible VS Code extension.
+%% Direction: top -> bottom. Orange nodes are data products; blue nodes are processing;
+%% green nodes are serving/UI; red nodes are validation branches.
+
+flowchart TD
+    U["Nguoi dung / Data Engineer"] --> SRC["Dataset CSV<br/>VietJobs.csv hoac CSV upload"]
+    SRC --> PRE["Kiem tra moi truong<br/>Python + Java + Hadoop + Spark"]
+    PRE --> HDFS_START["Khoi dong HDFS<br/>1 NameNode + 3 DataNodes<br/>Replication = 3"]
+
+    subgraph HDFS["1_infrastructure - Cum luu tru HDFS"]
+        NN["NameNode<br/>RPC 9000<br/>Web UI 9870<br/>Quan ly metadata"]
+        DN1["DataNode 1<br/>Data port 9866"]
+        DN2["DataNode 2<br/>Data port 9876"]
+        DN3["DataNode 3<br/>Data port 9886"]
+        NN --> DN1
+        NN --> DN2
+        NN --> DN3
+    end
+    HDFS_START --> NN
+
+    subgraph AIRFLOW["Airflow DAG: jobmarket_intelligence_pipeline"]
+        A0["validate_input<br/>BashOperator<br/>Kiem tra CSV ton tai"]
+        A1["ingest_raw_hdfs<br/>BashOperator<br/>hdfs dfs -put"]
+        A2["tang1_ingest<br/>BashOperator<br/>Chay tang1_job.py"]
+        A3["profile_and_map<br/>BashOperator<br/>Profiler + adaptive schema"]
+        A4["tang2_cleaning<br/>BashOperator<br/>Chay tang2_job.py"]
+        A5{"quality_gate<br/>Doc data/meta/quality.json<br/>Score >= 60?"}
+        AQ["quarantine_alert<br/>Canh bao du lieu loi<br/>HDFS /quarantine/jobs"]
+        A6["tang3_sql_analytics<br/>TaskGroup<br/>Chay tang3_job.py"]
+        A7{"ml_eligibility_check<br/>Doc capabilities.json<br/>ML salary enabled?"}
+        A8["tang3_spark_mllib<br/>Chay ml.py<br/>Random Forest + K-Means"]
+        AS["skip_mllib<br/>Khong du mau luong<br/>Bo qua huan luyen"]
+        AD["notify_pipeline_completed<br/>Thong bao ket thuc"]
+
+        A0 --> A1 --> A2 --> A3 --> A4 --> A5
+        A5 -->|Dat| A6
+        A5 -->|Khong dat| AQ
+        A6 --> A7
+        A7 -->|Du dieu kien| A8
+        A7 -->|Khong du| AS
+        A8 --> AD
+        AS --> AD
+        AQ --> AD
+    end
+    SRC --> A0
+    NN --> A1
+
+    subgraph TANG1["2_pipeline/tang1_ingest - TANG 1: INGESTION"]
+        T1R["Spark CSV Reader<br/>header + multiline + escape"]
+        T1N["normalize_column_name<br/>Doi ten cot ve snake_case"]
+        T1M["Them metadata lineage<br/>_row_id<br/>_source_file<br/>_ingest_ts"]
+        T1W["Ghi Parquet Snappy<br/>HDFS /tang1/jobs"]
+        T1R --> T1N --> T1M --> T1W
+    end
+    A2 --> T1R
+    T1W --> A3
+
+    subgraph PROFILE["Profiling va Adaptive Schema"]
+        P1["Doc schema + mau gia tri"]
+        P2["sniffer.py<br/>Encoding + delimiter + header"]
+        P3["mapper.py<br/>Alias -> canonical fields"]
+        P4["Ghi profile.json<br/>mapping.json<br/>market.json"]
+        P1 --> P2 --> P3 --> P4
+    end
+    A3 --> P1
+    P4 --> A4
+
+    subgraph TANG2["2_pipeline/tang2_cleaning - TANG 2: CLEANING"]
+        T2R["Doc Parquet TANG 1<br/>HDFS /tang1/jobs"]
+        T2C["Spark Catalyst Native<br/>col / when / regexp / trim / coalesce"]
+        T2N["Chuan hoa noi dung<br/>title, location, salary, experience,<br/>skills, education, application, date"]
+        T2Q["Quality Audit<br/>null + duplicate + quarantine"]
+        T2G{"Ban ghi co tieu de hop le?"}
+        T2X["Quarantine Parquet<br/>HDFS /quarantine/jobs"]
+        T2W["Dữ liệu sạch<br/>Parquet partitionBy region<br/>HDFS /tang2/jobs"]
+        T2META["Sinh metadata<br/>data/meta/quality.json<br/>data/meta/capabilities.json"]
+        T2R --> T2C --> T2N --> T2Q --> T2G
+        T2G -->|Khong hop le| T2X
+        T2G -->|Hop le| T2W --> T2META
+    end
+    A4 --> T2R
+    T2META --> A5
+    T2W --> A6
+
+    subgraph TANG3["2_pipeline/tang3_analytics - TANG 3: ANALYTICS"]
+        T3R["Doc TANG 2<br/>Dang ky temp view tang2_jobs"]
+        SQL["Spark SQL<br/>01 overview<br/>02 hot jobs<br/>03 salary<br/>04 geo<br/>05 requirements<br/>06 skills<br/>07 companies<br/>08 year<br/>09 month<br/>10 hot jobs by geo"]
+        T3H["Ghi Parquet metrics<br/>HDFS /tang3/jobs/&lt;metric&gt;"]
+        T3J["Collect DataFrame<br/>Xuat JSON Serving Store"]
+        T3R --> SQL --> T3H
+        SQL --> T3J
+    end
+    A6 --> T3R
+    T3J --> A7
+
+    subgraph MLLIB["Spark MLlib"]
+        M1["Loc mau luong hop le<br/>Loai negotiable / outlier"]
+        M2["Feature preparation<br/>StringIndexer<br/>OneHotEncoder<br/>VectorAssembler"]
+        M3["RandomForestRegressor<br/>Du doan salary_monthly_vnd"]
+        M4["RegressionEvaluator<br/>RMSE + MAE + R2 + baseline"]
+        M5["Group theo province<br/>job_count + avg_salary + avg_exp"]
+        M6["StandardScaler + KMeans k=3"]
+        M7["ClusteringEvaluator<br/>Silhouette score"]
+        M8["Xuat ml_metrics.json<br/>Xuat ml_clusters.json"]
+        M1 --> M2 --> M3 --> M4 --> M8
+        M5 --> M6 --> M7 --> M8
+    end
+    A8 --> M1
+    T2W --> M1
+
+    subgraph SERVE["Serving Store - ket qua phuc vu"]
+        J1["data/tang3/*.json<br/>Dataset mac dinh"]
+        J2["data/datasets/&lt;dataset_id&gt;/tang3/*.json<br/>Dataset upload"]
+        J3["data/meta/*.json<br/>Quality + capabilities + profile"]
+    end
+    T3J --> J1
+    T3J --> J2
+    T2META --> J3
+    M8 --> J1
+    M8 --> J2
+
+    subgraph API["3_backend - FastAPI :8000"]
+        B1["GET /api/datasets<br/>Chon dataset"]
+        B2["GET /api/datasets/{id}/insights/{module}<br/>Doc JSON + filter year/month"]
+        B3["GET /api/datasets/{id}/jobs<br/>Tim kiem + loc jobs"]
+        B4["GET /api/health<br/>Probe HDFS CLI that"]
+        B5["POST /api/datasets/{id}/predict-salary<br/>ML estimator request"]
+        B6["POST /api/datasets/upload<br/>Nhan CSV + tao dataset_id/job_id"]
+        B7["Pipeline job database<br/>pipeline_jobs.sqlite3"]
+        B8["SSE /events<br/>queued -> progress -> completed/failed"]
+    end
+    J1 --> B1
+    J1 --> B2
+    J2 --> B1
+    J2 --> B2
+    J3 --> B2
+    NN --> B4
+    B6 --> B7
+    B7 --> B8
+    B6 -->|"Stage file vao HDFS raw"| NN
+    B6 -->|"Goi run_uploaded_hdfs_pipeline"| A0
+    B5 --> J1
+
+    subgraph UI["4_frontend - React/Vite :5173"]
+        F0["App.jsx<br/>State + fetch API + navigation"]
+        F1["Job Explorer<br/>Search + detail + skills + education"]
+        F2["Analytics<br/>KPI + salary + geo + hot jobs + skills"]
+        F3["Time filters<br/>Year + month + province/state"]
+        F4["ML Estimator<br/>Input -> predict salary"]
+        F5["Upload Pipeline<br/>Drag/drop CSV + progress"]
+        F6["HDFS Cluster<br/>NameNode + 3 DataNodes health"]
+        F0 --> F1
+        F0 --> F2
+        F0 --> F3
+        F0 --> F4
+        F0 --> F5
+        F0 --> F6
+    end
+    B1 --> F0
+    B2 --> F2
+    B2 --> F3
+    B3 --> F1
+    B4 --> F6
+    B5 --> F4
+    F5 --> B6
+    B8 --> F5
+
+    subgraph OPS["Van hanh va kiem chung"]
+        O1["run_all.ps1 -Step hdfs"]
+        O2["run_all.ps1 -Step pipeline"]
+        O3["run_all.ps1 -Step backend"]
+        O4["run_all.ps1 -Step frontend"]
+        O5["run_all.ps1 -Step status / inventory"]
+        O1 --> O2 --> O3 --> O4
+        O5 -.-> NN
+        O5 -.-> T1W
+        O5 -.-> T2W
+        O5 -.-> T3H
+    end
+
+    classDef source fill:#FFF1E6,stroke:#E87524,color:#1F2933,stroke-width:2px;
+    classDef process fill:#EEF6FF,stroke:#3B82F6,color:#1F2933;
+    classDef data fill:#EAF7EF,stroke:#22A06B,color:#1F2933;
+    classDef branch fill:#FFF7D6,stroke:#B7791F,color:#1F2933,stroke-width:2px;
+    classDef serving fill:#EDE9FE,stroke:#7C3AED,color:#1F2933;
+    classDef ui fill:#FCE7F3,stroke:#DB2777,color:#1F2933;
+    classDef alert fill:#FEE2E2,stroke:#DC2626,color:#1F2933;
+
+    class U,SRC source;
+    class PRE,HDFS_START,A0,A1,A2,A3,A4,A6,A8,T1R,T1N,T1M,T2R,T2C,T2N,T2Q,T3R,SQL,M1,M2,M3,M4,M5,M6,M7,B1,B2,B3,B4,B5,B6,B7,B8,O1,O2,O3,O4,O5 process;
+    class NN,DN1,DN2,DN3,T1W,T2W,T3H,J1,J2,J3,M8 data;
+    class A5,A7,T2G branch;
+    class AQ,T2X,AS alert;
+    class F0,F1,F2,F3,F4,F5,F6 ui;
+    class P1,P2,P3,P4,T2META,AD serving;

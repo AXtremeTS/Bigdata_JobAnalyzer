@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { animate, stagger } from 'animejs';
 import {
   ResponsiveContainer,
   BarChart,
@@ -8,7 +9,12 @@ import {
   Tooltip,
   AreaChart,
   Area,
-  CartesianGrid
+  CartesianGrid,
+  LineChart,
+  Line,
+  PieChart,
+  Pie,
+  Cell
 } from 'recharts';
 import {
   Server,
@@ -44,6 +50,7 @@ import {
   Crosshair,
   SlidersHorizontal,
   Plus,
+  ArrowUp,
   ArrowUpRight,
   TrendingUp,
   Terminal,
@@ -61,6 +68,24 @@ function AnthropicSpike({ size = 18, color = "currentColor" }) {
   );
 }
 
+function ChartTooltip({ active, payload, label }) {
+  if (!active || !payload?.length) return null;
+  return (
+    <div className="chart-tooltip">
+      <div className="chart-tooltip-label">{label}</div>
+      {payload.map((entry, index) => (
+        <div className="chart-tooltip-row" key={`${entry.dataKey || entry.name}-${index}`}>
+          <span className="chart-tooltip-key">
+            <span className="chart-tooltip-swatch" style={{ background: entry.color || 'var(--orange)' }} />
+            {entry.name || entry.dataKey}
+          </span>
+          <strong>{typeof entry.value === 'number' ? entry.value.toLocaleString('vi-VN') : entry.value}</strong>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default function App() {
   // Navigation tabs: 'jobs' (Reference View), 'graphs' (Deep Charts Hub), 'ml' (Estimator), 'pipeline' (CSV Upload), 'cluster' (HDFS 3 DataNodes)
   const [activeTab, setActiveTab] = useState('jobs');
@@ -72,6 +97,7 @@ export default function App() {
   // Insights Data
   const [overview, setOverview] = useState(null);
   const [hotJobs, setHotJobs] = useState([]);
+  const [hotJobsByGeo, setHotJobsByGeo] = useState([]);
   const [salaryByLevel, setSalaryByLevel] = useState([]);
   const [geoData, setGeoData] = useState([]);
   const [requirements, setRequirements] = useState([]);
@@ -81,13 +107,38 @@ export default function App() {
   const [capabilities, setCapabilities] = useState(null);
   const [market, setMarket] = useState(null);
   const [mlMetrics, setMlMetrics] = useState(null);
+  const [yearDistribution, setYearDistribution] = useState([]);
+  const [monthDistribution, setMonthDistribution] = useState([]);
+  const [clusterHealth, setClusterHealth] = useState(null);
   const [loading, setLoading] = useState(true);
 
   // Real-time Search & State Explorer
+  const jobsScrollRef = useRef(null);
+  const [jobsScrollPercent, setJobsScrollPercent] = useState(0);
+
+  const handleJobsScroll = (e) => {
+    const { scrollTop, scrollHeight, clientHeight } = e.currentTarget;
+    const total = scrollHeight - clientHeight;
+    if (total > 0) {
+      setJobsScrollPercent(Math.min(100, Math.round((scrollTop / total) * 100)));
+    } else {
+      setJobsScrollPercent(0);
+    }
+  };
+
+  const scrollToTopJobs = () => {
+    if (jobsScrollRef.current) {
+      jobsScrollRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+
   const [jobsList, setJobsList] = useState([]);
   const [selectedJob, setSelectedJob] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedState, setSelectedState] = useState('ALL');
+  const [selectedYear, setSelectedYear] = useState('ALL');
+  const [selectedMonth, setSelectedMonth] = useState('ALL');
   const [filterMode, setFilterMode] = useState('hot'); // 'hot', 'all', 'high_salary'
   const [stateCounts, setStateCounts] = useState({});
 
@@ -110,6 +161,10 @@ export default function App() {
   // Initial load
   useEffect(() => {
     fetchInitialData('vietjobs');
+    fetch(`${API_BASE}/health`)
+      .then((response) => response.ok ? response.json() : null)
+      .then(setClusterHealth)
+      .catch(() => setClusterHealth(null));
   }, []);
 
   const showToast = (message) => {
@@ -125,6 +180,7 @@ export default function App() {
         resDatasets,
         resOverview,
         resHotJobs,
+        resHotJobsByGeo,
         resSalary,
         resGeo,
         resReq,
@@ -134,11 +190,14 @@ export default function App() {
         resCaps,
         resMarket,
         resMl,
+        resYears,
+        resMonths,
         resJobs
       ] = await Promise.all([
         fetch(`${API_BASE}/datasets`).then(r => r.json()).catch(() => []),
         fetch(`${API_BASE}/datasets/${datasetId}/insights/overview`).then(r => r.json()).catch(() => []),
         fetch(`${API_BASE}/datasets/${datasetId}/insights/hot_jobs`).then(r => r.json()).catch(() => []),
+        fetch(`${API_BASE}/datasets/${datasetId}/insights/hot_jobs_by_geo`).then(r => r.json()).catch(() => []),
         fetch(`${API_BASE}/datasets/${datasetId}/insights/salary_by_level`).then(r => r.json()).catch(() => []),
         fetch(`${API_BASE}/datasets/${datasetId}/insights/geo_distribution`).then(r => r.json()).catch(() => []),
         fetch(`${API_BASE}/datasets/${datasetId}/insights/requirements`).then(r => r.json()).catch(() => []),
@@ -148,21 +207,26 @@ export default function App() {
         fetch(`${API_BASE}/datasets/${datasetId}/capabilities`).then(r => r.json()).catch(() => null),
         fetch(`${API_BASE}/datasets/${datasetId}/market`).then(r => r.json()).catch(() => null),
         fetch(`${API_BASE}/datasets/${datasetId}/insights/ml_metrics`).then(r => r.json()).catch(() => null),
+        fetch(`${API_BASE}/datasets/${datasetId}/insights/year_distribution`).then(r => r.json()).catch(() => []),
+        fetch(`${API_BASE}/datasets/${datasetId}/insights/month_distribution`).then(r => r.json()).catch(() => []),
         fetch(`${API_BASE}/datasets/${datasetId}/jobs?limit=80`).then(r => r.json()).catch(() => ({ jobs: [], state_counts: {} })),
       ]);
 
       if (Array.isArray(resDatasets)) setDatasetsList(resDatasets);
       if (resOverview && resOverview.length > 0) setOverview(resOverview[0]);
       setHotJobs(resHotJobs || []);
+      setHotJobsByGeo(Array.isArray(resHotJobsByGeo) ? resHotJobsByGeo : []);
       setSalaryByLevel(resSalary || []);
       setGeoData(resGeo || []);
       setRequirements(resReq || []);
-      setTopSkills(resSkills || []);
+      setTopSkills(Array.isArray(resSkills) ? resSkills : []);
       setTopCompanies(resComps || []);
       setQuality(resQuality);
       setCapabilities(resCaps);
       setMarket(resMarket);
       setMlMetrics(resMl);
+      setYearDistribution(resYears || []);
+      setMonthDistribution(Array.isArray(resMonths) ? resMonths : []);
 
       // Jobs and initial selection
       const loadedJobs = resJobs?.jobs || [];
@@ -182,16 +246,48 @@ export default function App() {
   const handleSwitchDataset = async (datasetId) => {
     setSelectedDataset(datasetId);
     setSelectedState('ALL');
+    setSelectedYear('ALL');
+    setSelectedMonth('ALL');
     setSearchQuery('');
     await fetchInitialData(datasetId);
     showToast(`Đã chuyển sang tập dữ liệu: ${datasetId.toUpperCase()}`);
+  };
+
+  // Load the complete set for a selected province. The overview count is
+  // computed from all rows, while the initial dashboard list is intentionally
+  // capped for the hot-jobs view.
+  const handleStateChange = async (state) => {
+    setSelectedState(state);
+    setSearchQuery('');
+    setFilterMode(state === 'ALL' ? 'hot' : 'all');
+
+    try {
+      const params = new URLSearchParams({ limit: state === 'ALL' ? '80' : '1000' });
+      if (state !== 'ALL') params.set('state', state);
+      if (selectedYear !== 'ALL') params.set('year', selectedYear);
+      if (selectedMonth !== 'ALL') params.set('month', selectedMonth);
+      const response = await fetch(`${API_BASE}/datasets/${selectedDataset}/jobs?${params.toString()}`);
+      if (!response.ok) throw new Error(`Jobs request failed: ${response.status}`);
+      const result = await response.json();
+      const loadedJobs = result?.jobs || [];
+      setJobsList(loadedJobs);
+      setSelectedJob(loadedJobs[0] || null);
+    } catch (err) {
+      console.error('Failed to load jobs for selected state:', err);
+      showToast('Không thể tải danh sách việc làm của tỉnh đã chọn.');
+      setJobsList([]);
+      setSelectedJob(null);
+    }
   };
 
   // Filter Jobs in Master List
   const filteredJobs = useMemo(() => {
     return jobsList.filter(job => {
       // 1. Filter by State
-      if (selectedState !== 'ALL') {
+      // Province selection is already applied by the API. Do not apply a
+      // second client-side string comparison because multi-location rows and
+      // normalized province labels can use different representations.
+      if (selectedState !== 'ALL' && jobsList.length === 0) {
         const jobState = (job.state || job.location || '').toLowerCase();
         if (!jobState.includes(selectedState.toLowerCase())) return false;
       }
@@ -208,14 +304,90 @@ export default function App() {
 
       // 3. Filter by Segmented Pill
       if (filterMode === 'hot') {
-        return (job.hot_score || 0) >= 80 || job.status === 'HOT HIRING';
+        const hasHotSignal = Number(job.hot_score) > 0 || job.status === 'HOT HIRING';
+        if (hasHotSignal && !((job.hot_score || 0) >= 80 || job.status === 'HOT HIRING')) return false;
       } else if (filterMode === 'high_salary') {
-        return (job.salary_vnd && job.salary_vnd >= 25000000) || (job.salary || '').includes('triệu') || (job.salary || '').includes('$');
+        const hasHighSalary = (job.salary_vnd && job.salary_vnd >= 25000000)
+          || (job.salary || '').includes('triệu')
+          || (job.salary || '').includes('$');
+        if (!hasHighSalary) return false;
+      }
+
+      if (selectedYear !== 'ALL' && String(job.posted_year || '') !== String(selectedYear)) {
+        return false;
+      }
+      if (selectedMonth !== 'ALL' && String(job.posted_month || '') !== String(selectedMonth)) {
+        return false;
       }
 
       return true;
     });
-  }, [jobsList, selectedState, searchQuery, filterMode]);
+  }, [jobsList, selectedState, searchQuery, filterMode, selectedYear, selectedMonth]);
+
+  const availableYears = useMemo(() => {
+    const years = yearDistribution
+      .map(row => Number(row.year))
+      .filter(year => Number.isInteger(year) && year > 1900);
+    if (years.length > 0) return [...new Set(years)].sort((a, b) => b - a);
+    return [...new Set(jobsList.map(job => Number(job.posted_year)).filter(year => year > 1900))]
+      .sort((a, b) => b - a);
+  }, [yearDistribution, jobsList]);
+
+  const availableMonths = useMemo(() => {
+    const months = monthDistribution
+      .map(row => Number(row.month))
+      .filter(month => Number.isInteger(month) && month >= 1 && month <= 12);
+    if (months.length > 0) return [...new Set(months)].sort((a, b) => a - b);
+    return [...new Set(jobsList.map(job => Number(job.posted_month)).filter(month => month >= 1 && month <= 12))]
+      .sort((a, b) => a - b);
+  }, [monthDistribution, jobsList]);
+
+  const chartSalaryData = useMemo(() => salaryByLevel.map(row => ({
+    ...row,
+    segment: row.segment || row.level || 'Vai trò phổ thông',
+    median_salary: Number(row.median_salary ?? row.median_salary_vnd ?? 0),
+    max_salary: Number(row.max_salary ?? row.max_salary_vnd ?? 0),
+    p25_salary: Number(row.p25_salary ?? row.p25_salary_vnd ?? 0),
+    p75_salary: Number(row.p75_salary ?? row.p75_salary_vnd ?? 0)
+  })).filter(row => row.median_salary > 0), [salaryByLevel]);
+
+  const chartSkillsData = useMemo(() => {
+    if (topSkills.length > 0) return topSkills;
+    const counts = new Map();
+    jobsList.forEach(job => (job.skills || []).forEach(skill => {
+      const cleanSkill = String(skill || '').trim();
+      if (cleanSkill) counts.set(cleanSkill, (counts.get(cleanSkill) || 0) + 1);
+    }));
+    const total = jobsList.length || 1;
+    return [...counts.entries()]
+      .map(([skill, frequency]) => ({
+        skill,
+        frequency,
+        prevalence_pct: Number((frequency * 100 / total).toFixed(2))
+      }))
+      .sort((a, b) => b.frequency - a.frequency);
+  }, [topSkills, jobsList]);
+
+  const chartHotJobsData = useMemo(() => {
+    const source = selectedState === 'ALL'
+      ? hotJobsByGeo
+      : hotJobsByGeo.filter(row => String(row.province || '').toLowerCase() === String(selectedState).toLowerCase());
+    const grouped = new Map();
+    source.forEach(row => {
+      const title = row.job_title || 'Không có tiêu đề';
+      const current = grouped.get(title) || { title, job_count: 0, application_count: 0 };
+      current.job_count += Number(row.job_count || 0);
+      current.application_count += Number(row.application_count || 0);
+      grouped.set(title, current);
+    });
+    const hasApplications = [...grouped.values()].some(row => row.application_count > 0);
+    return [...grouped.values()]
+      .sort((a, b) => b.application_count - a.application_count || b.job_count - a.job_count)
+      .slice(0, 10)
+      .map(row => ({ ...row, metric: hasApplications ? row.application_count : row.job_count }));
+  }, [hotJobsByGeo, selectedState]);
+  const hasApplicationData = chartHotJobsData.some(row => row.application_count > 0);
+  const hotJobsMetricName = hasApplicationData ? 'Lượt ứng tuyển' : 'Số tin đăng';
 
   // Unique States list with accurate counts from geoData & stateCounts
   const availableStates = useMemo(() => {
@@ -254,14 +426,56 @@ export default function App() {
     };
   }, [selectedState, availableStates, overview, market]);
 
+  const handleTimeChange = async (year, month) => {
+    setSelectedYear(year);
+    setSelectedMonth(month);
+    const query = new URLSearchParams({ limit: '1000' });
+    if (selectedState !== 'ALL') query.set('state', selectedState);
+    if (year !== 'ALL') query.set('year', year);
+    if (month !== 'ALL') query.set('month', month);
+    try {
+      const insightQuery = new URLSearchParams();
+      if (year !== 'ALL') insightQuery.set('year', year);
+      if (month !== 'ALL') insightQuery.set('month', month);
+      const insightModules = ['overview', 'hot_jobs', 'hot_jobs_by_geo', 'salary_by_level', 'geo_distribution', 'requirements', 'top_skills', 'top_companies'];
+      const [result, ...insights] = await Promise.all([
+        fetch(`${API_BASE}/datasets/${selectedDataset}/jobs?${query.toString()}`).then(response => {
+          if (!response.ok) throw new Error(`Jobs request failed: ${response.status}`);
+          return response.json();
+        }),
+        ...insightModules.map(module =>
+          fetch(`${API_BASE}/datasets/${selectedDataset}/insights/${module}?${insightQuery.toString()}`)
+            .then(response => response.ok ? response.json() : [])
+        )
+      ]);
+      const loadedJobs = result?.jobs || [];
+      setJobsList(loadedJobs);
+      setSelectedJob(loadedJobs[0] || null);
+      const [filteredOverview, filteredHotJobs, filteredHotJobsByGeo, filteredSalary, filteredGeo, filteredRequirements, filteredSkills, filteredCompanies] = insights;
+      if (Array.isArray(filteredOverview) && filteredOverview.length) setOverview(filteredOverview[0]);
+      setHotJobs(Array.isArray(filteredHotJobs) ? filteredHotJobs : []);
+      setHotJobsByGeo(Array.isArray(filteredHotJobsByGeo) ? filteredHotJobsByGeo : []);
+      setSalaryByLevel(Array.isArray(filteredSalary) ? filteredSalary : []);
+      setGeoData(Array.isArray(filteredGeo) ? filteredGeo : []);
+      setRequirements(Array.isArray(filteredRequirements) ? filteredRequirements : []);
+      setTopSkills(Array.isArray(filteredSkills) ? filteredSkills : []);
+      setTopCompanies(Array.isArray(filteredCompanies) ? filteredCompanies : []);
+    } catch (err) {
+      console.error('Failed to load jobs for selected time:', err);
+      showToast('Không thể tải dữ liệu theo thời gian đã chọn.');
+    }
+  };
+
   // Salary Formatter
   function formatSalary(amountVND) {
     if (!amountVND || amountVND <= 0) return 'Thỏa thuận / Chưa công khai';
-    const isUSD = market?.currency === 'USD';
-    if (isUSD) {
-      const usdMonthly = Math.round(amountVND / 25410);
-      return `$${usdMonthly.toLocaleString('en-US')}/tháng (~$${(usdMonthly * 12).toLocaleString('en-US')}/yr)`;
+    const currencyRates = { USD: 25410, MYR: 5500, SGD: 19000, GBP: 32000 };
+    const currency = market?.currency || 'VND';
+    if (currencyRates[currency]) {
+      const localAmount = Math.round(amountVND / currencyRates[currency]);
+      return `${currency} ${localAmount.toLocaleString('en-US')}/tháng`;
     }
+
     return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND', maximumFractionDigits: 0 }).format(amountVND);
   }
 
@@ -274,19 +488,7 @@ export default function App() {
     }
 
     setUploading(true);
-    setPipelineProgress({ step: 1, stepName: '1. Khảo sát tệp tin CSV & mã hoá UTF-8', pct: 20 });
-
-    const t1 = setTimeout(() => {
-      setPipelineProgress({ step: 2, stepName: '2. Ánh xạ ngữ nghĩa cột dữ liệu (Semantic Mapping)', pct: 45 });
-    }, 300);
-
-    const t2 = setTimeout(() => {
-      setPipelineProgress({ step: 3, stepName: '3. Nhận diện quốc gia & Tiền tệ (Market Detection)', pct: 70 });
-    }, 600);
-
-    const t3 = setTimeout(() => {
-      setPipelineProgress({ step: 4, stepName: '4. Chuẩn hoá dữ liệu & Tổng hợp 7 Bảng Gold SQL', pct: 90 });
-    }, 900);
+    setPipelineProgress({ step: 0, stepName: 'Đang xếp hàng chờ xử lý...', pct: 0 });
 
     const formData = new FormData();
     formData.append('file', file);
@@ -297,23 +499,39 @@ export default function App() {
         body: formData
       });
       const result = await res.json();
+      if (!res.ok || !result.job_id) throw new Error(result.detail || 'Upload failed');
 
-      clearTimeout(t1);
-      clearTimeout(t2);
-      clearTimeout(t3);
-
-      if (result.status === 'success') {
-        setPipelineProgress({
-          step: 5,
-          stepName: `Hoàn tất! Xử lý ${result.records_processed?.toLocaleString('vi-VN')} bản ghi trong ${result.duration_seconds}s`,
-          pct: 100
+      await new Promise((resolve, reject) => {
+        const events = new EventSource(`${API_BASE}/pipeline/jobs/${result.job_id}/events`);
+        const handleEvent = (event) => {
+          const payload = JSON.parse(event.data);
+          setPipelineProgress({
+            step: payload.status === 'completed' ? 5 : 1,
+            stepName: payload.step || 'Đang xử lý pipeline qua HDFS và Spark...',
+            pct: payload.progress || 0
+          });
+          if (payload.status === 'completed') {
+            events.close();
+            setPipelineResult(payload.result);
+            setSelectedDataset(payload.result.dataset_id);
+            fetchInitialData(payload.result.dataset_id).then(() => {
+              setActiveTab('jobs');
+              showToast(`Đã xử lý ${payload.result.records_processed?.toLocaleString('vi-VN')} bản ghi.`);
+              resolve();
+            }).catch(reject);
+          } else if (payload.status === 'failed' || payload.status === 'cancelled') {
+            events.close();
+            reject(new Error(payload.error || 'Pipeline không hoàn tất'));
+          }
+        };
+        ['queued', 'progress', 'completed', 'failed', 'cancelled'].forEach((eventName) => {
+          events.addEventListener(eventName, handleEvent);
         });
-        setPipelineResult(result);
-        setSelectedDataset(result.dataset_id);
-        await fetchInitialData(result.dataset_id);
-        setActiveTab('jobs');
-        showToast(`🎉 Pipeline đã lọc và sinh kết quả mới cho ${result.records_processed} việc làm!`);
-      }
+        events.onerror = () => {
+          events.close();
+          reject(new Error('Mất kết nối theo dõi pipeline'));
+        };
+      });
     } catch (err) {
       console.error("Upload error:", err);
       alert("Lỗi kết nối khi nạp tệp CSV");
@@ -334,7 +552,7 @@ export default function App() {
         setSelectedDataset(sampleId);
         await fetchInitialData(sampleId);
         setActiveTab('jobs');
-        showToast(`⚡ Đã nạp thành công mẫu dữ liệu: ${sampleId.toUpperCase()}!`);
+        showToast(`Đã nạp thành công mẫu dữ liệu: ${sampleId.toUpperCase()}!`);
       }
     } catch (err) {
       console.error("Load sample error:", err);
@@ -344,38 +562,33 @@ export default function App() {
   };
 
   // Real-time Salary Estimator Calculation
-  const calculateEstimatedSalary = () => {
-    const levelMultipliers = {
-      'Intern': 0.28,
-      'Fresher': 0.55,
-      'Junior/Mid': 0.85,
-      'Senior': 1.45,
-      'Lead / Manager': 2.30,
-      'Director': 4.50
-    };
-    const provinceMultipliers = {
-      'TP Hồ Chí Minh': 1.15,
-      'Hà Nội': 1.10,
-      'Đà Nẵng': 0.90,
-      'Bình Dương': 0.95,
-      'Khác': 0.80
-    };
-
-    const baseVal = market?.currency === 'USD' ? 65000000 : 16000000;
-    const lMul = levelMultipliers[simLevel] || 1.0;
-    const pMul = provinceMultipliers[simProvince] || 1.0;
-    const expBonus = simExp * (market?.currency === 'USD' ? 5500000 : 1800000);
-    const skillBonus = simSkillsCount * (market?.currency === 'USD' ? 2200000 : 650000);
-
-    const targetVal = Math.round(baseVal * lMul * pMul + expBonus + skillBonus);
-    setDisplaySalary(targetVal);
+  const calculateEstimatedSalary = async () => {
+    try {
+      const response = await fetch(`${API_BASE}/datasets/${selectedDataset}/predict-salary`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          level: simLevel,
+          province: simProvince,
+          experience_years: Number(simExp),
+          skill_count: Number(simSkillsCount)
+        })
+      });
+      if (!response.ok) throw new Error(`Prediction failed: ${response.status}`);
+      const result = await response.json();
+      if (typeof result.predicted_salary_vnd !== 'number') throw new Error('Missing prediction');
+      setDisplaySalary(Math.round(result.predicted_salary_vnd));
+    } catch (error) {
+      console.error('Salary prediction failed:', error);
+      showToast('Mô hình MLlib chưa sẵn sàng cho bộ dữ liệu này.');
+    }
   };
 
   // Active Job fallback
   const activeJob = selectedJob || filteredJobs[0] || {
     id: 'VN-10000',
     title: 'Kỹ sư Dữ liệu Cấp cao (Data Engineer)',
-    company: 'Databricks Vietnam',
+    company: 'Không có dữ liệu công ty',
     location: 'TP Hồ Chí Minh',
     state: 'TP Hồ Chí Minh',
     salary: '32.000.000 ₫ - 55.000.000 ₫',
@@ -389,6 +602,54 @@ export default function App() {
     recruiter: { name: 'Harris Whitaker', role: 'Senior Tech Talent Lead', avatar: 'HW' },
     posted_date: '2026-03-24'
   };
+
+  // Anime.js scroll and entrance animation for dedicated jobs window
+  useEffect(() => {
+    if (activeTab !== 'jobs') return;
+
+    const container = jobsScrollRef.current;
+    if (!container) return;
+
+    // Initial stagger entrance for cards
+    const cards = container.querySelectorAll('.job-card-animated');
+    if (cards.length > 0) {
+      animate(cards, {
+        opacity: [0.15, 1],
+        translateY: [14, 0],
+        scale: [0.99, 1],
+        delay: stagger(25, { start: 15 }),
+        duration: 350,
+        ease: 'outCubic',
+      });
+    }
+
+    // Dynamic in/out scroll animation with IntersectionObserver
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animate(entry.target, {
+              opacity: [0.35, 1],
+              translateY: [12, 0],
+              scale: [0.99, 1],
+              duration: 280,
+              ease: 'outCubic',
+            });
+          }
+        });
+      },
+      {
+        root: container,
+        threshold: 0.05,
+      }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [activeTab, filteredJobs, filterMode, selectedState]);
 
   return (
     <div className="fullpage-app">
@@ -482,7 +743,7 @@ export default function App() {
           >
             {datasetsList.map(ds => (
               <option key={ds.id} value={ds.id}>
-                📦 {ds.name} ({ds.records.toLocaleString('vi-VN')} tin)
+                {ds.name} ({ds.records.toLocaleString('vi-VN')} tin)
               </option>
             ))}
           </select>
@@ -498,14 +759,15 @@ export default function App() {
 
           {/* Live HDFS Status Pill */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 500, color: 'var(--colors-body-strong)' }}>
-            <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--colors-success)', display: 'inline-block' }}></span>
-            <span>3 DataNodes Online</span>
+            <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: clusterHealth?.status === 'healthy' ? 'var(--colors-success)' : 'var(--colors-warning)', display: 'inline-block' }}></span>
+            <span>{clusterHealth?.cluster?.live_datanodes ?? '—'} DataNodes {clusterHealth?.status === 'healthy' ? 'Online' : 'Unavailable'}</span>
           </div>
         </div>
       </header>
 
       {/* 2. Main Fullpage Workspace */}
-      <div className="workspace-fullpage">
+      <div className={`workspace-fullpage ${activeTab === 'jobs' ? 'jobs-layout' : ''}`}>
+
 
         {/* ========================================================================= */}
         {/* TAB 1: KHẢO SÁT VIỆC LÀM & BẢN ĐỒ TỈNH/BANG (FULLPAGE EDITORIAL LAYOUT)     */}
@@ -531,13 +793,13 @@ export default function App() {
                     className={`category-tab-btn ${filterMode === 'hot' ? 'active' : ''}`}
                     onClick={() => setFilterMode('hot')}
                   >
-                    Đang tuyển 🔥
+                    Đang tuyển
                   </button>
                   <button
                     className={`category-tab-btn ${filterMode === 'high_salary' ? 'active' : ''}`}
                     onClick={() => setFilterMode('high_salary')}
                   >
-                    Lương cao 💎
+                    Lương cao
                   </button>
                   <button
                     className={`category-tab-btn ${filterMode === 'all' ? 'active' : ''}`}
@@ -564,27 +826,39 @@ export default function App() {
                   <select
                     className="select-input-claude"
                     value={selectedState}
-                    onChange={(e) => setSelectedState(e.target.value)}
+                    onChange={(e) => handleStateChange(e.target.value)}
                   >
-                    <option value="ALL">📍 Tất cả các Tỉnh / Thành phố / Bang</option>
+                    <option value="ALL">Tất cả các Tỉnh / Thành phố / Bang</option>
                     {availableStates.map((st, idx) => (
                       <option key={idx} value={st.name}>
-                        📍 {st.name} ({st.count.toLocaleString('vi-VN')} việc làm)
+                        {st.name} ({st.count.toLocaleString('vi-VN')} việc làm)
                       </option>
                     ))}
                   </select>
                 </div>
               </div>
 
-              {/* Scrollable Job Cards Flow */}
-              <div className="jobs-cards-flow">
+              {/* Scroll progress indicator for the dedicated jobs window */}
+              <div className="jobs-window-progress-track">
+                <div
+                  className="jobs-window-progress-bar"
+                  style={{ width: `${jobsScrollPercent}%` }}
+                />
+              </div>
+
+              {/* Dedicated Internal Scrollable Jobs Area */}
+              <div
+                ref={jobsScrollRef}
+                onScroll={handleJobsScroll}
+                className="jobs-cards-flow"
+              >
                 {filteredJobs.map((job) => {
                   const isSelected = activeJob.id === job.id;
 
                   // ACTIVE CARD: Claude Dark Navy Product Surface (#181715)
                   if (isSelected) {
                     return (
-                      <div key={job.id} className="job-card-active-claude">
+                      <div key={job.id} className="job-card-active-claude job-card-animated">
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                           <div>
                             <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.2rem', fontWeight: 500, color: 'var(--colors-on-dark)', lineHeight: 1.2 }}>
@@ -625,45 +899,19 @@ export default function App() {
                             <span className="cell-label-claude">Kinh nghiệm:</span>
                             <span className="cell-val-claude">{job.experience}</span>
                           </div>
-                          <div className="cell-claude">
-                            <span className="cell-label-claude">Học vấn:</span>
-                            <span className="cell-val-claude">{job.education}</span>
-                          </div>
+                          {job.education && String(job.education).trim() && (
+                            <div className="cell-claude">
+                              <span className="cell-label-claude">Học vấn:</span>
+                              <span className="cell-val-claude">{job.education}</span>
+                            </div>
+                          )}
                         </div>
 
-                        {/* Recruiter Profile Row */}
-                        <div className="recruiter-row-claude">
-                          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                            <div className="recruiter-avatar-claude">
-                              {job.recruiter?.avatar || 'HR'}
-                            </div>
-                            <div>
-                              <div style={{ fontSize: '13px', fontWeight: 500, color: 'var(--colors-on-dark)' }}>{job.recruiter?.name || 'Recruiter'}</div>
-                              <div style={{ fontSize: '11px', color: 'var(--colors-on-dark-soft)' }}>{job.recruiter?.role || 'Talent Acquisition'}</div>
-                            </div>
-                          </div>
-
-                          <div style={{ display: 'flex', gap: '6px' }}>
-                            <button
-                              onClick={(e) => { e.stopPropagation(); showToast(`Đã gửi tin nhắn đến ${job.recruiter?.name}`); }}
-                              style={{ width: '30px', height: '30px', borderRadius: '50%', background: 'var(--colors-surface-dark-elevated)', border: '1px solid rgba(230,223,216,0.2)', color: 'var(--colors-on-dark)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
-                              title="Trao đổi trực tiếp"
-                            >
-                              <MessageSquare size={14} />
-                            </button>
-                            <button
-                              onClick={(e) => { e.stopPropagation(); showToast(`Đã sao chép liên kết tin #${job.id}`); }}
-                              style={{ width: '30px', height: '30px', borderRadius: '50%', background: 'var(--colors-surface-dark-elevated)', border: '1px solid rgba(230,223,216,0.2)', color: 'var(--colors-on-dark)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
-                              title="Chia sẻ vị trí"
-                            >
-                              <Share2 size={14} />
-                            </button>
-                          </div>
-                        </div>
-
-                        {/* Skills Pill Tags */}
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
-                          {(job.skills || ['Python', 'SQL', 'Spark']).map((sk, i) => (
+                        {/* Skills replace the placeholder recruiter row. */}
+                        <div className="job-skills-row-claude">
+                          <span className="job-skills-label-claude">Kỹ năng</span>
+                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                          {(job.skills || []).map((sk, i) => (
                             <span key={i} style={{
                               padding: '2px 8px',
                               borderRadius: 'var(--rounded-pill)',
@@ -675,6 +923,8 @@ export default function App() {
                               {sk}
                             </span>
                           ))}
+                          {!job.skills?.length && <span className="job-skills-empty-claude">Chưa có dữ liệu kỹ năng</span>}
+                          </div>
                         </div>
                       </div>
                     );
@@ -684,7 +934,7 @@ export default function App() {
                   return (
                     <div
                       key={job.id}
-                      className="job-card-claude"
+                      className="job-card-claude job-card-animated"
                       onClick={() => setSelectedJob(job)}
                     >
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -709,6 +959,20 @@ export default function App() {
                   </div>
                 )}
               </div>
+
+              {/* Dedicated Window Status & Quick Navigation Footer */}
+              <div className="jobs-window-footer">
+                <span>Hiển thị <b>{filteredJobs.length}</b> vị trí</span>
+                <button
+                  type="button"
+                  onClick={scrollToTopJobs}
+                  className="jobs-scroll-top-btn"
+                  title="Cuộn về đầu danh sách"
+                >
+                  <ArrowUp size={12} />
+                  <span>Đầu trang</span>
+                </button>
+              </div>
             </aside>
 
             {/* Right Column: Detail Canvas (Full Remaining Screen, Cream Canvas #faf9f5) */}
@@ -728,7 +992,7 @@ export default function App() {
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                   <button
-                    onClick={() => setSelectedState('ALL')}
+                    onClick={() => handleStateChange('ALL')}
                     className="button-secondary-cream"
                     title="Hiển thị toàn thị trường"
                   >
@@ -745,65 +1009,38 @@ export default function App() {
                 </div>
               </div>
 
-              {/* State Selection Chips Band */}
-              <div className="state-chips-band">
-                <button
-                  className={`chip-claude ${selectedState === 'ALL' ? 'active' : ''}`}
-                  onClick={() => setSelectedState('ALL')}
-                >
-                  📍 Toàn quốc ({overview?.total_jobs?.toLocaleString('vi-VN') || '48k'})
-                </button>
-                {availableStates.slice(0, 9).map((st, i) => (
-                  <button
-                    key={i}
-                    className={`chip-claude ${selectedState === st.name ? 'active' : ''}`}
-                    onClick={() => setSelectedState(st.name)}
-                  >
-                    📍 {st.name} ({st.count.toLocaleString('vi-VN')})
-                  </button>
-                ))}
-              </div>
-
               {/* Main Canvas Inner Flow */}
               <div className="canvas-inner-flow">
 
-                {/* Dark Product Mockup Card: HDFS Cluster Topology & Real-time Nodes (#181715) */}
-                <div className="dark-product-card-claude">
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-                    <div>
-                      <span className="badge-teal-claude" style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                        HADOOP HDFS TOPOLOGY (WINDOWS NATIVE)
-                      </span>
-                      <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.4rem', fontWeight: 400, marginTop: '4px' }}>
-                        Trạng Thái Phân Tán Dữ Liệu & Nhân Bản (Replication Factor = 3)
-                      </h3>
-                    </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '13px', color: 'var(--colors-accent-teal)' }}>
-                      <CheckCircle2 size={16} />
-                      <span>HEALTHY (0 block corrupt)</span>
-                    </div>
+                <section className="dashboard-time-filter dashboard-time-filter-jobs" aria-label="Bộ lọc thời gian">
+                  <div className="dashboard-time-copy">
+                    <span className="dashboard-time-label">Lọc việc làm theo thời gian</span>
+                    <small>
+                      {selectedYear !== 'ALL' || selectedMonth !== 'ALL'
+                        ? `Đang xem ${selectedYear !== 'ALL' ? `năm ${selectedYear}` : 'tất cả các năm'}${selectedMonth !== 'ALL' ? ` · tháng ${String(selectedMonth).padStart(2, '0')}` : ''}`
+                        : 'Chọn năm, tháng hoặc xem toàn bộ dữ liệu'}
+                    </small>
                   </div>
-
-                  {/* 3 DataNodes Topology Grid */}
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}>
-                    {[
-                      { id: 'DataNode 1', port: 9866, webui: 9864, path: 'C:/bigdata/hdfs-data/datanode1', block: 'blk_1001 (103.1MB)' },
-                      { id: 'DataNode 2', port: 9876, webui: 9874, path: 'C:/bigdata/hdfs-data/datanode2', block: 'blk_1001 (103.1MB)' },
-                      { id: 'DataNode 3', port: 9886, webui: 9884, path: 'C:/bigdata/hdfs-data/datanode3', block: 'blk_1001 (103.1MB)' },
-                    ].map((dn, i) => (
-                      <div key={i} style={{ background: 'var(--colors-surface-dark-elevated)', padding: '14px', borderRadius: 'var(--rounded-md)', border: '1px solid rgba(230,223,216,0.1)' }}>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                          <span style={{ fontWeight: 600, fontSize: '13px', color: 'var(--colors-on-dark)' }}>{dn.id}</span>
-                          <span style={{ fontSize: '11px', color: 'var(--colors-accent-teal)', fontWeight: 600 }}>● Online</span>
-                        </div>
-                        <div style={{ fontSize: '12px', color: 'var(--colors-on-dark-soft)', marginTop: '6px', display: 'flex', flexDirection: 'column', gap: '3px', fontFamily: 'var(--font-mono)' }}>
-                          <div>Port: {dn.port} · Web: {dn.webui}</div>
-                          <div style={{ color: 'var(--colors-primary)' }}>Replication: {dn.block}</div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                  <label className="dashboard-time-control">
+                    <span>Năm</span>
+                    <select className="select-input-claude" value={selectedYear} onChange={(e) => handleTimeChange(e.target.value, selectedMonth)}>
+                      <option value="ALL">Tất cả các năm</option>
+                      {availableYears.map(year => <option key={year} value={year}>{year}</option>)}
+                    </select>
+                  </label>
+                  <label className="dashboard-time-control">
+                    <span>Tháng</span>
+                    <select className="select-input-claude" value={selectedMonth} onChange={(e) => handleTimeChange(selectedYear, e.target.value)}>
+                      <option value="ALL">Tất cả các tháng</option>
+                      {availableMonths.map(month => <option key={month} value={month}>Tháng {String(month).padStart(2, '0')}</option>)}
+                    </select>
+                  </label>
+                  {(selectedYear !== 'ALL' || selectedMonth !== 'ALL') && (
+                    <button className="button-secondary-cream dashboard-time-reset" onClick={() => handleTimeChange('ALL', 'ALL')}>
+                      Xóa bộ lọc
+                    </button>
+                  )}
+                </section>
 
                 {/* Charts Grid: Anthropic Warm Coral & Ink Palette ("need more GRAPH!") */}
                 <div className="charts-grid-claude">
@@ -824,7 +1061,7 @@ export default function App() {
                       <ResponsiveContainer width="100%" height="100%">
                         <BarChart data={availableStates.slice(0, 6)} onClick={(e) => {
                           if (e && e.activePayload && e.activePayload[0]) {
-                            setSelectedState(e.activePayload[0].payload.name);
+                            handleStateChange(e.activePayload[0].payload.name);
                           }
                         }}>
                           <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--colors-hairline)" />
@@ -832,7 +1069,7 @@ export default function App() {
                           <YAxis tick={{ fontSize: 11, fill: 'var(--colors-muted)' }} axisLine={false} tickLine={false} />
                           <Tooltip
                             formatter={(value) => [`${value?.toLocaleString('vi-VN')} việc làm`, 'Số lượng tin']}
-                            contentStyle={{ background: 'var(--colors-surface-dark)', borderRadius: '8px', color: '#fff', fontSize: '12px', border: 'none' }}
+                            content={<ChartTooltip />}
                           />
                           <Bar dataKey="count" fill="var(--colors-primary)" radius={[4, 4, 0, 0]} cursor="pointer" />
                         </BarChart>
@@ -845,28 +1082,28 @@ export default function App() {
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                       <div>
                         <h4 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', fontWeight: 500, color: 'var(--colors-ink)' }}>
-                          Dải Mức Lương Theo Cấp Bậc
+                          Dải Mức Lương Theo Nhóm Vai Trò
                         </h4>
-                        <p style={{ fontSize: '13px', color: 'var(--colors-muted)' }}>Phân vị trung vị từ Thực tập sinh đến Giám đốc</p>
+                        <p style={{ fontSize: '13px', color: 'var(--colors-muted)' }}>So sánh mức lương trung vị theo nhóm vai trò của dataset</p>
                       </div>
                       <span className="badge-pill-cream">{market?.currency || 'VND'}</span>
                     </div>
 
                     <div style={{ width: '100%', height: 230, marginTop: '8px' }}>
                       <ResponsiveContainer width="100%" height="100%">
-                        <AreaChart data={salaryByLevel.length > 0 ? salaryByLevel : [
-                          { level: 'Intern', median_salary: 4500000 },
-                          { level: 'Fresher', median_salary: 11500000 },
-                          { level: 'Senior', median_salary: 26000000 },
-                          { level: 'Lead', median_salary: 42000000 },
-                          { level: 'Director', median_salary: 85000000 },
-                        ]}>
+                        <AreaChart data={(chartSalaryData.length > 0 ? chartSalaryData : [
+                          { segment: 'Mới vào nghề', median_salary: 4500000 },
+                          { segment: 'Đầu sự nghiệp', median_salary: 11500000 },
+                          { segment: 'Chuyên môn cao', median_salary: 26000000 },
+                          { segment: 'Quản lý / dẫn dắt', median_salary: 42000000 },
+                          { segment: 'Điều hành', median_salary: 85000000 },
+                        ])}>
                           <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--colors-hairline)" />
-                          <XAxis dataKey="level" tick={{ fontSize: 11, fill: 'var(--colors-muted)' }} axisLine={false} tickLine={false} />
+                          <XAxis dataKey="segment" tick={{ fontSize: 11, fill: 'var(--colors-muted)' }} axisLine={false} tickLine={false} />
                           <YAxis tick={{ fontSize: 11, fill: 'var(--colors-muted)' }} tickFormatter={(val) => `${(val / 1000000).toFixed(0)}M`} axisLine={false} tickLine={false} />
                           <Tooltip
                             formatter={(value) => [formatSalary(value), 'Lương trung vị']}
-                            contentStyle={{ background: 'var(--colors-surface-dark)', borderRadius: '8px', color: '#fff', fontSize: '12px', border: 'none' }}
+                            content={<ChartTooltip />}
                           />
                           <Area type="monotone" dataKey="median_salary" stroke="var(--colors-ink)" strokeWidth={2} fill="var(--colors-surface-cream-strong)" />
                         </AreaChart>
@@ -882,27 +1119,21 @@ export default function App() {
                   {/* Skills Progress Card */}
                   <div className="feature-card-claude">
                     <h4 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.2rem', fontWeight: 500, color: 'var(--colors-ink)' }}>
-                      Kỹ Năng Công Nghệ Săn Đón Nhất
+                      Kỹ Năng Được Săn Đón Nhiều Nhất
                     </h4>
                     <p style={{ fontSize: '13px', color: 'var(--colors-muted)', marginBottom: '8px' }}>
-                      Tỉ lệ bài đăng tuyển dụng trên HDFS yêu cầu thành thạo
+                      Tỉ lệ bài đăng tuyển dụng trên HDFS có nhắc đến kỹ năng
                     </p>
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                      {(topSkills.length > 0 ? topSkills.slice(0, 5) : [
-                        { skill: 'SQL & Database', pct: 24.5, job_count: 11780 },
-                        { skill: 'Python', pct: 19.8, job_count: 9520 },
-                        { skill: 'Java & Spring Boot', pct: 17.2, job_count: 8270 },
-                        { skill: 'React & Frontend', pct: 16.5, job_count: 7930 },
-                        { skill: 'Cloud (AWS / GCP)', pct: 11.4, job_count: 5480 },
-                      ]).map((sk, idx) => (
+                      {chartSkillsData.slice(0, 5).map((sk, idx) => (
                         <div key={idx}>
                           <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '13px', fontWeight: 500, marginBottom: '3px' }}>
                             <span>{sk.skill}</span>
-                            <span style={{ color: 'var(--colors-primary)' }}>{sk.pct}% ({sk.job_count?.toLocaleString('vi-VN')} tin)</span>
+                            <span style={{ color: 'var(--colors-primary)' }}>{Number(sk.prevalence_pct || sk.pct || 0).toLocaleString('vi-VN')}% ({Number(sk.frequency || sk.job_count || 0).toLocaleString('vi-VN')} tin)</span>
                           </div>
                           <div style={{ height: '6px', background: 'var(--colors-surface-cream-strong)', borderRadius: 'var(--rounded-pill)', overflow: 'hidden' }}>
-                            <div style={{ width: `${sk.pct * 3.8}%`, height: '100%', background: 'var(--colors-ink)', borderRadius: 'var(--rounded-pill)' }} />
+                            <div style={{ width: `${Math.min(100, Number(sk.prevalence_pct || sk.pct || 0) * 3.8)}%`, height: '100%', background: 'var(--colors-ink)', borderRadius: 'var(--rounded-pill)' }} />
                           </div>
                         </div>
                       ))}
@@ -919,24 +1150,51 @@ export default function App() {
                     </p>
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                      {(topCompanies.length > 0 ? topCompanies.slice(0, 5) : [
-                        { company: 'FPT Software', job_count: 1450 },
-                        { company: 'Viettel Telecom', job_count: 1220 },
-                        { company: 'VNG Corporation', job_count: 980 },
-                        { company: 'Shopee Vietnam', job_count: 850 },
-                        { company: 'Techcombank', job_count: 720 },
-                      ]).map((comp, idx) => (
+                      {topCompanies.slice(0, 5).map((comp, idx) => (
                         <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '6px 10px', background: 'var(--colors-canvas)', borderRadius: 'var(--rounded-sm)', border: '1px solid var(--colors-hairline)' }}>
                           <span style={{ fontSize: '13px', fontWeight: 500 }}>#{idx + 1} {comp.company}</span>
                           <span className="badge-pill-cream" style={{ fontSize: '11px' }}>{comp.job_count?.toLocaleString('vi-VN')} việc làm</span>
                         </div>
                       ))}
+                      {topCompanies.length === 0 && (
+                        <div className="empty-state">Nguồn dữ liệu không có cột công ty nên chưa thể xếp hạng doanh nghiệp.</div>
+                      )}
                     </div>
                   </div>
 
                 </div>
 
               </div>
+
+              <section className="jobs-hot-chart-claude">
+                <div className="jobs-hot-chart-heading">
+                  <div>
+                    <span className="section-kicker">NHU CẦU NỔI BẬT</span>
+                    <h3>Công việc được quan tâm nhiều nhất</h3>
+                    <p>
+                      {hasApplicationData
+                        ? 'Xếp hạng theo số lượt ứng tuyển trong tỉnh / bang và khoảng thời gian đang chọn.'
+                          : 'Dataset không có cột apply; biểu đồ dùng số tin đăng đã xử lý để thể hiện nhu cầu tuyển dụng.'}
+                    </p>
+                  </div>
+                    <span className="badge-coral-claude">{hotJobsMetricName}</span>
+                </div>
+                  {chartHotJobsData.length > 0 ? (
+                  <ResponsiveContainer width="100%" height={330}>
+                    <BarChart data={chartHotJobsData} layout="vertical" margin={{ top: 8, right: 24, left: 18, bottom: 8 }}>
+                      <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="var(--colors-hairline)" />
+                      <XAxis type="number" allowDecimals={false} tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
+                      <YAxis type="category" dataKey="title" width={190} tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
+                      <Tooltip content={<ChartTooltip />} />
+                      <Bar dataKey="metric" name={hotJobsMetricName} fill="var(--colors-primary)" radius={[0, 5, 5, 0]} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                ) : (
+                  <div className="chart-empty-state">
+                    Không có công việc phù hợp với bộ lọc hiện tại.
+                  </div>
+                )}
+              </section>
 
               {/* Floating Bottom Drawer (Dark Navy Surface with Signature Coral CTA) */}
               <div className="floating-drawer-claude">
@@ -946,7 +1204,7 @@ export default function App() {
                       Mã Tin Tuyển Dụng #{activeJob.id}
                     </span>
                     <span className="badge-coral-claude">
-                      {activeJob.status === 'HOT HIRING' ? '🔥 HOT HIRING' : activeJob.status}
+                      {activeJob.status === 'HOT HIRING' ? 'HOT HIRING' : activeJob.status}
                     </span>
                   </div>
 
@@ -995,59 +1253,185 @@ export default function App() {
         {/* TAB 2: TRUNG TÂM ĐỒ THỊ CHUYÊN SÂU (CHARTS HUB)                            */}
         {/* ========================================================================= */}
         {activeTab === 'graphs' && (
-          <main className="canvas-claude-pane" style={{ padding: '2.5rem 3.5rem' }}>
-            <div style={{ marginBottom: '2rem' }}>
-              <span className="badge-coral-claude">CHARTS & VISUAL ANALYTICS HUB</span>
-              <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', fontWeight: 400, letterSpacing: '-1px', color: 'var(--colors-ink)', marginTop: '8px' }}>
-                Báo Cáo Biểu Đồ Toàn Cảnh Thị Trường
-              </h2>
-              <p style={{ fontSize: '15px', color: 'var(--colors-muted)', marginTop: '4px' }}>
-                Phân tích định lượng chuyên sâu 48k+ bản ghi việc làm qua Apache Spark SQL & thư viện Recharts.
-              </p>
+          <main className="canvas-claude-pane market-dashboard">
+            <div className="market-dashboard-hero">
+              <div>
+                <span className="badge-coral-claude">MARKET INTELLIGENCE</span>
+                <h2>{market?.country_name || 'Thị trường tuyển dụng'}</h2>
+                <p>Toàn cảnh nhu cầu tuyển dụng, kỹ năng, lương và mức độ quan tâm của ứng viên trong dataset đang chọn.</p>
+              </div>
+              <div className="market-context">
+                <span>Dataset đang phân tích</span>
+                <strong>{datasetsList.find(ds => ds.id === selectedDataset)?.name || selectedDataset}</strong>
+                <small>{market?.currency || 'N/A'} · Độ tin cậy nhận diện {Math.round((market?.confidence || 0) * 100)}%</small>
+              </div>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '3rem' }}>
-              {/* Full State Bar Chart */}
-              <div className="chart-box-claude">
-                <h4 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.3rem', fontWeight: 500 }}>Nhu Cầu Việc Làm Theo Bang / Tỉnh</h4>
-                <p style={{ fontSize: '13px', color: 'var(--colors-muted)', marginBottom: '1rem' }}>Top 8 địa phương có số lượng việc làm cao nhất</p>
-                <div style={{ width: '100%', height: 270 }}>
-                  <ResponsiveContainer width="100%" height="100%">
-                    <BarChart data={availableStates.slice(0, 8)}>
+            <section className="dashboard-time-filter" aria-label="Bộ lọc thời gian">
+              <div className="dashboard-time-copy">
+                <span className="dashboard-time-label">Lọc biểu đồ theo thời gian</span>
+                <small>
+                  {selectedYear !== 'ALL' || selectedMonth !== 'ALL'
+                    ? `Đang xem ${selectedYear !== 'ALL' ? `năm ${selectedYear}` : 'tất cả các năm'}${selectedMonth !== 'ALL' ? ` · tháng ${String(selectedMonth).padStart(2, '0')}` : ''}`
+                    : 'Chọn năm, tháng hoặc xem toàn bộ dữ liệu'}
+                </small>
+              </div>
+              <label className="dashboard-time-control">
+                <span>Năm</span>
+                <select
+                  className="select-input-claude"
+                  value={selectedYear}
+                  onChange={(e) => handleTimeChange(e.target.value, selectedMonth)}
+                >
+                  <option value="ALL">Tất cả các năm</option>
+                  {availableYears.map(year => <option key={year} value={year}>{year}</option>)}
+                </select>
+              </label>
+              <label className="dashboard-time-control">
+                <span>Tháng</span>
+                <select
+                  className="select-input-claude"
+                  value={selectedMonth}
+                  onChange={(e) => handleTimeChange(selectedYear, e.target.value)}
+                >
+                  <option value="ALL">Tất cả các tháng</option>
+                  {availableMonths.map(month => (
+                    <option key={month} value={month}>Tháng {String(month).padStart(2, '0')}</option>
+                  ))}
+                </select>
+              </label>
+              {(selectedYear !== 'ALL' || selectedMonth !== 'ALL') && (
+                <button className="button-secondary-cream dashboard-time-reset" onClick={() => handleTimeChange('ALL', 'ALL')}>
+                  Xóa bộ lọc
+                </button>
+              )}
+            </section>
+
+            <div className="market-kpi-grid">
+              <div className="market-kpi"><span>Tổng vị trí</span><strong>{overview?.total_jobs?.toLocaleString('vi-VN') || '—'}</strong><small>Toàn bộ bản ghi sau Quality Gate</small></div>
+              <div className="market-kpi"><span>Địa điểm tuyển dụng</span><strong>{overview?.total_provinces || availableStates.length || '—'}</strong><small>Thành phố, bang hoặc khu vực</small></div>
+              <div className="market-kpi"><span>Phủ lương</span><strong>{overview?.salary_coverage_pct ? `${overview.salary_coverage_pct}%` : '—'}</strong><small>Bản ghi có mức lương hợp lệ</small></div>
+              <div className="market-kpi"><span>Vị trí nổi bật</span><strong>{hotJobs[0]?.clean_title || hotJobs[0]?.job_title || '—'}</strong><small>{hotJobs[0]?.application_count ? `${Number(hotJobs[0].application_count).toLocaleString('vi-VN')} lượt ứng tuyển` : 'Theo số lượng tin đăng'}</small></div>
+            </div>
+
+            <section className="dashboard-section">
+              <div className="section-heading"><div><span className="section-kicker">01 · NHU CẦU</span><h3>Thị trường đang tuyển gì?</h3></div><p>Xếp hạng theo quy mô tuyển dụng và số lượt ứng tuyển nếu dataset cung cấp trường tương ứng.</p></div>
+              <div className="dashboard-chart-grid">
+                <div className="chart-box-claude chart-box-wide">
+                  <h4>Vị trí hot nhất</h4><p>Ưu tiên số lượt ứng tuyển; nếu không có dữ liệu, dùng số tin đăng.</p>
+                  <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={hotJobs.slice(0, 10)} layout="vertical" margin={{ left: 18, right: 24 }}>
+                      <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="var(--colors-hairline)" />
+                      <XAxis type="number" tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
+                      <YAxis type="category" dataKey="clean_title" width={125} tick={{ fontSize: 10 }} axisLine={false} tickLine={false} />
+                      <Tooltip content={<ChartTooltip />} />
+                      <Bar dataKey={hotJobs.some(j => j.application_count > 0) ? 'application_count' : 'job_count'} fill="var(--colors-primary)" radius={[0, 5, 5, 0]} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </div>
+                <div className="chart-box-claude">
+                  <h4>Tổng hợp kỹ năng được săn đón</h4><p>Toàn bộ kỹ năng được nhắc đến trong các tin tuyển dụng, không giới hạn ở công nghệ.</p>
+                  <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={chartSkillsData.slice(0, 8)} margin={{ bottom: 35 }}>
                       <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--colors-hairline)" />
-                      <XAxis dataKey="name" tick={{ fontSize: 11, fill: 'var(--colors-muted)' }} axisLine={false} tickLine={false} />
-                      <YAxis tick={{ fontSize: 11, fill: 'var(--colors-muted)' }} axisLine={false} tickLine={false} />
-                      <Tooltip contentStyle={{ background: 'var(--colors-surface-dark)', borderRadius: '8px', color: '#fff', fontSize: '12px' }} />
-                      <Bar dataKey="count" fill="var(--colors-primary)" radius={[4, 4, 0, 0]} />
+                      <XAxis dataKey="skill" angle={-28} textAnchor="end" interval={0} height={70} tick={{ fontSize: 10 }} axisLine={false} tickLine={false} />
+                      <YAxis tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
+                      <Tooltip content={<ChartTooltip />} />
+                      <Bar dataKey="frequency" fill="var(--colors-accent-teal)" radius={[5, 5, 0, 0]} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                  {chartSkillsData.length === 0 && <div className="chart-empty-state">Dataset chưa có trường kỹ năng để tổng hợp.</div>}
+                </div>
+              </div>
+            </section>
+
+            <section className="dashboard-section">
+              <div className="section-heading"><div><span className="section-kicker">02 · PHÂN BỔ</span><h3>Quy mô theo nơi và thời gian</h3></div><p>Nhấp vào địa điểm trong trang việc làm để xem danh sách tương ứng.</p></div>
+              <div className="dashboard-chart-grid">
+                <div className="chart-box-claude">
+                  <h4>Địa điểm có nhiều cơ hội</h4><p>Top 10 thành phố, bang hoặc khu vực.</p>
+                  <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={availableStates.slice(0, 10)} margin={{ bottom: 35 }}>
+                      <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--colors-hairline)" />
+                      <XAxis dataKey="name" angle={-28} textAnchor="end" interval={0} height={70} tick={{ fontSize: 10 }} axisLine={false} tickLine={false} />
+                      <YAxis tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
+                      <Tooltip content={<ChartTooltip />} />
+                      <Bar dataKey="count" fill="var(--colors-primary)" radius={[5, 5, 0, 0]} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </div>
+                <div className="chart-box-claude">
+                  <h4>Nhu cầu theo năm</h4><p>Số tin đăng và tổng lượt ứng tuyển theo năm đăng.</p>
+                  <ResponsiveContainer width="100%" height={300}>
+                    <LineChart data={yearDistribution} margin={{ right: 20 }}>
+                      <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--colors-hairline)" />
+                      <XAxis dataKey="year" tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
+                      <YAxis tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
+                      <Tooltip content={<ChartTooltip />} />
+                      <Line type="monotone" dataKey="job_count" name="Tin đăng" stroke="var(--colors-primary)" strokeWidth={3} dot={{ r: 3 }} />
+                      <Line type="monotone" dataKey="application_count" name="Lượt ứng tuyển" stroke="var(--colors-accent-teal)" strokeWidth={2} dot={{ r: 3 }} />
+                    </LineChart>
+                  </ResponsiveContainer>
+                  <div className="year-summary-table">
+                    <div className="year-summary-row year-summary-head"><span>Năm</span><span>Tin đăng</span><span>Lượt ứng tuyển</span></div>
+                    {yearDistribution.map((row) => (
+                      <div className="year-summary-row" key={row.year}>
+                        <span>{row.year || 'Không rõ'}</span>
+                        <span>{Number(row.job_count || 0).toLocaleString('vi-VN')}</span>
+                        <span>{Number(row.application_count || 0).toLocaleString('vi-VN')}</span>
+                      </div>
+                    ))}
+                    {yearDistribution.length === 0 && <div className="year-summary-empty">Dataset chưa có ngày đăng để tổng hợp theo năm.</div>}
+                  </div>
+                  <div className="month-chart-block">
+                    <h5>Phân bổ theo tháng</h5>
+                    <ResponsiveContainer width="100%" height={150}>
+                      <BarChart data={monthDistribution} margin={{ top: 8, right: 8, left: -20, bottom: 0 }}>
+                        <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--colors-hairline)" />
+                        <XAxis dataKey="month" tickFormatter={value => `T${value}`} tick={{ fontSize: 10 }} axisLine={false} tickLine={false} />
+                        <YAxis tick={{ fontSize: 10 }} axisLine={false} tickLine={false} />
+                        <Tooltip content={<ChartTooltip />} />
+                        <Bar dataKey="job_count" name="Tin đăng" fill="var(--colors-primary)" radius={[4, 4, 0, 0]} />
+                      </BarChart>
+                    </ResponsiveContainer>
+                    {monthDistribution.length === 0 && <div className="chart-empty-state">Dataset chưa có tháng đăng hợp lệ.</div>}
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section className="dashboard-section">
+              <div className="section-heading"><div><span className="section-kicker">03 · GIÁ TRỊ</span><h3>Lương và cấp bậc</h3></div><p>So sánh trung vị, biên độ thu nhập và tỷ trọng từng cấp bậc.</p></div>
+              <div className="dashboard-chart-grid">
+                <div className="chart-box-claude chart-box-wide">
+                  <h4>Dải lương theo nhóm vai trò</h4>
+                  <p>Nhóm vai trò được suy luận từ tiêu đề, dùng được cho nhiều ngành và không ép một hệ thống cấp bậc cố định.</p>
+                  <ResponsiveContainer width="100%" height={300}>
+                    <AreaChart data={chartSalaryData}>
+                      <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--colors-hairline)" />
+                      <XAxis dataKey="segment" tick={{ fontSize: 10 }} axisLine={false} tickLine={false} />
+                      <YAxis tickFormatter={(val) => `${(val / 1000000).toFixed(0)}M`} tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
+                      <Tooltip content={<ChartTooltip />} />
+                      <Area type="monotone" dataKey="max_salary" name="Cao nhất" stroke="var(--colors-primary)" fill="var(--colors-surface-cream-strong)" />
+                      <Area type="monotone" dataKey="median_salary" name="Trung vị" stroke="var(--colors-ink)" fill="var(--colors-surface-soft)" />
+                    </AreaChart>
+                  </ResponsiveContainer>
+                  {chartSalaryData.length === 0 && <div className="chart-empty-state">Dataset chưa có đủ mức lương hợp lệ để so sánh.</div>}
+                </div>
+                <div className="chart-box-claude">
+                  <h4>Phân bổ kinh nghiệm</h4><p>Số lượng tin theo yêu cầu kinh nghiệm.</p>
+                  <ResponsiveContainer width="100%" height={300}>
+                    <BarChart data={requirements.slice(0, 8)}>
+                      <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--colors-hairline)" />
+                      <XAxis dataKey="exp_group" tick={{ fontSize: 10 }} angle={-25} textAnchor="end" height={65} axisLine={false} tickLine={false} />
+                      <YAxis tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
+                      <Tooltip content={<ChartTooltip />} />
+                      <Bar dataKey="job_count" fill="var(--colors-accent-teal)" radius={[5, 5, 0, 0]} />
                     </BarChart>
                   </ResponsiveContainer>
                 </div>
               </div>
-
-              {/* Salary by Level Area Chart */}
-              <div className="chart-box-claude">
-                <h4 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.3rem', fontWeight: 500 }}>Dải Mức Lương Theo Cấp Bậc Chuyên Môn</h4>
-                <p style={{ fontSize: '13px', color: 'var(--colors-muted)', marginBottom: '1rem' }}>Khoảng thu nhập trung vị và tối đa theo level</p>
-                <div style={{ width: '100%', height: 270 }}>
-                  <ResponsiveContainer width="100%" height="100%">
-                    <AreaChart data={salaryByLevel.length > 0 ? salaryByLevel : [
-                      { level: 'Intern', median_salary: 4500000, max_salary: 8000000 },
-                      { level: 'Fresher', median_salary: 11500000, max_salary: 18000000 },
-                      { level: 'Senior', median_salary: 26000000, max_salary: 45000000 },
-                      { level: 'Lead', median_salary: 42000000, max_salary: 80000000 },
-                      { level: 'Director', median_salary: 85000000, max_salary: 150000000 },
-                    ]}>
-                      <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--colors-hairline)" />
-                      <XAxis dataKey="level" tick={{ fontSize: 11, fill: 'var(--colors-muted)' }} axisLine={false} tickLine={false} />
-                      <YAxis tick={{ fontSize: 11, fill: 'var(--colors-muted)' }} tickFormatter={(val) => `${(val / 1000000).toFixed(0)}M`} axisLine={false} tickLine={false} />
-                      <Tooltip contentStyle={{ background: 'var(--colors-surface-dark)', borderRadius: '8px', color: '#fff', fontSize: '12px' }} />
-                      <Area type="monotone" dataKey="max_salary" stroke="var(--colors-primary)" fill="var(--colors-surface-cream-strong)" />
-                      <Area type="monotone" dataKey="median_salary" stroke="var(--colors-ink)" fill="var(--colors-surface-soft)" />
-                    </AreaChart>
-                  </ResponsiveContainer>
-                </div>
-              </div>
-            </div>
+            </section>
           </main>
         )}
 
@@ -1279,7 +1663,7 @@ export default function App() {
               {/* 1-Click Sample Buttons */}
               <div style={{ marginTop: '2rem', borderTop: '1px solid var(--colors-hairline)', paddingTop: '1.5rem' }}>
                 <span style={{ fontSize: '13px', fontWeight: 600, color: 'var(--colors-body-strong)', display: 'block', marginBottom: '12px' }}>
-                  ⚡ Hoặc nạp nhanh các tập dữ liệu mẫu chuẩn bị sẵn (1-Click):
+                  Hoặc nạp nhanh các tập dữ liệu mẫu chuẩn bị sẵn (1-Click):
                 </span>
                 <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
                   <button onClick={() => handleLoadSample('us_jobs')} className="button-secondary-cream" disabled={uploading}>
@@ -1367,6 +1751,25 @@ export default function App() {
             </div>
           </main>
         )}
+
+        <nav className="page-dots" aria-label="Điều hướng các trang dashboard">
+          {[
+            { id: 'jobs', label: 'Khám phá việc làm' },
+            { id: 'graphs', label: 'Phân tích thị trường' },
+            { id: 'ml', label: 'Dự báo thu nhập' },
+            { id: 'pipeline', label: 'Nạp dữ liệu' },
+            { id: 'cluster', label: 'Cụm HDFS' },
+          ].map((page) => (
+            <button
+              key={page.id}
+              className={`page-dot ${activeTab === page.id ? 'active' : ''}`}
+              onClick={() => setActiveTab(page.id)}
+              aria-label={page.label}
+              aria-current={activeTab === page.id ? 'page' : undefined}
+              title={page.label}
+            />
+          ))}
+        </nav>
 
       </div>
     </div>
